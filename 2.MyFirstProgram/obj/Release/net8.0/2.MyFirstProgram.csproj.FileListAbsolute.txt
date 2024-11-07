@@ -1,0 +1,15 @@
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\bin\Release\net8.0\2.MyFirstProgram.exe
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\bin\Release\net8.0\2.MyFirstProgram.deps.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\bin\Release\net8.0\2.MyFirstProgram.runtimeconfig.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\bin\Release\net8.0\2.MyFirstProgram.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\bin\Release\net8.0\2.MyFirstProgram.pdb
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.AssemblyInfoInputs.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.AssemblyInfo.cs
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.csproj.CoreCompileInputs.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.sourcelink.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\refint\2.MyFirstProgram.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.pdb
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\2.MyFirstProgram.genruntimeconfig.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\2.MyFirstProgram\obj\Release\net8.0\ref\2.MyFirstProgram.dll
