@@ -7,7 +7,13 @@ namespace myApp
         static void Main(string[] args)
         {
             Console.WriteLine("hello");
+            Console.WriteLine("    /|");
+            Console.WriteLine("   / |");
+            Console.WriteLine("  /  |");
+            Console.WriteLine(" /   |");
+            Console.WriteLine("/____|");
             Console.ReadLine();
+
 
         }
     }
