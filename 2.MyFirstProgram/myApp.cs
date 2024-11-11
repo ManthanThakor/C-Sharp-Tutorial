@@ -7,7 +7,7 @@ namespace myApp
         static void Main(string[] args)
         {
             Console.WriteLine("hello");
-            Console.ReadLine(); 
+            Console.ReadLine();
 
         }
     }
