@@ -364,6 +364,33 @@ namespace Program
             // Output:  Prepare to stop.
             // ===========================
 
+            // 2. Day Type and Activity Based on Day
+            Console.WriteLine("\nDay Type and Activity Based on Day");
+
+            string day2 = "Monday";
+            if (day2 == "Saturday" || day2 == "Sunday")
+            {
+                if (day2 == "Saturday")
+                {
+                    Console.WriteLine("It's a weekend, time to relax.");
+                }
+                else
+                {
+                    Console.WriteLine("It's a weekend, time to enjoy!");
+                }
+            }
+            else if (day2 == "Monday" || day2 == "Friday")
+            {
+                Console.WriteLine("It's a workday, get ready for the week.");
+            }
+            else
+            {
+                Console.WriteLine("It's a regular workday.");
+            }
+            // ===========================
+            // Output:  It's a workday, get ready for the week. 
+            // ===========================
+
             Console.ReadLine();
         }
     }
