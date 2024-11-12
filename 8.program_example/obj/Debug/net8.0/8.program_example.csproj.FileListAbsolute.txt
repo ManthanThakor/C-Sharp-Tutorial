@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\8.program_example\bin\Debug\net8.0\8.program_example.exe
+E:\manthan\C-Sharp-Tutorial\8.program_example\bin\Debug\net8.0\8.program_example.deps.json
+E:\manthan\C-Sharp-Tutorial\8.program_example\bin\Debug\net8.0\8.program_example.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\8.program_example\bin\Debug\net8.0\8.program_example.dll
+E:\manthan\C-Sharp-Tutorial\8.program_example\bin\Debug\net8.0\8.program_example.pdb
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.dll
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\refint\8.program_example.dll
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.pdb
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\8.program_example.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\8.program_example\obj\Debug\net8.0\ref\8.program_example.dll

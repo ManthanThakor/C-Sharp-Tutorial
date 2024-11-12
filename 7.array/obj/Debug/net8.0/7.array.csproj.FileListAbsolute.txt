@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\7.array\bin\Debug\net8.0\7.array.exe
+E:\manthan\C-Sharp-Tutorial\7.array\bin\Debug\net8.0\7.array.deps.json
+E:\manthan\C-Sharp-Tutorial\7.array\bin\Debug\net8.0\7.array.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\7.array\bin\Debug\net8.0\7.array.dll
+E:\manthan\C-Sharp-Tutorial\7.array\bin\Debug\net8.0\7.array.pdb
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.dll
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\refint\7.array.dll
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.pdb
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\7.array.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\7.array\obj\Debug\net8.0\ref\7.array.dll
