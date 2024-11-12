@@ -1,58 +1,52 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 
-namespace program
+namespace Program
 {
     class Practical
     {
         static void Main(string[] args)
         {
-
-            /*
-            //1. Check if a number is positive or negative
-
-            console.writeline("check if a number is positive or negative\n");
-            console.write("enter the number: ");
-            int num = int.parse(console.readline());
+            // 1. Check if a number is positive or negative
+            Console.WriteLine("\nCheck if a number is positive or negative");
+            Console.Write("Enter the number: ");
+            int num = int.Parse(Console.ReadLine());
 
             if (num > 0)
             {
-                console.writeline("the number is positive.");
+                Console.WriteLine("The number is positive.");
             }
             else if (num == 0)
             {
-                console.writeline("the number is 0.");
+                Console.WriteLine("The number is 0.");
             }
             else
             {
-                console.writeline("the number is negative.");
+                Console.WriteLine("The number is negative.");
             }
 
-            //===========================
-            // Output: Depends on input 
-            //===========================
+            // ===========================
+            // Output: Depends on input
+            // ===========================
 
             // 2. Check if a Number is Even or Odd
-            //Console.WriteLine("Check if a Number is Even or Odd\n");
+            Console.WriteLine("\nCheck if a number is positive or negative");
 
             int num2 = 10;
-
             if (num2 % 2 == 0)
             {
                 Console.WriteLine("The number is even.");
             }
             else
             {
-                Console.WriteLine("The number is Odd.");
+                Console.WriteLine("The number is odd.");
             }
 
-            //===========================
+            // ===========================
             // Output: The number is even.
-            //===========================
+            // ===========================
 
-                    
             // 3. Check the Largest of Two Numbers
-            Console.WriteLine("Check the Largest of Two Numbers\n");
+            Console.WriteLine("\nCheck the Largest of Two Numbers");
 
             int a = 1;
             int b = 2;
@@ -66,30 +60,30 @@ namespace program
                 Console.WriteLine("b is greater.");
             }
 
-            //===========================
+            // ===========================
             // Output: b is greater.
-            //===========================
+            // ===========================
 
-            // 4. Check if a Year is a Leap Yeark
-            Console.WriteLine("Check if a Year is a Leap Yeark\n");
+            // 4. Check if a Year is a Leap Year
+            Console.WriteLine("\nCheck if a Year is a Leap Year");
 
             int year = 2024;
 
-            if((year % 4  == 0 && year % 100 !=0) || (year % 400 == 0 ))
+            if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
             {
-                Console.WriteLine($"The year {year}  is a leap year.");
+                Console.WriteLine($"The year {year} is a leap year.");
             }
             else
             {
                 Console.WriteLine($"The year {year} is not a leap year.");
             }
 
-            //===========================
-            // Output: The year 2024  is a leap year..
-            //===========================
-         
+            // ===========================
+            // Output: The year 2024 is a leap year.
+            // ===========================
+
             // 5. Check if a Character is a Vowel or Consonant
-            Console.WriteLine("Check if a Character is a Vowel or Consonant\n");
+            Console.WriteLine("\nCheck if a Character is a Vowel or Consonant");
 
             char ch = 'a';
 
@@ -103,12 +97,12 @@ namespace program
                 Console.WriteLine($"The character {ch} is a consonant.");
             }
 
-            //===========================
+            // ===========================
             // Output: The character a is a vowel.
-            //===========================
-             
+            // ===========================
+
             // 6. Grade Classification
-            Console.WriteLine("Grade Classification\n");
+            Console.WriteLine("\nGrade Classification");
 
             int marks = 85;
             if (marks >= 90)
@@ -128,12 +122,12 @@ namespace program
                 Console.WriteLine("Grade: C");
             }
 
-            //===========================
-            // Output: Grade: A   
-            //===========================
-             
+            // ===========================
+            // Output: Grade: A
+            // ===========================
+
             // 7. Check Eligibility to Vote
-            Console.WriteLine("Check Eligibility to Vote\n");
+            Console.WriteLine("\nCheck Eligibility to Vote");
 
             int age = 20;
             if (age >= 18)
@@ -145,12 +139,12 @@ namespace program
                 Console.WriteLine("Not eligible to vote.");
             }
 
-            //===========================
+            // ===========================
             // Output: Eligible to vote.
-            //===========================
-        
+            // ===========================
+
             // 8. Simple Login System
-            Console.WriteLine("Simple Login System\n");
+            Console.WriteLine("\nSimple Login System");
 
             string username = "user";
             string password = "pass";
@@ -163,19 +157,19 @@ namespace program
                 Console.WriteLine("Invalid username or password.");
             }
 
-            //===========================
+            // ===========================
             // Output: Invalid username or password.
-            //===========================
-             
-            // 9. Number Comparison with Zero
-            Console.WriteLine("Number Comparison with Zero\n");
+            // ===========================
 
-            int num = 0;
-            if (num > 0)
+            // 9. Number Comparison with Zero
+            Console.WriteLine("\nNumber Comparison with Zero");
+
+            int num3 = 0;
+            if (num3 > 0)
             {
                 Console.WriteLine("Number is positive.");
             }
-            else if (num < 0)
+            else if (num3 < 0)
             {
                 Console.WriteLine("Number is negative.");
             }
@@ -183,15 +177,16 @@ namespace program
             {
                 Console.WriteLine("Number is zero.");
             }
-            //===========================
-            // Output: Number is zero.
-            //===========================
-    
-            // 10. Check if a Number is Divisible by 5 and 3
-            Console.WriteLine("Check if a Number is Divisible by 5 and 3\n");
 
-            int num = 15;
-            if (num % 3 == 0 && num % 5 == 0)
+            // ===========================
+            // Output: Number is zero.
+            // ===========================
+
+            // 10. Check if a Number is Divisible by 5 and 3
+            Console.WriteLine("\nCheck if a Number is Divisible by 5 and 3");
+
+            int num4 = 15;
+            if (num4 % 3 == 0 && num4 % 5 == 0)
             {
                 Console.WriteLine("Number is divisible by both 3 and 5.");
             }
@@ -200,12 +195,12 @@ namespace program
                 Console.WriteLine("Number is not divisible by both 3 and 5.");
             }
 
-            //===========================
+            // ===========================
             // Output: Number is divisible by both 3 and 5.
-            //===========================
-                       */
+            // ===========================
+
             // 11. Determine Largest of Three Numbers
-            Console.WriteLine("Determine Largest of Three Numbers\n");
+            Console.WriteLine("\nDetermine Largest of Three Numbers");
 
             int x = 12, y = 45, z = 25;
             if (x > y && x > z)
@@ -220,12 +215,13 @@ namespace program
             {
                 Console.WriteLine("z is the largest.");
             }
-            //===========================
-            // Output: y is the largest.
-            //===========================
 
-            // 11. Determine Day Type
-            Console.WriteLine("Determine Day Type\n");
+            // ===========================
+            // Output: y is the largest.
+            // ===========================
+
+            // 12. Determine Day Type
+            Console.WriteLine("\nDetermine Day Type");
 
             string day = "Saturday";
             if (day == "Saturday" || day == "Sunday")
@@ -237,13 +233,138 @@ namespace program
                 Console.WriteLine("It's a weekday.");
             }
 
+            // ===========================
+            // Output: It's a weekend.
+            // ===========================
 
+            // 13. Check if a Number Lies in a Range
+            Console.WriteLine("\nCheck if a Number Lies in a Range");
 
+            int number = 25;
+            if (number >= 10 && number <= 50)
+            {
+                Console.WriteLine("Number lies within the range 10-50.");
+            }
+            else
+            {
+                Console.WriteLine("Number does not lie within the range 10-50.");
+            }
 
+            // ===========================
+            // Output: Number lies within the range 10-50.
+            // ===========================
+
+            // 14. Simple Traffic Light System
+            Console.WriteLine("\nSimple Traffic Light System");
+
+            string lightColor = "Red";
+            if (lightColor == "Green")
+            {
+                Console.WriteLine("Go.");
+            }
+            else if (lightColor == "Yellow")
+            {
+                Console.WriteLine("Ready to stop.");
+            }
+            else
+            {
+                Console.WriteLine("Stop.");
+            }
+            // ===========================
+            // Output: Number lies within the range 10-50.
+            // ===========================
+
+            // 15.Temperature Check
+            Console.WriteLine("\nTemperature Check");
+
+            int temperatureFahrenheit = 86; // Fahrenheit temperature
+            int temperatureCelsius = (temperatureFahrenheit - 32) * 5 / 9;
+
+            if (temperatureCelsius > 35)
+            {
+                Console.WriteLine("It's a hot day.");
+            }
+            else if (temperatureCelsius > 20)
+            {
+                Console.WriteLine("It's a pleasant day.");
+            }
+            else
+            {
+                Console.WriteLine("It's a cold day.");
+            }
+            // ===========================
+            // Output: It's a pleasant day.   
+            // ===========================
+
+            //==========================================
+            //==========================================
+            Console.WriteLine("   ");
+            Console.WriteLine("\n================ Nested If else examples ===============");
+            Console.WriteLine("    ");
+            //==========================================
+            //==========================================
+
+            // 1. Determine Discount Based on Age and Membership Status
+            Console.WriteLine("\nDetermine Discount Based on Age and Membership Status");
+
+            int agee = 65;
+            bool isMember = true;
+            if (agee >= 60)
+            {
+                if (isMember)
+                {
+                    Console.WriteLine("You get a 30% discount.");
+                }
+                else
+                {
+                    Console.WriteLine("You get a 10% discount.");
+
+                }
+            }
+            else
+            {
+                if (isMember)
+                {
+                    Console.WriteLine("You get a 10% discount.");
+                }
+                else
+                {
+                    Console.WriteLine("You are not eligible for a discount.");
+
+                }
+            }
+            // ===========================
+            // Output: You get a 30 % discount.   
+            // ===========================
+
+            // 2. Determine Traffic Light Action
+            Console.WriteLine("\nDetermine Traffic Light Action");
+
+            string lightColor2 = "Yellow";
+            if (lightColor2 == "Green")
+            {
+                Console.WriteLine("Go.");
+            }
+            else if (lightColor2 == "Yellow")
+            {
+                Console.WriteLine("Prepare to stop.");
+            }
+            else
+            {
+                if (lightColor2 == "Red")
+                {
+                    Console.WriteLine("Stop.");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid light color.");
+                }
+            }
+            // ===========================
+            // Output:  Prepare to stop.
+            // ===========================
 
             Console.ReadLine();
         }
-
-     
     }
 }

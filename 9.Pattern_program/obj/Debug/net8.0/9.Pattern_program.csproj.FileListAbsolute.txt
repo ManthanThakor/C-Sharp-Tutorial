@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\bin\Debug\net8.0\9.Pattern_program.exe
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\bin\Debug\net8.0\9.Pattern_program.deps.json
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\bin\Debug\net8.0\9.Pattern_program.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\bin\Debug\net8.0\9.Pattern_program.dll
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\bin\Debug\net8.0\9.Pattern_program.pdb
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.dll
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\refint\9.Pattern_program.dll
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.pdb
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\9.Pattern_program.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\9.Pattern_program\obj\Debug\net8.0\ref\9.Pattern_program.dll
