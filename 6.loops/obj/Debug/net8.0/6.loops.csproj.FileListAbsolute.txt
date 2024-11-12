@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\6.loops\bin\Debug\net8.0\6.loops.exe
+E:\manthan\C-Sharp-Tutorial\6.loops\bin\Debug\net8.0\6.loops.deps.json
+E:\manthan\C-Sharp-Tutorial\6.loops\bin\Debug\net8.0\6.loops.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\6.loops\bin\Debug\net8.0\6.loops.dll
+E:\manthan\C-Sharp-Tutorial\6.loops\bin\Debug\net8.0\6.loops.pdb
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.dll
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\refint\6.loops.dll
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.pdb
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\6.loops.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\6.loops\obj\Debug\net8.0\ref\6.loops.dll
