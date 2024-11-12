@@ -1,0 +1,15 @@
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.AssemblyInfoInputs.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.AssemblyInfo.cs
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.csproj.CoreCompileInputs.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.sourcelink.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\bin\Debug\net8.0\3.VariableAndDataTypeExamples.exe
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\bin\Debug\net8.0\3.VariableAndDataTypeExamples.deps.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\bin\Debug\net8.0\3.VariableAndDataTypeExamples.runtimeconfig.json
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\bin\Debug\net8.0\3.VariableAndDataTypeExamples.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\bin\Debug\net8.0\3.VariableAndDataTypeExamples.pdb
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\refint\3.VariableAndDataTypeExamples.dll
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.pdb
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\3.VariableAndDataTypeExamples.genruntimeconfig.cache
+C:\Users\TGSUser147\Source\Repos\ManthanThakor\C-Sharp-Tutorial\3.VariableAndDataTypeExamples\obj\Debug\net8.0\ref\3.VariableAndDataTypeExamples.dll
