@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\bin\Debug\net8.0\5.task_Mad_Lib.exe
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\bin\Debug\net8.0\5.task_Mad_Lib.deps.json
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\bin\Debug\net8.0\5.task_Mad_Lib.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\bin\Debug\net8.0\5.task_Mad_Lib.dll
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\bin\Debug\net8.0\5.task_Mad_Lib.pdb
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.dll
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\refint\5.task_Mad_Lib.dll
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.pdb
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\5.task_Mad_Lib.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\5.task_Mad_Lib\obj\Debug\net8.0\ref\5.task_Mad_Lib.dll
