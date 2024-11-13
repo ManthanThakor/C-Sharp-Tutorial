@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\bin\Debug\net8.0\11.handle_Exception.exe
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\bin\Debug\net8.0\11.handle_Exception.deps.json
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\bin\Debug\net8.0\11.handle_Exception.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\bin\Debug\net8.0\11.handle_Exception.dll
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\bin\Debug\net8.0\11.handle_Exception.pdb
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.dll
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\refint\11.handle_Exception.dll
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.pdb
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\11.handle_Exception.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\11.handle_Exception\obj\Debug\net8.0\ref\11.handle_Exception.dll

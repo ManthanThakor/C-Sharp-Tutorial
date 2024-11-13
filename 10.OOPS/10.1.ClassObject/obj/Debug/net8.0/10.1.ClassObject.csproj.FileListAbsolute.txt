@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\bin\Debug\net8.0\10.1.ClassObject.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\bin\Debug\net8.0\10.1.ClassObject.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\bin\Debug\net8.0\10.1.ClassObject.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\bin\Debug\net8.0\10.1.ClassObject.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\bin\Debug\net8.0\10.1.ClassObject.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\refint\10.1.ClassObject.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\10.1.ClassObject.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.1.ClassObject\obj\Debug\net8.0\ref\10.1.ClassObject.dll
