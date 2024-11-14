@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\bin\Debug\net8.0\10.8.Inheritance.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\bin\Debug\net8.0\10.8.Inheritance.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\bin\Debug\net8.0\10.8.Inheritance.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\bin\Debug\net8.0\10.8.Inheritance.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\bin\Debug\net8.0\10.8.Inheritance.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\refint\10.8.Inheritance.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\10.8.Inheritance.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.8.Inheritance\obj\Debug\net8.0\ref\10.8.Inheritance.dll
