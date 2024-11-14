@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\bin\Debug\net8.0\10.5.staticClassAtribute.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\bin\Debug\net8.0\10.5.staticClassAtribute.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\bin\Debug\net8.0\10.5.staticClassAtribute.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\bin\Debug\net8.0\10.5.staticClassAtribute.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\bin\Debug\net8.0\10.5.staticClassAtribute.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\refint\10.5.staticClassAtribute.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\10.5.staticClassAtribute.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.5.staticClassAtribute\obj\Debug\net8.0\ref\10.5.staticClassAtribute.dll
