@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\bin\Debug\net8.0\10.3.ObjectMethods.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\bin\Debug\net8.0\10.3.ObjectMethods.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\bin\Debug\net8.0\10.3.ObjectMethods.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\bin\Debug\net8.0\10.3.ObjectMethods.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\bin\Debug\net8.0\10.3.ObjectMethods.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\refint\10.3.ObjectMethods.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\10.3.ObjectMethods.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.3.ObjectMethods\obj\Debug\net8.0\ref\10.3.ObjectMethods.dll
