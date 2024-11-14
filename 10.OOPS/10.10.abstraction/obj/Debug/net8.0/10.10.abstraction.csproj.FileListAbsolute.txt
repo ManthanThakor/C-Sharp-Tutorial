@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\bin\Debug\net8.0\10.10.abstraction.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\bin\Debug\net8.0\10.10.abstraction.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\bin\Debug\net8.0\10.10.abstraction.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\bin\Debug\net8.0\10.10.abstraction.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\bin\Debug\net8.0\10.10.abstraction.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\refint\10.10.abstraction.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\10.10.abstraction.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.10.abstraction\obj\Debug\net8.0\ref\10.10.abstraction.dll
