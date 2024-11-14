@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\bin\Debug\net8.0\10.4.GetterSetter.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\bin\Debug\net8.0\10.4.GetterSetter.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\bin\Debug\net8.0\10.4.GetterSetter.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\bin\Debug\net8.0\10.4.GetterSetter.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\bin\Debug\net8.0\10.4.GetterSetter.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\refint\10.4.GetterSetter.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\10.4.GetterSetter.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.4.GetterSetter\obj\Debug\net8.0\ref\10.4.GetterSetter.dll
