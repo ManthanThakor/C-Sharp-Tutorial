@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\bin\Debug\net8.0\10.12.Aggregation.exe
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\bin\Debug\net8.0\10.12.Aggregation.deps.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\bin\Debug\net8.0\10.12.Aggregation.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\bin\Debug\net8.0\10.12.Aggregation.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\bin\Debug\net8.0\10.12.Aggregation.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\refint\10.12.Aggregation.dll
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.pdb
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\10.12.Aggregation.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\10.OOPS\10.12.Aggregation\obj\Debug\net8.0\ref\10.12.Aggregation.dll
