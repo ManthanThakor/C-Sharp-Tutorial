@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\bin\Debug\net8.0\7.1. JaggedArrays.exe
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\bin\Debug\net8.0\7.1. JaggedArrays.deps.json
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\bin\Debug\net8.0\7.1. JaggedArrays.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\bin\Debug\net8.0\7.1. JaggedArrays.dll
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\bin\Debug\net8.0\7.1. JaggedArrays.pdb
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.dll
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\refint\7.1. JaggedArrays.dll
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.pdb
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\7.1. JaggedArrays.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\7.1. JaggedArrays\obj\Debug\net8.0\ref\7.1. JaggedArrays.dll
