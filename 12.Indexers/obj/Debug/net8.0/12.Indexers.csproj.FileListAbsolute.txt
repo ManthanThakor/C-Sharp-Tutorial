@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\12.Indexers\bin\Debug\net8.0\12.Indexers.exe
+E:\manthan\C-Sharp-Tutorial\12.Indexers\bin\Debug\net8.0\12.Indexers.deps.json
+E:\manthan\C-Sharp-Tutorial\12.Indexers\bin\Debug\net8.0\12.Indexers.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\12.Indexers\bin\Debug\net8.0\12.Indexers.dll
+E:\manthan\C-Sharp-Tutorial\12.Indexers\bin\Debug\net8.0\12.Indexers.pdb
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.dll
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\refint\12.Indexers.dll
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.pdb
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\12.Indexers.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\12.Indexers\obj\Debug\net8.0\ref\12.Indexers.dll
