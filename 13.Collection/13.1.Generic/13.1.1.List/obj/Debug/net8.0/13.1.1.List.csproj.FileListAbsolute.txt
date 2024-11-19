@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\bin\Debug\net8.0\13.1.1.List.exe
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\bin\Debug\net8.0\13.1.1.List.deps.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\bin\Debug\net8.0\13.1.1.List.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\bin\Debug\net8.0\13.1.1.List.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\bin\Debug\net8.0\13.1.1.List.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\refint\13.1.1.List.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\13.1.1.List.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.1.List\obj\Debug\net8.0\ref\13.1.1.List.dll
