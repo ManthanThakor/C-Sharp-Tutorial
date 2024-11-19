@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\bin\Debug\net8.0\13.1.4.stack.exe
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\bin\Debug\net8.0\13.1.4.stack.deps.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\bin\Debug\net8.0\13.1.4.stack.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\bin\Debug\net8.0\13.1.4.stack.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\bin\Debug\net8.0\13.1.4.stack.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\refint\13.1.4.stack.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\13.1.4.stack.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.4.stack\obj\Debug\net8.0\ref\13.1.4.stack.dll

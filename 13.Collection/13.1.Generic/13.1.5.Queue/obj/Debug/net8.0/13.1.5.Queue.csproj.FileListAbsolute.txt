@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\bin\Debug\net8.0\13.1.5.Queue.exe
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\bin\Debug\net8.0\13.1.5.Queue.deps.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\bin\Debug\net8.0\13.1.5.Queue.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\bin\Debug\net8.0\13.1.5.Queue.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\bin\Debug\net8.0\13.1.5.Queue.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\refint\13.1.5.Queue.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\13.1.5.Queue.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.5.Queue\obj\Debug\net8.0\ref\13.1.5.Queue.dll
