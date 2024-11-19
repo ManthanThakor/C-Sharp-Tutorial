@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\bin\Debug\net8.0\13.1.3.SortedList.exe
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\bin\Debug\net8.0\13.1.3.SortedList.deps.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\bin\Debug\net8.0\13.1.3.SortedList.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\bin\Debug\net8.0\13.1.3.SortedList.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\bin\Debug\net8.0\13.1.3.SortedList.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\refint\13.1.3.SortedList.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\13.1.3.SortedList.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.3.SortedList\obj\Debug\net8.0\ref\13.1.3.SortedList.dll
