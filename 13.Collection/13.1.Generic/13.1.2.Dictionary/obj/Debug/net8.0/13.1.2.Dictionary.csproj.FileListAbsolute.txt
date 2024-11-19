@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\bin\Debug\net8.0\13.1.2.Dictionary.exe
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\bin\Debug\net8.0\13.1.2.Dictionary.deps.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\bin\Debug\net8.0\13.1.2.Dictionary.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\bin\Debug\net8.0\13.1.2.Dictionary.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\bin\Debug\net8.0\13.1.2.Dictionary.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\refint\13.1.2.Dictionary.dll
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.pdb
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\13.1.2.Dictionary.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\13.Collection\13.1.Generic\13.1.2.Dictionary\obj\Debug\net8.0\ref\13.1.2.Dictionary.dll
