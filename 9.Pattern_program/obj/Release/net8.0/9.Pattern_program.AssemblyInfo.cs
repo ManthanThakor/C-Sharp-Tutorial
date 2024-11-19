@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("9.Pattern_program")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+849352917dd4a0f1b4cff1254f355e1efc8796f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7909db20144d8704ae8a424caa1c4aef204366ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("9.Pattern_program")]
 [assembly: System.Reflection.AssemblyTitleAttribute("9.Pattern_program")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("12.Indexers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5903bc7f300de062ed8e62175c583bad6a08e1d9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7909db20144d8704ae8a424caa1c4aef204366ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("12.Indexers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("12.Indexers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
