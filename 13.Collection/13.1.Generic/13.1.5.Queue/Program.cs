@@ -25,5 +25,7 @@ public class Program
         }
 
         Console.WriteLine($"\nIs the queue empty? {queue.Count == 0}");
+
+        Console.ReadLine();
     }
 }
