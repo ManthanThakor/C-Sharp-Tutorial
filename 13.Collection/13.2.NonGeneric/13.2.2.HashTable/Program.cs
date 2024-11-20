@@ -10,8 +10,8 @@ class Program
         table.Add(2, "Banana");
         table.Add(3, "Cherry");
 
-        Console.WriteLine(table[1]);  // Output: Apple
-        Console.WriteLine(table[2]);  // Output: Banana
+        Console.WriteLine(table[1]);   
+        Console.WriteLine(table[2]);  
         Console.ReadLine();
     }
 }

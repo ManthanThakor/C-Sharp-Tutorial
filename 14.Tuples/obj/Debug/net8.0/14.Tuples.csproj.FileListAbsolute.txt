@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\14.Tuples\bin\Debug\net8.0\14.Tuples.exe
+E:\manthan\C-Sharp-Tutorial\14.Tuples\bin\Debug\net8.0\14.Tuples.deps.json
+E:\manthan\C-Sharp-Tutorial\14.Tuples\bin\Debug\net8.0\14.Tuples.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\14.Tuples\bin\Debug\net8.0\14.Tuples.dll
+E:\manthan\C-Sharp-Tutorial\14.Tuples\bin\Debug\net8.0\14.Tuples.pdb
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.dll
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\refint\14.Tuples.dll
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.pdb
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\14.Tuples.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\14.Tuples\obj\Debug\net8.0\ref\14.Tuples.dll
