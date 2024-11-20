@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.NonGeneric.csproj": {}
+    "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.1.ArrayList\\13.2.1.ArrayList.csproj": {}
   },
   "projects": {
-    "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.NonGeneric.csproj": {
+    "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.1.ArrayList\\13.2.1.ArrayList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.NonGeneric.csproj",
-        "projectName": "13.2.NonGeneric",
-        "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.NonGeneric.csproj",
+        "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.1.ArrayList\\13.2.1.ArrayList.csproj",
+        "projectName": "13.2.1.ArrayList",
+        "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.1.ArrayList\\13.2.1.ArrayList.csproj",
         "packagesPath": "C:\\Users\\TGSUser147\\.nuget\\packages\\",
-        "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\obj\\",
+        "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\13.Collection\\13.2.NonGeneric\\13.2.1.ArrayList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
