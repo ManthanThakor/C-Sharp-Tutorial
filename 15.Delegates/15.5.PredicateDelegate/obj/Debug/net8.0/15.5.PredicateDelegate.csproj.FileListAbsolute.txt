@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\bin\Debug\net8.0\15.5.PredicateDelegate.exe
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\bin\Debug\net8.0\15.5.PredicateDelegate.deps.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\bin\Debug\net8.0\15.5.PredicateDelegate.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\bin\Debug\net8.0\15.5.PredicateDelegate.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\bin\Debug\net8.0\15.5.PredicateDelegate.pdb
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\refint\15.5.PredicateDelegate.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.pdb
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\15.5.PredicateDelegate.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.5.PredicateDelegate\obj\Debug\net8.0\ref\15.5.PredicateDelegate.dll

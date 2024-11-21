@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\bin\Debug\net8.0\15.4.ActionDelegates.exe
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\bin\Debug\net8.0\15.4.ActionDelegates.deps.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\bin\Debug\net8.0\15.4.ActionDelegates.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\bin\Debug\net8.0\15.4.ActionDelegates.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\bin\Debug\net8.0\15.4.ActionDelegates.pdb
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\refint\15.4.ActionDelegates.dll
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.pdb
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\15.4.ActionDelegates.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\15.Delegates\15.4.ActionDelegates\obj\Debug\net8.0\ref\15.4.ActionDelegates.dll
