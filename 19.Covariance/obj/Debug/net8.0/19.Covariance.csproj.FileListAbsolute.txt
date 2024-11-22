@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\19.Covariance\bin\Debug\net8.0\19.Covariance.exe
+E:\manthan\C-Sharp-Tutorial\19.Covariance\bin\Debug\net8.0\19.Covariance.deps.json
+E:\manthan\C-Sharp-Tutorial\19.Covariance\bin\Debug\net8.0\19.Covariance.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\19.Covariance\bin\Debug\net8.0\19.Covariance.dll
+E:\manthan\C-Sharp-Tutorial\19.Covariance\bin\Debug\net8.0\19.Covariance.pdb
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.dll
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\refint\19.Covariance.dll
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.pdb
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\19.Covariance.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\19.Covariance\obj\Debug\net8.0\ref\19.Covariance.dll
