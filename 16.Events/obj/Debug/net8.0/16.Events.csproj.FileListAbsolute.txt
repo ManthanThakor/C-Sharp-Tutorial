@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\16.Events\bin\Debug\net8.0\16.Events.exe
+E:\manthan\C-Sharp-Tutorial\16.Events\bin\Debug\net8.0\16.Events.deps.json
+E:\manthan\C-Sharp-Tutorial\16.Events\bin\Debug\net8.0\16.Events.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\16.Events\bin\Debug\net8.0\16.Events.dll
+E:\manthan\C-Sharp-Tutorial\16.Events\bin\Debug\net8.0\16.Events.pdb
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.dll
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\refint\16.Events.dll
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.pdb
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\16.Events.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\16.Events\obj\Debug\net8.0\ref\16.Events.dll
