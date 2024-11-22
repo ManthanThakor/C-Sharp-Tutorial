@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "18.PassinganEventData/1.0.0": {
+        "runtime": {
+          "18.PassinganEventData.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "18.PassinganEventData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

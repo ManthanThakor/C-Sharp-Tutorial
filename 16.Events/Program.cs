@@ -1,42 +1,48 @@
 ﻿using System;
-
-namespace Events
+namespace EventExample
 {
-    public delegate void Notify();
-
-    public class ProcessBusinessLogic
+    // Publisher class
+    public class Publisher
     {
-        // Define an event
-        public event Notify OnProcess;
+        // Declare the delegate for the event
+        public delegate void NotifyEventHandler(string message);
 
-        // Method to invoke the event
-        public virtual void OnProcessCompleted()
+        // Declare the event based on the delegate
+        public event NotifyEventHandler Notify;
+
+        // Method to raise the event
+        public void RaiseEvent(string message)
         {
-            OnProcess?.Invoke();
+            // Check if there are subscribers before raising the event
+            Notify?.Invoke(message);
         }
     }
-
+    // Subscriber class
+    public class Subscriber
+    {
+        // Method to handle the event
+        public void OnNotify(string message)
+        {
+            Console.WriteLine($"Event received with message: {message}");
+        }
+    }
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("\n Events \n");
-
-            ProcessBusinessLogic bl = new ProcessBusinessLogic();
-
+            // Create instances of publisher and subscriber
+            Publisher publisher = new Publisher();
+            Subscriber subscriber = new Subscriber();
             // Subscribe to the event
-            bl.OnProcess += Bl_ProcessCompleted;
-
-            // Trigger the process logic, which invokes the event
-            bl.OnProcessCompleted();
+            publisher.Notify += subscriber.OnNotify;
+            // Raise the event
+            publisher.RaiseEvent("Hello, Events in C#!");
+            // Unsubscribe from the event
+            publisher.Notify -= subscriber.OnNotify;
+            // Trying to raise the event again (no output since unsubscribed)
+            publisher.RaiseEvent("This will not be received.");
 
             Console.ReadLine();
-        }
-
-        // Event handler method
-        public static void Bl_ProcessCompleted()
-        {
-            Console.WriteLine("Process Completed!");
         }
     }
 }

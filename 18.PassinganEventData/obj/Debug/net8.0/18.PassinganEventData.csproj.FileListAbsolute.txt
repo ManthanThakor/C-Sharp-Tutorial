@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\bin\Debug\net8.0\18.PassinganEventData.exe
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\bin\Debug\net8.0\18.PassinganEventData.deps.json
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\bin\Debug\net8.0\18.PassinganEventData.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\bin\Debug\net8.0\18.PassinganEventData.dll
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\bin\Debug\net8.0\18.PassinganEventData.pdb
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.dll
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\refint\18.PassinganEventData.dll
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.pdb
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\18.PassinganEventData.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\18.PassinganEventData\obj\Debug\net8.0\ref\18.PassinganEventData.dll
