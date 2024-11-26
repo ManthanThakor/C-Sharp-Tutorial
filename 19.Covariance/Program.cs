@@ -26,7 +26,10 @@ public class TestUserDefinedException
         {
             validate(22);
         }
-        catch (InvalidAgeException e) { Console.WriteLine(e); }
+        catch (InvalidAgeException e) 
+        { 
+            Console.WriteLine(e); 
+        }
      
         Console.WriteLine("Rest of the code");
         Console.ReadLine();

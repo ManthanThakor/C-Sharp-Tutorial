@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\bin\Debug\net8.0\20.1.SingleResponsibilityPrinciple.exe
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\bin\Debug\net8.0\20.1.SingleResponsibilityPrinciple.deps.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\bin\Debug\net8.0\20.1.SingleResponsibilityPrinciple.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\bin\Debug\net8.0\20.1.SingleResponsibilityPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\bin\Debug\net8.0\20.1.SingleResponsibilityPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\refint\20.1.SingleResponsibilityPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\20.1.SingleResponsibilityPrinciple.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.1.SingleResponsibilityPrinciple\obj\Debug\net8.0\ref\20.1.SingleResponsibilityPrinciple.dll
