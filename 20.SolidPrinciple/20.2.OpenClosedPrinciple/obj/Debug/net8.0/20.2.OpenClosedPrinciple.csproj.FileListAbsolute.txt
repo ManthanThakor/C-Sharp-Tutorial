@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\bin\Debug\net8.0\20.2.OpenClosedPrinciple.exe
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\bin\Debug\net8.0\20.2.OpenClosedPrinciple.deps.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\bin\Debug\net8.0\20.2.OpenClosedPrinciple.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\bin\Debug\net8.0\20.2.OpenClosedPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\bin\Debug\net8.0\20.2.OpenClosedPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\refint\20.2.OpenClosedPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\20.2.OpenClosedPrinciple.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.2.OpenClosedPrinciple\obj\Debug\net8.0\ref\20.2.OpenClosedPrinciple.dll
