@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\bin\Debug\net8.0\20.5.DependencyInversionPrinciple.exe
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\bin\Debug\net8.0\20.5.DependencyInversionPrinciple.deps.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\bin\Debug\net8.0\20.5.DependencyInversionPrinciple.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\bin\Debug\net8.0\20.5.DependencyInversionPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\bin\Debug\net8.0\20.5.DependencyInversionPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\refint\20.5.DependencyInversionPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\20.5.DependencyInversionPrinciple.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.5.DependencyInversionPrinciple\obj\Debug\net8.0\ref\20.5.DependencyInversionPrinciple.dll
