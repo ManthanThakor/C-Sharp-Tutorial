@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\bin\Debug\net8.0\20.4.InterfaceSegregationPrinciple.exe
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\bin\Debug\net8.0\20.4.InterfaceSegregationPrinciple.deps.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\bin\Debug\net8.0\20.4.InterfaceSegregationPrinciple.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\bin\Debug\net8.0\20.4.InterfaceSegregationPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\bin\Debug\net8.0\20.4.InterfaceSegregationPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\refint\20.4.InterfaceSegregationPrinciple.dll
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.pdb
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\20.4.InterfaceSegregationPrinciple.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\20.SolidPrinciple\20.4.InterfaceSegregationPrinciple\obj\Debug\net8.0\ref\20.4.InterfaceSegregationPrinciple.dll

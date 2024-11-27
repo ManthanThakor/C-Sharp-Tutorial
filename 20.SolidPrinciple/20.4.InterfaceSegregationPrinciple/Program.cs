@@ -19,7 +19,7 @@ namespace InterfaceSegregationPrinciple
     {
         public void Drive()
         {
-            Console.WriteLine("Driving the Car...");
+            Console.WriteLine("Driving the Car...\n");
         }
     }
 
@@ -31,7 +31,7 @@ namespace InterfaceSegregationPrinciple
         }
         public void Fly()
         {
-            Console.WriteLine("Flying the Airplane...");
+            Console.WriteLine("Flying the Airplane...\n");
         }
     }
 
@@ -39,11 +39,11 @@ namespace InterfaceSegregationPrinciple
     {
         public void Drive()
         {
-            Console.WriteLine("Driving the boat on land ....")
+            Console.WriteLine("Driving the Boat on land...");
         }
         public void Sail()
         {
-            Console.WriteLine("Sailing the Boat on water...");
+            Console.WriteLine("Sailing the Boat on water...\n");
         }
     }
 
@@ -54,6 +54,19 @@ namespace InterfaceSegregationPrinciple
         {
             Console.WriteLine("\n InterFace Segregation Principle \n");
 
+            Car car = new Car();
+            Console.WriteLine("Car Section");
+            car.Drive();
+
+            Airplan airplan = new Airplan();
+            Console.WriteLine("Airplan Section");
+            airplan.Drive();
+            airplan.Fly();
+
+            Boat boat = new Boat();
+            Console.WriteLine("Boat Section");
+            boat.Drive();
+            boat.Sail();
 
             Console.ReadLine();
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("20.4.InterfaceSegregationPrinciple")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e70558c65713237b5ca8fe56d7fc1b0042de22f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca3eda361b1eba453da8897298421d6c842b77f2")]
 [assembly: System.Reflection.AssemblyProductAttribute("20.4.InterfaceSegregationPrinciple")]
 [assembly: System.Reflection.AssemblyTitleAttribute("20.4.InterfaceSegregationPrinciple")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
