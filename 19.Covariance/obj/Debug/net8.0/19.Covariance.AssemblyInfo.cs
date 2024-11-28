@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("19.Covariance")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3312dec461ee0cbd32d2b5481862fece9361d15d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95c0531d43fca797bb1e290f9e27e3c39063eb88")]
 [assembly: System.Reflection.AssemblyProductAttribute("19.Covariance")]
 [assembly: System.Reflection.AssemblyTitleAttribute("19.Covariance")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
