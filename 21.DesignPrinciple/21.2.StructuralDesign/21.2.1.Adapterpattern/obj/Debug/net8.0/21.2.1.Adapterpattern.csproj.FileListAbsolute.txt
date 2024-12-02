@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\bin\Debug\net8.0\21.2.1.Adapterpattern.exe
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\bin\Debug\net8.0\21.2.1.Adapterpattern.deps.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\bin\Debug\net8.0\21.2.1.Adapterpattern.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\bin\Debug\net8.0\21.2.1.Adapterpattern.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\bin\Debug\net8.0\21.2.1.Adapterpattern.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\refint\21.2.1.Adapterpattern.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\21.2.1.Adapterpattern.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.1.Adapterpattern\obj\Debug\net8.0\ref\21.2.1.Adapterpattern.dll
