@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\bin\Debug\net8.0\21.1.5.Prototype.exe
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\bin\Debug\net8.0\21.1.5.Prototype.deps.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\bin\Debug\net8.0\21.1.5.Prototype.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\bin\Debug\net8.0\21.1.5.Prototype.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\bin\Debug\net8.0\21.1.5.Prototype.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\refint\21.1.5.Prototype.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\21.1.5.Prototype.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.1.CreationalDesignPatterns\21.1.5.Prototype\obj\Debug\net8.0\ref\21.1.5.Prototype.dll
