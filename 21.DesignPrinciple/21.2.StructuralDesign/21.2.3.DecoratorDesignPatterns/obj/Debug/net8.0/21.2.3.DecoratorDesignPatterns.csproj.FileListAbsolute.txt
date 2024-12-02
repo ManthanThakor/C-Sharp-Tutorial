@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\bin\Debug\net8.0\21.2.3.DecoratorDesignPatterns.exe
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\bin\Debug\net8.0\21.2.3.DecoratorDesignPatterns.deps.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\bin\Debug\net8.0\21.2.3.DecoratorDesignPatterns.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\bin\Debug\net8.0\21.2.3.DecoratorDesignPatterns.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\bin\Debug\net8.0\21.2.3.DecoratorDesignPatterns.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\refint\21.2.3.DecoratorDesignPatterns.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\21.2.3.DecoratorDesignPatterns.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.3.DecoratorDesignPatterns\obj\Debug\net8.0\ref\21.2.3.DecoratorDesignPatterns.dll
