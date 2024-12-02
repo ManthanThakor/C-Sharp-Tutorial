@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\bin\Debug\net8.0\21.2.2.Facade.exe
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\bin\Debug\net8.0\21.2.2.Facade.deps.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\bin\Debug\net8.0\21.2.2.Facade.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\bin\Debug\net8.0\21.2.2.Facade.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\bin\Debug\net8.0\21.2.2.Facade.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\refint\21.2.2.Facade.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\21.2.2.Facade.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.2.StructuralDesign\21.2.2.Facade\obj\Debug\net8.0\ref\21.2.2.Facade.dll
