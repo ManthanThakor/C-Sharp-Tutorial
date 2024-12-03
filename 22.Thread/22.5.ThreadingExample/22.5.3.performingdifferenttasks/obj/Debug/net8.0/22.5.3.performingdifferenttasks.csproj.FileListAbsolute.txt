@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\bin\Debug\net8.0\22.5.3.performingdifferenttasks.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\bin\Debug\net8.0\22.5.3.performingdifferenttasks.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\bin\Debug\net8.0\22.5.3.performingdifferenttasks.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\bin\Debug\net8.0\22.5.3.performingdifferenttasks.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\bin\Debug\net8.0\22.5.3.performingdifferenttasks.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\refint\22.5.3.performingdifferenttasks.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\22.5.3.performingdifferenttasks.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.5.ThreadingExample\22.5.3.performingdifferenttasks\obj\Debug\net8.0\ref\22.5.3.performingdifferenttasks.dll
