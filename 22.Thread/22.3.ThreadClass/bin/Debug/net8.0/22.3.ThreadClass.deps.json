@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "22.3.ThreadClass/1.0.0": {
+        "runtime": {
+          "22.3.ThreadClass.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "22.3.ThreadClass/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
