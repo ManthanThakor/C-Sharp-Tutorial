@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\bin\Debug\net8.0\22.2.MultiThreading.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\bin\Debug\net8.0\22.2.MultiThreading.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\bin\Debug\net8.0\22.2.MultiThreading.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\bin\Debug\net8.0\22.2.MultiThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\bin\Debug\net8.0\22.2.MultiThreading.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\refint\22.2.MultiThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\22.2.MultiThreading.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.2.MultiThreading\obj\Debug\net8.0\ref\22.2.MultiThreading.dll
