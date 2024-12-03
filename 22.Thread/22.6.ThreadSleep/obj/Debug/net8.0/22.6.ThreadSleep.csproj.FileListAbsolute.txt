@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\bin\Debug\net8.0\22.6.ThreadSleep.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\bin\Debug\net8.0\22.6.ThreadSleep.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\bin\Debug\net8.0\22.6.ThreadSleep.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\bin\Debug\net8.0\22.6.ThreadSleep.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\bin\Debug\net8.0\22.6.ThreadSleep.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\refint\22.6.ThreadSleep.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\22.6.ThreadSleep.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.6.ThreadSleep\obj\Debug\net8.0\ref\22.6.ThreadSleep.dll
