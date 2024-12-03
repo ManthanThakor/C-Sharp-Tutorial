@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("22.5.2.NonStaticMethod")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a082a9e2d551b9078cc2487a5528a12d11bcaae6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11326dcf51dc122ac40589db5da8134f402c5596")]
 [assembly: System.Reflection.AssemblyProductAttribute("22.5.2.NonStaticMethod")]
 [assembly: System.Reflection.AssemblyTitleAttribute("22.5.2.NonStaticMethod")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
