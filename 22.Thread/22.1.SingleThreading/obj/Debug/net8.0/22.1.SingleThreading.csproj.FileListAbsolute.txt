@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\bin\Debug\net8.0\22.1.SingleThreading.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\bin\Debug\net8.0\22.1.SingleThreading.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\bin\Debug\net8.0\22.1.SingleThreading.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\bin\Debug\net8.0\22.1.SingleThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\bin\Debug\net8.0\22.1.SingleThreading.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\refint\22.1.SingleThreading.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\22.1.SingleThreading.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.1.SingleThreading\obj\Debug\net8.0\ref\22.1.SingleThreading.dll
