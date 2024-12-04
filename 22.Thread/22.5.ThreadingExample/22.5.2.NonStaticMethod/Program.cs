@@ -7,9 +7,9 @@ public class MyThread
     public void Thread1()
     {
         // Loop to print numbers from 0 to 9
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 100; i++)
         {
-            Console.WriteLine(i);  // Print the current number
+            Console.WriteLine($"Count : {i}");  // Print the current number
         }
     }
 }
@@ -28,7 +28,10 @@ public class ThreadExample
 
         // Start both threads. They will run the Thread1 method concurrently.
         t1.Start();
+        t1.Join();
         t2.Start();
+ 
+        t2.Join();
         Console.ReadLine();
     }
 }

@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\bin\Debug\net8.0\22.8.ThreadJoin.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\bin\Debug\net8.0\22.8.ThreadJoin.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\bin\Debug\net8.0\22.8.ThreadJoin.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\bin\Debug\net8.0\22.8.ThreadJoin.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\bin\Debug\net8.0\22.8.ThreadJoin.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\refint\22.8.ThreadJoin.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\22.8.ThreadJoin.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.8.ThreadJoin\obj\Debug\net8.0\ref\22.8.ThreadJoin.dll

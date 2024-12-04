@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\bin\Debug\net8.0\22.7.ThreadAbort.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\bin\Debug\net8.0\22.7.ThreadAbort.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\bin\Debug\net8.0\22.7.ThreadAbort.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\bin\Debug\net8.0\22.7.ThreadAbort.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\bin\Debug\net8.0\22.7.ThreadAbort.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\refint\22.7.ThreadAbort.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\22.7.ThreadAbort.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.7.ThreadAbort\obj\Debug\net8.0\ref\22.7.ThreadAbort.dll
