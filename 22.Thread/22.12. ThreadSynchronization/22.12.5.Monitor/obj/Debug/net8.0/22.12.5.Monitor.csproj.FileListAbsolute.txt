@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\bin\Debug\net8.0\22.12.5.Monitor.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\bin\Debug\net8.0\22.12.5.Monitor.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\bin\Debug\net8.0\22.12.5.Monitor.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\bin\Debug\net8.0\22.12.5.Monitor.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\bin\Debug\net8.0\22.12.5.Monitor.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\refint\22.12.5.Monitor.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\22.12.5.Monitor.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.5.Monitor\obj\Debug\net8.0\ref\22.12.5.Monitor.dll
