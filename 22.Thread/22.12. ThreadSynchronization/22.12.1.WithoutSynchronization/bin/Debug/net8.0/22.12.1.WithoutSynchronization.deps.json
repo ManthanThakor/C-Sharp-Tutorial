@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "22.12.1.WithoutSynchronization/1.0.0": {
+        "runtime": {
+          "22.12.1.WithoutSynchronization.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "22.12.1.WithoutSynchronization/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\bin\Debug\net8.0\22.12.1.WithoutSynchronization.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\bin\Debug\net8.0\22.12.1.WithoutSynchronization.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\bin\Debug\net8.0\22.12.1.WithoutSynchronization.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\bin\Debug\net8.0\22.12.1.WithoutSynchronization.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\bin\Debug\net8.0\22.12.1.WithoutSynchronization.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\refint\22.12.1.WithoutSynchronization.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\22.12.1.WithoutSynchronization.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.1.WithoutSynchronization\obj\Debug\net8.0\ref\22.12.1.WithoutSynchronization.dll
