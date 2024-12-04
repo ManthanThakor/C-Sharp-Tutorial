@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\bin\Debug\net8.0\22.12.3.WithThreadSafetyLock.exe
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\bin\Debug\net8.0\22.12.3.WithThreadSafetyLock.deps.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\bin\Debug\net8.0\22.12.3.WithThreadSafetyLock.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\bin\Debug\net8.0\22.12.3.WithThreadSafetyLock.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\bin\Debug\net8.0\22.12.3.WithThreadSafetyLock.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\refint\22.12.3.WithThreadSafetyLock.dll
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.pdb
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\22.12.3.WithThreadSafetyLock.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\22.Thread\22.12. ThreadSynchronization\22.12.3.WithThreadSafetyLock\obj\Debug\net8.0\ref\22.12.3.WithThreadSafetyLock.dll
