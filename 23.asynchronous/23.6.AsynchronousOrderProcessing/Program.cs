@@ -20,7 +20,7 @@ namespace OrderProcessing
         public async Task prepare()
         {
             Console.WriteLine($"Order {OrderId}: Preparing {Item}...");
-            await Task.Delay(PreparationTime); // Simulate preparation time
+            await Task.Delay(PreparationTime); 
             Console.WriteLine($"Order {OrderId}: {Item} is ready!");
         }
     }
@@ -33,15 +33,14 @@ namespace OrderProcessing
 
             List<Order> order = new List<Order>
             {
-                new Order(1, "Burger", 3000),      // Order 1: Burger takes 3 seconds
-                new Order(2, "Pizza", 5000),       // Order 2: Pizza takes 5 seconds
-                new Order(3, "Pasta", 4000),       // Order 3: Pasta takes 4 seconds
-                new Order(4, "Salad", 2000),       // Order 4: Salad takes 2 seconds
-                new Order(5, "Milkshake", 1000),   // Order 5: Milkshake takes 1 second
+                new Order(1, "Burger", 3000),     
+                new Order(2, "Pizza", 5000),      
+                new Order(3, "Pasta", 4000),       
+                new Order(4, "Salad", 2000),     
+                new Order(5, "Milkshake", 1000),   
             };
             Console.WriteLine("Orders received, starting preparation...\n");
 
-            // Create a list to store tasks
             var preparationTasks = new List<Task>();
             foreach (var task in order)
             {
@@ -55,8 +54,6 @@ namespace OrderProcessing
         }
     }
 }
-
-
 //Restaurant Order Processing
 
 //Orders received, starting preparation...
