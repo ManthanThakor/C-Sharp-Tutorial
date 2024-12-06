@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\bin\Debug\net8.0\23.2.FetchDataExample.exe
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\bin\Debug\net8.0\23.2.FetchDataExample.deps.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\bin\Debug\net8.0\23.2.FetchDataExample.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\bin\Debug\net8.0\23.2.FetchDataExample.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\bin\Debug\net8.0\23.2.FetchDataExample.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\refint\23.2.FetchDataExample.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\23.2.FetchDataExample.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.2.FetchDataExample\obj\Debug\net8.0\ref\23.2.FetchDataExample.dll
