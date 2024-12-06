@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "23.4.AsynchronousCarOperations/1.0.0": {
+        "runtime": {
+          "23.4.AsynchronousCarOperations.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "23.4.AsynchronousCarOperations/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

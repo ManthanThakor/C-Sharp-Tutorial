@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("23.4.AsynchronousCarOperations")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8824e147a40606d584cbf4dd7ea626f4be1aa7b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+017b7a2404371cbb28046f0b90882e37d06eecdf")]
 [assembly: System.Reflection.AssemblyProductAttribute("23.4.AsynchronousCarOperations")]
 [assembly: System.Reflection.AssemblyTitleAttribute("23.4.AsynchronousCarOperations")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
