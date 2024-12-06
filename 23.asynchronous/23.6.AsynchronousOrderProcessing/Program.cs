@@ -31,7 +31,7 @@ namespace OrderProcessing
         {
             Console.WriteLine("\nRestaurant Order Processing\n");
 
-            var order = new List<Order>
+            List<Order> order = new List<Order>
             {
                 new Order(1, "Burger", 3000),      // Order 1: Burger takes 3 seconds
                 new Order(2, "Pizza", 5000),       // Order 2: Pizza takes 5 seconds
@@ -55,3 +55,21 @@ namespace OrderProcessing
         }
     }
 }
+
+
+//Restaurant Order Processing
+
+//Orders received, starting preparation...
+
+//Order 1: Preparing Burger...
+//Order 2: Preparing Pizza...
+//Order 3: Preparing Pasta...
+//Order 4: Preparing Salad...
+//Order 5: Preparing Milkshake...
+//Order 5: Milkshake is ready!
+//Order 4: Salad is ready!
+//Order 1: Burger is ready!
+//Order 3: Pasta is ready!
+//Order 2: Pizza is ready!
+
+//All orders are ready!

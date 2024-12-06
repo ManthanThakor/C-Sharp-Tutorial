@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("23.6.AsynchronousOrderProcessing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52a73f21a669ed3ba081d51cc80c63264099078b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0773e3fc316b91f3feb0f394202012846be976b")]
 [assembly: System.Reflection.AssemblyProductAttribute("23.6.AsynchronousOrderProcessing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("23.6.AsynchronousOrderProcessing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
