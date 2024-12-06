@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\bin\Debug\net8.0\23.6.AsynchronousOrderProcessing.exe
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\bin\Debug\net8.0\23.6.AsynchronousOrderProcessing.deps.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\bin\Debug\net8.0\23.6.AsynchronousOrderProcessing.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\bin\Debug\net8.0\23.6.AsynchronousOrderProcessing.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\bin\Debug\net8.0\23.6.AsynchronousOrderProcessing.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\refint\23.6.AsynchronousOrderProcessing.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\23.6.AsynchronousOrderProcessing.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.6.AsynchronousOrderProcessing\obj\Debug\net8.0\ref\23.6.AsynchronousOrderProcessing.dll

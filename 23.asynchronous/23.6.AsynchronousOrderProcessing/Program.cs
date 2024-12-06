@@ -6,18 +6,51 @@ namespace OrderProcessing
 {
     class Order
     {
-        public int Id { get; set; }
+        public int OrderId { get; set; }
         public string Item { get; set; }
         public int PreparationTime { get; set; }
+
+        public Order(int orderId, string item, int preparationTime)
+        {
+            OrderId = orderId;
+            Item = item;
+            PreparationTime = preparationTime;
+        }
+
+        public async Task prepare()
+        {
+            Console.WriteLine($"Order {OrderId}: Preparing {Item}...");
+            await Task.Delay(PreparationTime); // Simulate preparation time
+            Console.WriteLine($"Order {OrderId}: {Item} is ready!");
+        }
     }
 
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Console.WriteLine("\n Order Processing System \n");
+            Console.WriteLine("\nRestaurant Order Processing\n");
 
-            Order order = new Order();
+            var order = new List<Order>
+            {
+                new Order(1, "Burger", 3000),      // Order 1: Burger takes 3 seconds
+                new Order(2, "Pizza", 5000),       // Order 2: Pizza takes 5 seconds
+                new Order(3, "Pasta", 4000),       // Order 3: Pasta takes 4 seconds
+                new Order(4, "Salad", 2000),       // Order 4: Salad takes 2 seconds
+                new Order(5, "Milkshake", 1000),   // Order 5: Milkshake takes 1 second
+            };
+            Console.WriteLine("Orders received, starting preparation...\n");
+
+            // Create a list to store tasks
+            var preparationTasks = new List<Task>();
+            foreach (var task in order)
+            {
+                preparationTasks.Add(task.prepare());
+            }
+            await Task.WhenAll(preparationTasks);
+
+            Console.WriteLine("\nAll orders are ready!");
+
             Console.ReadLine();
         }
     }
