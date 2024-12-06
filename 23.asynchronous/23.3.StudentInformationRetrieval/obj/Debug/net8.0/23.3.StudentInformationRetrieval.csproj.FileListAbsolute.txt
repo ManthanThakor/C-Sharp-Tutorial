@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\bin\Debug\net8.0\23.3.StudentInformationRetrieval.exe
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\bin\Debug\net8.0\23.3.StudentInformationRetrieval.deps.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\bin\Debug\net8.0\23.3.StudentInformationRetrieval.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\bin\Debug\net8.0\23.3.StudentInformationRetrieval.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\bin\Debug\net8.0\23.3.StudentInformationRetrieval.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\refint\23.3.StudentInformationRetrieval.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\23.3.StudentInformationRetrieval.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.3.StudentInformationRetrieval\obj\Debug\net8.0\ref\23.3.StudentInformationRetrieval.dll
