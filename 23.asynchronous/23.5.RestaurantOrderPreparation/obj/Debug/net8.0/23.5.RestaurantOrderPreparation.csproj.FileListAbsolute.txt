@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\bin\Debug\net8.0\23.5.RestaurantOrderPreparation.exe
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\bin\Debug\net8.0\23.5.RestaurantOrderPreparation.deps.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\bin\Debug\net8.0\23.5.RestaurantOrderPreparation.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\bin\Debug\net8.0\23.5.RestaurantOrderPreparation.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\bin\Debug\net8.0\23.5.RestaurantOrderPreparation.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\refint\23.5.RestaurantOrderPreparation.dll
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.pdb
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\23.5.RestaurantOrderPreparation.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\23.asynchronous\23.5.RestaurantOrderPreparation\obj\Debug\net8.0\ref\23.5.RestaurantOrderPreparation.dll
