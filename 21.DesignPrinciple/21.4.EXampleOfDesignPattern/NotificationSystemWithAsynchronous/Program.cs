@@ -1,39 +1,42 @@
-﻿using NotificationSystem;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace NotificationSystem
 {
-
     public interface INotificationSubject
     {
         void Subscribe(INotificationObserver observer);
         void Unsubscribe(INotificationObserver observer);
-        void NotifyObservers(string message);
+        Task NotifyObserversAsync(string message);
     }
 
     public interface INotificationObserver
     {
-        void Update(string message);
+        Task UpdateAsync(string message);
     }
 
     public interface INotification
     {
-        void Send(string recipient, string message);
+        Task SendAsync(string recipient, string message);
     }
 
     public class EmailNotification : INotification
     {
-        public void Send(string recipient, string message)
+        public async Task SendAsync(string recipient, string message)
         {
+
+            await Task.Delay(500);
             Console.WriteLine($"Sending Email to {recipient}: {message}");
         }
     }
 
     public class SMSNotification : INotification
     {
-        public void Send(string recipient, string message)
+        public async Task SendAsync(string recipient, string message)
         {
+
+            await Task.Delay(500);
             Console.WriteLine($"Sending SMS to {recipient}: {message}");
         }
     }
@@ -44,15 +47,12 @@ namespace NotificationSystem
         {
             type = type.ToLower();
 
-            switch (type)
+            return type switch
             {
-                case "email":
-                    return new EmailNotification();
-                case "sms":
-                    return new SMSNotification();
-                default:
-                    throw new ArgumentException("Invalid notification type");
-            }
+                "email" => new EmailNotification(),
+                "sms" => new SMSNotification(),
+                _ => throw new ArgumentException("Invalid notification type"),
+            };
         }
     }
 
@@ -68,11 +68,11 @@ namespace NotificationSystem
             NotificationType = notificationType;
             ContactInfo = contactInfo;
         }
-        public void Update(string message)
+
+        public async Task UpdateAsync(string message)
         {
             var notification = NotificationFactory.CreateNotification(NotificationType);
-            notification.Send(ContactInfo, message);
-
+            await notification.SendAsync(ContactInfo, message);
         }
     }
 
@@ -95,18 +95,20 @@ namespace NotificationSystem
             _observers.Remove(observer);
         }
 
-        public void NotifyObservers(string message)
+        public async Task NotifyObserversAsync(string message)
         {
+            var tasks = new List<Task>();
             foreach (var observer in _observers)
             {
-                observer.Update(message);
+                tasks.Add(observer.UpdateAsync(message));
             }
+            await Task.WhenAll(tasks);
         }
     }
 
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var notificationManager = NotificationManager.Instance;
 
@@ -117,54 +119,14 @@ namespace NotificationSystem
             notificationManager.Subscribe(customer2);
 
             Console.WriteLine("Sending promotional notification...");
-            notificationManager.NotifyObservers("Exclusive Sale! Get 20% off on your next purchase.");
+            await notificationManager.NotifyObserversAsync("Exclusive Sale! Get 20% off on your next purchase.");
 
             notificationManager.Unsubscribe(customer1);
 
             Console.WriteLine("\nSending another notification...");
-            notificationManager.NotifyObservers("Hurry! Free shipping on orders above 5000 INR.");
+            await notificationManager.NotifyObserversAsync("Hurry! Free shipping on orders above 5000 INR.");
 
             Console.ReadLine();
         }
     }
-
 }
-
-//Sending promotional notification...
-//Sending Email to ABC@gmail.com: Exclusive Sale! Get 20% off on your next purchase.
-//Sending SMS to +1234567890: Exclusive Sale! Get 20% off on your next purchase.
-
-//Sending another notification...
-//Sending SMS to +1234567890: Hurry! Free shipping on orders above 5000 INR.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//===============================================================================================
-//===============================================================================================
-
-//Explanation
-//Observer Pattern:
-
-//NotificationManager is the Subject that maintains a list of observers (Customer objects).
-//Customer objects are notified dynamically when NotifyObservers is called.
-//Factory Pattern:
-
-//The NotificationFactory creates notification objects (EmailNotification or SMSNotification) based on customer preferences.
-//Singleton Pattern:
-
-//NotificationManager ensures only one instance handles all subscriptions and notifications.
