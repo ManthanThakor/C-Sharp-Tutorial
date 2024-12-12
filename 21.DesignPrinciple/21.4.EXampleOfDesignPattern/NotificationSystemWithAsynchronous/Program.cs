@@ -26,7 +26,7 @@ namespace NotificationSystem
         public async Task SendAsync(string recipient, string message)
         {
 
-            await Task.Delay(500);
+            await Task.Delay(3000);
             Console.WriteLine($"Sending Email to {recipient}: {message}");
         }
     }
@@ -36,7 +36,7 @@ namespace NotificationSystem
         public async Task SendAsync(string recipient, string message)
         {
 
-            await Task.Delay(500);
+            await Task.Delay(3000);
             Console.WriteLine($"Sending SMS to {recipient}: {message}");
         }
     }
@@ -124,7 +124,7 @@ namespace NotificationSystem
             notificationManager.Unsubscribe(customer1);
 
             Console.WriteLine("\nSending another notification...");
-            await notificationManager.NotifyObserversAsync("Hurry! Free shipping on orders above 5000 INR.");
+            await notificationManager.NotifyObserversAsync("Hurry! Free shipping on orders above 30000 INR.");
 
             Console.ReadLine();
         }
