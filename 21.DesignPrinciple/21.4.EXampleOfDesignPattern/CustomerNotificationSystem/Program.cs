@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NotificationSystem;
+using System;
 using System.Collections.Generic;
 
 namespace NotificationSystem
@@ -135,3 +136,17 @@ namespace NotificationSystem
 //Sending another notification...
 //Sending SMS to +1234567890: Hurry! Free shipping on orders above 5000 INR.
 
+//===============================================================================================
+//===============================================================================================
+
+//Explanation
+//Observer Pattern:
+
+//NotificationManager is the Subject that maintains a list of observers (Customer objects).
+//Customer objects are notified dynamically when NotifyObservers is called.
+//Factory Pattern:
+
+//The NotificationFactory creates notification objects (EmailNotification or SMSNotification) based on customer preferences.
+//Singleton Pattern:
+
+//NotificationManager ensures only one instance handles all subscriptions and notifications.
