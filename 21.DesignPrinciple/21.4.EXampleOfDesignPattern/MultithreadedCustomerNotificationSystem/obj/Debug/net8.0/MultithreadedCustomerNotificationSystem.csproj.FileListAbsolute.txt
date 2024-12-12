@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\bin\Debug\net8.0\MultithreadedCustomerNotificationSystem.exe
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\bin\Debug\net8.0\MultithreadedCustomerNotificationSystem.deps.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\bin\Debug\net8.0\MultithreadedCustomerNotificationSystem.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\bin\Debug\net8.0\MultithreadedCustomerNotificationSystem.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\bin\Debug\net8.0\MultithreadedCustomerNotificationSystem.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\refint\MultithreadedCustomerNotificationSystem.dll
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.pdb
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\MultithreadedCustomerNotificationSystem.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\21.DesignPrinciple\21.4.EXampleOfDesignPattern\MultithreadedCustomerNotificationSystem\obj\Debug\net8.0\ref\MultithreadedCustomerNotificationSystem.dll
