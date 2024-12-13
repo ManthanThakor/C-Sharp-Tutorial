@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\bin\Debug\net8.0\24.1.ReadAndWrite.exe
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\bin\Debug\net8.0\24.1.ReadAndWrite.deps.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\bin\Debug\net8.0\24.1.ReadAndWrite.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\bin\Debug\net8.0\24.1.ReadAndWrite.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\bin\Debug\net8.0\24.1.ReadAndWrite.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\refint\24.1.ReadAndWrite.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\24.1.ReadAndWrite.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.1.ReadAndWrite\obj\Debug\net8.0\ref\24.1.ReadAndWrite.dll
