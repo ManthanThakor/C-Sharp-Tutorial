@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\bin\Debug\net8.0\24.2.1.example1.exe
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\bin\Debug\net8.0\24.2.1.example1.deps.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\bin\Debug\net8.0\24.2.1.example1.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\bin\Debug\net8.0\24.2.1.example1.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\bin\Debug\net8.0\24.2.1.example1.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\refint\24.2.1.example1.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\24.2.1.example1.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.1.example1\obj\Debug\net8.0\ref\24.2.1.example1.dll
