@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.exe
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.deps.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\bin\Debug\net8.0\ConsoleApp2.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\refint\ConsoleApp2.dll
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.pdb
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ConsoleApp2.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\24.StreamIo\24.2.stream\24.2.3.FileStream\ConsoleApp2\obj\Debug\net8.0\ref\ConsoleApp2.dll

@@ -1,0 +1,3 @@
+Hello, this is a sample text file.
+File handling in C# is simple!
+This line was added later.
