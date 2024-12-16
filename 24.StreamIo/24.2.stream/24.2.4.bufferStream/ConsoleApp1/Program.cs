@@ -13,7 +13,6 @@ class BufferedStreamExample
             byte[] buffer = new byte[2000];
             int bytesRead = bs.Read(buffer, 0, buffer.Length);
 
-            // Convert the bytes read into a string (assuming text encoding is UTF-8 or ASCII)
             string fileContent = Encoding.UTF8.GetString(buffer, 0, bytesRead);
             Console.WriteLine($"Read {bytesRead} bytes.");
             Console.WriteLine("File Content:");
