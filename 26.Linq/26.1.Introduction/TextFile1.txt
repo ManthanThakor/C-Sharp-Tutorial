@@ -1,0 +1,4 @@
+
+Language-Integrated Query (LINQ) is a powerful set of technologies based on the integration of query capabilities directly into the C# language. 
+LINQ Queries are the first-class language construct in C# .NET, just like classes, methods, events. 
+The LINQ provides a consistent query experience to query objects (LINQ to Objects), relational databases (LINQ to SQL), and XML (LINQ to XML).
