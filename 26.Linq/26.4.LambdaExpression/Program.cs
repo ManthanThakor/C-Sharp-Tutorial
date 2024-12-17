@@ -26,6 +26,7 @@ public class Program
         {
             Console.WriteLine(std.StudentName);
         }
+        Console.ReadLine();
     }
 }
 
