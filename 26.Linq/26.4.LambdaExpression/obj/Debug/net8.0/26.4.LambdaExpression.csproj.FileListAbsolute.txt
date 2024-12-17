@@ -1,0 +1,15 @@
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\bin\Debug\net8.0\26.4.LambdaExpression.exe
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\bin\Debug\net8.0\26.4.LambdaExpression.deps.json
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\bin\Debug\net8.0\26.4.LambdaExpression.runtimeconfig.json
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\bin\Debug\net8.0\26.4.LambdaExpression.dll
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\bin\Debug\net8.0\26.4.LambdaExpression.pdb
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.dll
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\refint\26.4.LambdaExpression.dll
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.pdb
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\26.4.LambdaExpression.genruntimeconfig.cache
+E:\manthan\C-Sharp-Tutorial\26.Linq\26.4.LambdaExpression\obj\Debug\net8.0\ref\26.4.LambdaExpression.dll
