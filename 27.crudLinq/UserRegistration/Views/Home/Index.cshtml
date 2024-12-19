@@ -3,31 +3,66 @@
 }
 
 <main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
+    <!-- Hero Section -->
+    <section class="hero-section py-5 text-white text-center" style="background: linear-gradient(135deg, #007bff, #6610f2);">
+        <h1 class="display-4">Welcome to User Registration</h1>
+        <p class="lead">Effortless registration and seamless management.</p>
+        <a href="/user/Create" class="btn btn-lg btn-light mt-3">Get Started</a>
     </section>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
-    </div>
+    <!-- Features Section -->
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-box p-4 bg-white rounded shadow">
+                        <h3>Fast Registration</h3>
+                        <p>Quick and easy registration process with a user-friendly interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box p-4 bg-white rounded shadow">
+                        <h3>Secure Storage</h3>
+                        <p>Ensure your data is safe with state-of-the-art security measures.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box p-4 bg-white rounded shadow">
+                        <h3>Responsive Design</h3>
+                        <p>Optimized for all devices to ensure the best user experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section py-5 text-white text-center" style="background: linear-gradient(135deg, #28a745, #20c997);">
+        <h2>Already registered?</h2>
+        <p>View and manage your details easily.</p>
+        <a href="/user" class="btn btn-lg btn-dark mt-3">Go to User Details</a>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5 bg-light">
+        <div class="container">
+            <h2 class="mb-5 text-center">What our users say</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial p-4 bg-white rounded shadow">
+                        <p class="mb-2">"The registration process was smooth and straightforward. Highly recommend!"</p>
+                        <strong>- Sarah</strong>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial p-4 bg-white rounded shadow">
+                        <p class="mb-2">"A perfect platform with a modern design. My experience was amazing."</p>
+                        <strong>- David</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </main>

@@ -85,5 +85,33 @@ namespace UserRegistration.Controllers
             }
             return View(user);
         }
+
+        public ActionResult Delete(int id, bool? saveChangesError)
+        {
+            if (saveChangesError.GetValueOrDefault())
+            {
+                ViewBag.ErrorMessage = "Unable to save changes. Try again, and if the problem persists see your system administrator.";
+            }
+            UserModel user = _userRepository.GetUserById(id);
+            return View(user);
+        }
+        [HttpPost, ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            try
+            {
+                UserModel user = _userRepository.GetUserById(id);
+                _userRepository.DeleteUser(id);
+            }
+            catch (DataException)
+            {
+                return RedirectToAction("Delete",
+                new System.Web.Routing.RouteValueDictionary {
+          { "id", id },
+          { "saveChangesError", true } });
+            }
+            return RedirectToAction("Index");
+        }
+
     }
 }

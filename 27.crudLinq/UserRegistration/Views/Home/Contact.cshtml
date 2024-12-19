@@ -1,19 +1,167 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
+    ViewBag.Message = "We would love to hear from you!";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<main aria-labelledby="title" class="contact-us-section">
+    <div class="container">
+        <header class="contact-header">
+            <h1 id="title" class="contact-title">@ViewBag.Title</h1>
+            <p class="contact-message">@ViewBag.Message</p>
+        </header>
 
-    <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
-    </address>
+        <section class="contact-details">
+            <div class="contact-info">
+                <h3 class="section-title">Our Office</h3>
+                <address class="office-address">
+                    <p>One Microsoft Way</p>
+                    <p>Redmond, WA 98052-6399</p>
+                    <p><abbr title="Phone">P:</abbr> 425-555-0100</p>
+                </address>
+            </div>
 
-    <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-    </address>
+            <div class="contact-support">
+                <h3 class="section-title">Get In Touch</h3>
+                <p>For inquiries, please reach out to us:</p>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Support:</strong>
+                        <a href="mailto:support@example.com">support@example.com</a>
+                    </li>
+                    <li>
+                        <strong>Marketing:</strong>
+                        <a href="mailto:marketing@example.com">marketing@example.com</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3 class="section-title">Send Us a Message</h3>
+            <form action="#" method="post" class="form-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" name="message" rows="5" class="form-textarea" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </div>
 </main>
+
+<style>
+    .contact-us-section {
+        background-color: #f4f7fa;
+        padding: 40px 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .contact-message {
+        font-size: 1.1rem;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .contact-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .contact-info, .contact-support {
+        width: 48%;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .office-address p, .contact-list li {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+        .contact-list li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .contact-list li a:hover {
+                text-decoration: underline;
+            }
+
+    .contact-form {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .form-input, .form-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    .form-textarea {
+        resize: vertical;
+    }
+
+    .submit-btn {
+        align-self: flex-start;
+        padding: 12px 20px;
+        background-color: #007bff;
+        color: white;
+        font-size: 1.1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+</style>
