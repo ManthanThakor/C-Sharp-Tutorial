@@ -124,6 +124,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Models\IUserRepository.cs" />
     <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Models\UserRepository.cs" />
     <Compile Include="User.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
