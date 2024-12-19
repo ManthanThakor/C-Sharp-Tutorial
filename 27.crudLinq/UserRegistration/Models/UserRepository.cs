@@ -51,7 +51,7 @@ namespace UserRegistration.Models
             return null;
         }
 
-        public void InserUser(UserModel user)
+        public void InsertUser(UserModel user)
         {
             var userData = new User()
             {
@@ -84,16 +84,6 @@ namespace UserRegistration.Models
                 userData.Age = user.Age;
                 _dataContext.SubmitChanges();
             }
-        }
-
-        public IEnumerable<UserModel> GetUsers()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void InsertUser(UserModel user)
-        {
-            throw new NotImplementedException();
         }
     }
 }

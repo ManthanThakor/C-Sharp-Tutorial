@@ -7,7 +7,7 @@ namespace UserRegistration.Models
 {
     public interface IUserRepository
     {
-        IEnumerable<UserModel> GetUsers();
+        IEnumerable<UserModel> GetUser();
         UserModel GetUserById(int userId);
         void InsertUser(UserModel user);
         void DeleteUser(int userId);
