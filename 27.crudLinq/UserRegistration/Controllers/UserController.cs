@@ -58,7 +58,32 @@ namespace UserRegistration.Controllers
             {
                 return HttpNotFound();
             }
-            return View(user); // Return user details view
+            return View(user);
+        }
+
+
+        public ActionResult Edit(int id)
+        {
+            UserModel model = _userRepository.GetUserById(id);
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(UserModel user)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _userRepository.UpdateUser(user);
+                    return RedirectToAction("Index");
+                }
+            }
+            catch (DataException)
+            {
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+            }
+            return View(user);
         }
     }
 }
