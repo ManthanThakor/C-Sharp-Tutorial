@@ -1,9 +1,108 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "About Us";
+    ViewBag.Message = "Learn more about our mission and values.";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
+<main aria-labelledby="title" class="about-us-section">
+    <div class="container">
+        <header class="about-header">
+            <h1 id="title" class="about-title">@ViewBag.Title</h1>
+            <p class="about-message">@ViewBag.Message</p>
+        </header>
 
-    <p>Use this area to provide additional information.</p>
+        <section class="about-content">
+            <h3 class="section-title">Our Mission</h3>
+            <p class="about-text">
+                We are committed to providing high-quality products and services that enhance the lives of our customers. Our mission is to lead the way in innovation and customer satisfaction.
+            </p>
+
+            <h3 class="section-title">Our Values</h3>
+            <ul class="about-values">
+                <li><strong>Integrity:</strong> We value honesty and transparency in everything we do.</li>
+                <li><strong>Innovation:</strong> Constantly evolving to stay ahead in a fast-paced world.</li>
+                <li><strong>Customer-Centric:</strong> Our customers are at the heart of every decision we make.</li>
+            </ul>
+        </section>
+
+        <section class="about-vision">
+            <h3 class="section-title">Our Vision</h3>
+            <p class="about-text">
+                We aim to be the leading provider of solutions that empower people to achieve their goals. Our vision is to create a lasting impact by continuously improving and adapting to the needs of our community.
+            </p>
+        </section>
+    </div>
 </main>
+
+<style>
+    .about-us-section {
+        background-color: #f8f9fc;
+        padding: 50px 0;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .about-message {
+        font-size: 1.1rem;
+        color: #777;
+        margin-top: 10px;
+    }
+
+    .about-content {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .about-values {
+        list-style-type: none;
+        padding: 0;
+        font-size: 1.1rem;
+        color: #555;
+    }
+
+        .about-values li {
+            margin-bottom: 15px;
+        }
+
+            .about-values li strong {
+                color: #007bff;
+            }
+
+    .about-vision {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .about-vision p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+</style>

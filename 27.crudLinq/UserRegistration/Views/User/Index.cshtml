@@ -2,41 +2,93 @@
 @{
     ViewBag.Title = "Index";
 }
-<h2>Index</h2>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Email)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Age)
-        </th>
-        <th></th>
-    </tr>
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-            </td>
-        </tr>
 
+<!-- Page Heading -->
+<div class="my-4 container">
+    <h2 class="text-primary mb-4 text-center">User List</h2>
+
+    <div class="mb-3 text-end">
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success btn-lg" })
+    </div>
+
+    <!-- User Table -->
+    <table class="table-striped table-bordered table-hover table-responsive-lg custom-table table shadow-lg">
+        <thead class="thead-dark">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Name)</th>
+                <th>@Html.DisplayNameFor(model => model.Email)</th>
+                <th>@Html.DisplayNameFor(model => model.Age)</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="table-row">
+                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Age)</td>
+                    <td class="text-center">
+                        <div class="btn-group" role="group">
+                            <a href="@Url.Action("Edit", new { id = item.Id })" class="btn btn-warning btn-sm action-btn">
+                                <i class="fas fa-edit"></i> Edit
+                            </a>
+                            <a href="@Url.Action("Details", new { id = item.Id })" class="btn btn-info btn-sm action-btn">
+                                <i class="fas fa-eye"></i> Details
+                            </a>
+                            <a href="@Url.Action("Delete", new { id = item.Id })" class="btn btn-danger btn-sm action-btn">
+                                <i class="fas fa-trash"></i> Delete
+                            </a>
+                        </div>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+<style>
+    /* Custom Table Styling */
+    .custom-table th, .custom-table td {
+        vertical-align: middle;
+        text-align: center;
+        font-size: 1.1rem;
     }
-</table>
+
+    .btn-group .btn {
+        margin: 0 5px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .action-btn:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Icon Style for Action Buttons */
+    .action-btn i {
+        margin-right: 8px;
+    }
+
+    /* Table Hover Effect */
+    .table-hover tbody tr:hover {
+        background-color: #f8f9fa;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover Effect on Table Rows */
+    .table-row:hover {
+        transition: transform 0.2s ease;
+    }
+
+    /* Heading Styling */
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+</style>

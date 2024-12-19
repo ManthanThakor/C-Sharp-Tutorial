@@ -2,29 +2,35 @@
 @{
     ViewBag.Title = "Details";
 }
-<h2>Details</h2>
-<fieldset>
-    <legend>UserModel</legend>
-    <div class="display-label">
-        @Html.DisplayNameFor(model => model.Name)
+
+<h2 class="text-primary mb-4 text-center">User Details</h2>
+
+<fieldset class="p-4 rounded border shadow-sm">
+    <legend class="w-auto">UserModel</legend>
+
+    <div class="mb-3">
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.Name, new { @class = "form-label" })
+            <div class="form-control-plaintext">@Html.DisplayFor(model => model.Name)</div>
+        </div>
     </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Name)
+
+    <div class="mb-3">
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.Email, new { @class = "form-label" })
+            <div class="form-control-plaintext">@Html.DisplayFor(model => model.Email)</div>
+        </div>
     </div>
-    <div class="display-label">
-        @Html.DisplayNameFor(model => model.Email)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Email)
-    </div>
-    <div class="display-label">
-        @Html.DisplayNameFor(model => model.Age)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Age)
+
+    <div class="mb-3">
+        <div class="form-group">
+            @Html.DisplayNameFor(model => model.Age, new { @class = "form-label" })
+            <div class="form-control-plaintext">@Html.DisplayFor(model => model.Age)</div>
+        </div>
     </div>
 </fieldset>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="d-flex justify-content-center mt-3">
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-warning btn-sm mx-2" })
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary btn-sm" })
+</div>
