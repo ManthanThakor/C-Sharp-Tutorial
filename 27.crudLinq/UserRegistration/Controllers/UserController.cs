@@ -49,5 +49,16 @@ namespace UserRegistration.Controllers
             var users = _userRepository.GetUser();
             return View(users);
         }
+
+        // GET: User/Details/5
+        public ActionResult Details(int id)
+        {
+            var user = _userRepository.GetUserById(id);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+            return View(user); // Return user details view
+        }
     }
 }

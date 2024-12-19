@@ -87,10 +87,6 @@ namespace UserRegistration.Models
             }
         }
 
-        public ActionResult Details(int id)
-        {
-            UserModel model = _repository.GetUserById(id);
-            return View(model);
-        }
+
     }
 }
