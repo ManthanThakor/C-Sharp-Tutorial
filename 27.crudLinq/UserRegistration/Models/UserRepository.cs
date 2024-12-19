@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace UserRegistration.Models
 {
@@ -11,10 +12,10 @@ namespace UserRegistration.Models
 
         public UserRepository()
         {
-            string connectionString = "Data Source=TGS147\\SQLEXPRESS;Initial Catalog=UserRegistration;Integrated Security=True;Trust Server Certificate=True";
-
+            string connectionString = "Data Source=TGS147\\SQLEXPRESS;Initial Catalog=UserRegistration;Integrated Security=True;";
             _dataContext = new UserDataContext(connectionString);
         }
+
 
         public IEnumerable<UserModel> GetUser()
         {
@@ -84,6 +85,12 @@ namespace UserRegistration.Models
                 userData.Age = user.Age;
                 _dataContext.SubmitChanges();
             }
+        }
+
+        public ActionResult Details(int id)
+        {
+            UserModel model = _repository.GetUserById(id);
+            return View(model);
         }
     }
 }
