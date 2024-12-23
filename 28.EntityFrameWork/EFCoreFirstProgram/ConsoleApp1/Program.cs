@@ -10,37 +10,25 @@ namespace ConsoleApp1
         {
             using (var context = new SchoolContext())
             {
-                context.Database.Migrate();
+                var studentService = new StudentService(context);
 
-                // Check if any students are in the database
-                var students = context.Students.ToList();
+                studentService.AddStudent("John", "Doe");
+                studentService.AddStudent("Jane", "Smith");
 
-                if (students.Any())
-                {
-                    Console.WriteLine("Students found in the database:");
-                    foreach (var student in students)
-                    {
-                        Console.WriteLine($"{student.Id} - {student.FirstName} {student.LastName}");
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("No students found in the database.");
+                Console.WriteLine("\nAll students:");
+                studentService.GetAllStudents();
 
-                    // Add a student if none exist
-                    var student = new Student
-                    {
-                        FirstName = "John",
-                        LastName = "Doe"
-                    };
-                    context.Students.Add(student);
-                    context.SaveChanges();
+                studentService.UpdateStudent(1, "Johnny", "Doe");
 
-                    Console.WriteLine("Student added to the database!");
-                }
+                Console.WriteLine("\nStudents after update:");
+                studentService.GetAllStudents();
+
+                studentService.DeleteStudent(2);
+
+                Console.WriteLine("\nStudents after deletion:");
+                studentService.GetAllStudents();
             }
-
-            Console.WriteLine("Database migration completed!");
         }
     }
+
 }
