@@ -71,6 +71,32 @@ namespace CRUDDemo.Controllers
             }
             return View(employee);
         }
+        public ActionResult Delete(int id)
+        {
+            var employee = _context.Employees.SingleOrDefault(e => e.Id == id);
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+            return View(employee);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            var employee = _context.Employees.SingleOrDefault(e => e.Id == id);
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+
+            _context.Employees.Remove(employee);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
 
     }
 }
