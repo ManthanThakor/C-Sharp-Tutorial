@@ -61,5 +61,16 @@ namespace CRUDDemo.Controllers
             }
             return View(employee);
         }
+
+        public ActionResult Detail(int id)
+        {
+            var employee = _context.Employees.SingleOrDefault(e => e.Id == id);
+            if (employee == null)
+            {
+                return HttpNotFound();
+            }
+            return View(employee);
+        }
+
     }
 }

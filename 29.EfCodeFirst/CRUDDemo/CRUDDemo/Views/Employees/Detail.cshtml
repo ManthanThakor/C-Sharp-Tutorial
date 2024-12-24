@@ -1,0 +1,37 @@
+﻿@model CRUDDemo.Models.Employee
+
+@{
+    ViewBag.Title = "Employee Details";
+}
+
+<div class="mt-4 container">
+    <h2 class="text-center">Employee Details</h2>
+
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table-bordered table">
+                <tr>
+                    <th>Name</th>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>@Model.Email</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>@Model.Phone</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>@Model.Address</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="col-md-6">
+            <a href="@Url.Action("Edit", "Employees", new { id = Model.Id })" class="btn btn-warning">Edit</a>
+            <a href="@Url.Action("Index", "Employees")" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
