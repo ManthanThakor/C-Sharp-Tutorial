@@ -1,0 +1,29 @@
+﻿@model IEnumerable<ProdCat_Manager.Models.Category>
+
+<h1>Categories</h1>
+
+<p>
+    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Category</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var category in Model)
+        {
+            <tr>
+                <td>@category.Name</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = category.Id })" class="btn btn-warning">Edit</a>
+                    <a href="@Url.Action("Delete", new { id = category.Id })" class="btn btn-danger">Delete</a>
+                    <a href="@Url.Action("Details", new { id = category.Id })" class="btn btn-info">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
