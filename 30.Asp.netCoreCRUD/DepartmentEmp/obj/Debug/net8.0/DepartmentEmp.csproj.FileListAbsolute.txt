@@ -1,0 +1,8 @@
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.MvcApplicationPartsAssemblyInfo.cache
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.RazorAssemblyInfo.cache
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.RazorAssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\DepartmentEmp.sourcelink.json
