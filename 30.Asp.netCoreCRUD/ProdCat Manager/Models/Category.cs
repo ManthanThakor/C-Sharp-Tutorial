@@ -9,8 +9,7 @@ namespace ProdCat_Manager.Models
 
         [Required(ErrorMessage = "The category name is required.")]
         [MaxLength(50, ErrorMessage = "The category name cannot exceed 50 characters.")]
-        public string Name { get; set; }
-
-        public ICollection<Product> Products { get; set; }
+        public string? Name { get; set; }
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

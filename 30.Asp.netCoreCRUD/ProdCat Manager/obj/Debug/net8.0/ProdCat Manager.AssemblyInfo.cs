@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProdCat Manager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfe047d55fa9da4371e9ee3213d5012b1629e84f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c31863a139c157ede6efc0d4a5588689545949f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProdCat Manager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProdCat Manager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

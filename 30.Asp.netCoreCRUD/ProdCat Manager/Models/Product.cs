@@ -20,6 +20,6 @@ namespace ProdCat_Manager.Models
         [Required(ErrorMessage = "A category must be selected.")]
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public Category? Category { get; set; }
     }
 }

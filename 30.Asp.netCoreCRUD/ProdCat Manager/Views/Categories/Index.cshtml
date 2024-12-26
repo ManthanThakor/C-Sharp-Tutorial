@@ -1,29 +1,35 @@
 ﻿@model IEnumerable<ProdCat_Manager.Models.Category>
 
-<h1>Categories</h1>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
 
 <p>
-    <a href="@Url.Action("Create")" class="btn btn-primary">Create New Category</a>
+    <a asp-action="Create">Create New</a>
 </p>
-
 <table class="table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Actions</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var category in Model)
-        {
-            <tr>
-                <td>@category.Name</td>
-                <td>
-                    <a href="@Url.Action("Edit", new { id = category.Id })" class="btn btn-warning">Edit</a>
-                    <a href="@Url.Action("Delete", new { id = category.Id })" class="btn btn-danger">Delete</a>
-                    <a href="@Url.Action("Details", new { id = category.Id })" class="btn btn-info">Details</a>
-                </td>
-            </tr>
-        }
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
     </tbody>
 </table>
