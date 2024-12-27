@@ -1,4 +1,5 @@
 ﻿
+using DepartmentEmp.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DepartmentEmp.Models
@@ -11,7 +12,6 @@ namespace DepartmentEmp.Models
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
 
-        public byte[] imageData { get; set; }
+
     }
 }
-

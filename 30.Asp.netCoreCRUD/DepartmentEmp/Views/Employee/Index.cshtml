@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DepartmentEmp.Models.Employee>
+
+<h1>Employee List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var employee in Model)
+        {
+            <tr>
+                <td>@employee.Name</td>
+                <td>@employee.Email</td>
+                <td>@employee.Department.Name</td>
+                <td>
+                    @if (employee.imageData != null)
+                    {
+                        <img src="data:image/jpeg;base64,@Convert.ToBase64String(employee.imageData)" alt="Employee Image" width="50" />
+                    }
+                </td>
+                <td>
+                    <a class="btn btn-warning" href="@Url.Action("CreateEdit", "Employee", new { id = employee.Id })">Edit</a>
+                    <form asp-action="Delete" method="post" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this employee?');">
+                        <input type="hidden" name="id" value="@employee.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="@Url.Action("CreateEdit", "Employee")">Create New Employee</a>
