@@ -1,43 +1,41 @@
 ﻿@model DepartmentEmp.Models.Employee
 
-<h1>@(Model.Id == 0 ? "Create" : "Edit") Employee</h1>
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Create Employee" : "Edit Employee";
+}
+
+<h2>@ViewData["Title"]</h2>
 
 <form asp-action="CreateEdit" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label asp-for="Name"></label>
+        <label asp-for="Name" class="control-label"></label>
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Email"></label>
+        <label asp-for="Email" class="control-label"></label>
         <input asp-for="Email" class="form-control" />
         <span asp-validation-for="Email" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="DepartmentId">Department</label>
-        <select asp-for="DepartmentId" class="form-control" asp-items="@(ViewData["DepartmentId"] as SelectList)">
-            <option value="">Select Department</option> <!-- Allow empty option for nullable DepartmentId -->
+        <label asp-for="DepartmentId" class="control-label"></label>
+        <select asp-for="DepartmentId" class="form-control" asp-items="@(new SelectList(ViewBag.Departments, "Id", "Name"))">
+            <option value="">Select Department</option>
         </select>
         <span asp-validation-for="DepartmentId" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="imageData">Image</label>
-        <input type="file" asp-for="imageData" class="form-control" />
-        <span asp-validation-for="imageData" class="text-danger"></span>
+        <label for="ImageFile">Upload Image</label>
+        <input type="file" id="ImageFile" name="ImageFile" class="form-control" />
+        <span asp-validation-for="ImageFile" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">@((Model.Id == 0) ? "Create" : "Save")</button>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
 </form>
 
-@if (Model.imageData != null)
-{
-    <div class="mt-3">
-        <h4>Uploaded Image:</h4>
-        <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.imageData)" alt="Employee Image" width="200" />
-    </div>
-}
-
-<a href="@Url.Action("Index", "Employee")">Back to List</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>

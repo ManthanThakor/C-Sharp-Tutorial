@@ -1,6 +1,4 @@
-﻿
-using DepartmentEmp.Models;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DepartmentEmp.Models
 {
@@ -10,8 +8,12 @@ namespace DepartmentEmp.Models
         public string Name { get; set; }
         public string Email { get; set; }
         public int DepartmentId { get; set; }
-        public Department Department { get; set; }
+        public Department? Department { get; set; }
 
+        public string? ImagePath { get; set; }
+
+        [NotMapped]
+        public IFormFile? ImageFile { get; set; }
 
     }
 }

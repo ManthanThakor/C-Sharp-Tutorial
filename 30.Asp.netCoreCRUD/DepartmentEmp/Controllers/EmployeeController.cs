@@ -1,10 +1,10 @@
 ﻿using DepartmentEmp.Data;
 using DepartmentEmp.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace DepartmentEmp.Controllers
@@ -18,98 +18,80 @@ namespace DepartmentEmp.Controllers
             _context = context;
         }
 
-        // GET: Employee/Index
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            var employees = await _context.Employees.Include(e => e.Department).ToListAsync();
+            var employees = _context.Employees.Include(e => e.Department).ToList();
             return View(employees);
         }
 
-        // GET: Employee/CreateEdit
-        public async Task<IActionResult> CreateEdit(int? id)
+        public IActionResult CreateEdit(int? id)
         {
-            // If no id provided, creating a new employee
             if (id == null)
             {
-                ViewData["DepartmentId"] = new SelectList(await _context.Departments.ToListAsync(), "Id", "Name");
-                return View(new Employee()); // Empty employee model for create
+                ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+                return View(new Employee());
             }
-
-            // Editing an existing employee
-            var employee = await _context.Employees.FindAsync(id);
-            if (employee == null)
+            else
             {
-                return NotFound();
+                var employee = _context.Employees.Include(e => e.Department).FirstOrDefault(e => e.Id == id);
+                if (employee == null)
+                {
+                    return NotFound();
+                }
+                ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+                return View(employee);
             }
-
-            // Populating the Department dropdown for the employee edit page
-            ViewData["DepartmentId"] = new SelectList(await _context.Departments.ToListAsync(), "Id", "Name", employee.DepartmentId);
-            return View(employee);
         }
 
-        // POST: Employee/CreateEdit
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateEdit(int? id, [Bind("Id,Name,Email,DepartmentId,imageData")] Employee employee, IFormFile? imageFile)
+        public async Task<IActionResult> CreateEdit(int? id, Employee employee)
         {
             if (ModelState.IsValid)
             {
-                // If a file is uploaded, process the image
-                if (imageFile != null && imageFile.Length > 0)
+                if (employee.ImageFile != null)
                 {
-                    using (var memoryStream = new MemoryStream())
+                    // Handle file upload and save the file
+                    string fileName = Path.GetFileNameWithoutExtension(employee.ImageFile.FileName);
+                    string extension = Path.GetExtension(employee.ImageFile.FileName);
+                    fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+                    string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
+
+                    using (var fileStream = new FileStream(path, FileMode.Create))
                     {
-                        // Copy the uploaded file into memory
-                        await imageFile.CopyToAsync(memoryStream);
-
-                        // Store the image as byte[] in the employee object
-                        employee.imageData = memoryStream.ToArray();
+                        await employee.ImageFile.CopyToAsync(fileStream);
                     }
+
+                    // Save the image path to the employee record
+                    employee.ImagePath = "/images/" + fileName;
                 }
 
-                // If no image file is uploaded, set imageData to null (or empty byte array)
-                else
+                if (id == null) // Create
                 {
-                    employee.imageData = null; // Or Array.Empty<byte>() if you want an empty array
+                    _context.Employees.Add(employee);
+                }
+                else // Edit
+                {
+                    _context.Employees.Update(employee);
                 }
 
-                if (id == null) // Creating a new employee
-                {
-                    _context.Add(employee);
-                    await _context.SaveChangesAsync();
-                }
-                else // Editing an existing employee
-                {
-                    try
-                    {
-                        _context.Update(employee);
-                        await _context.SaveChangesAsync();
-                    }
-                    catch (DbUpdateConcurrencyException)
-                    {
-                        if (!EmployeeExists(employee.Id))
-                        {
-                            return NotFound();
-                        }
-                        else
-                        {
-                            throw;
-                        }
-                    }
-                }
-
-                return RedirectToAction(nameof(Index)); // Redirect back to the employee list after successful creation/edit
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
             }
 
-            // If model is invalid, re-populate the department dropdown and return the view with error messages
-            ViewData["DepartmentId"] = new SelectList(_context.Departments, "Id", "Name", employee.DepartmentId);
-            return View(employee); // Return the view with validation errors
+            ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+            return View(employee);
         }
 
-        // Helper method to check if employee exists
-        private bool EmployeeExists(int id)
+        [HttpPost]
+        public IActionResult Delete(int id)
         {
-            return _context.Employees.Any(e => e.Id == id);
+            var employee = _context.Employees.Find(id);
+            if (employee != null)
+            {
+                _context.Employees.Remove(employee);
+                _context.SaveChanges();
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }
