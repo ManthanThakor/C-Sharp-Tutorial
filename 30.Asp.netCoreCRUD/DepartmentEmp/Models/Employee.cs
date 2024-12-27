@@ -1,6 +1,5 @@
-﻿using DepartmentEmp.Data;
-using DepartmentEmp.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DepartmentEmp.Models
 {
@@ -11,7 +10,10 @@ namespace DepartmentEmp.Models
         public string Email { get; set; }
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
-        public byte[] ImageData { get; set; }
+
+        public string ImageFilePath { get; set; }
+        [NotMapped]
+        public IFormFile ImageData { get; set; }
     }
 }
 
