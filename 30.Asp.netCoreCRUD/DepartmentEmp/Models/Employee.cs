@@ -11,9 +11,7 @@ namespace DepartmentEmp.Models
         public int DepartmentId { get; set; }
         public Department Department { get; set; }
 
-        public string ImageFilePath { get; set; }
-        [NotMapped]
-        public IFormFile ImageData { get; set; }
+        public byte[] imageData { get; set; }
     }
 }
 
