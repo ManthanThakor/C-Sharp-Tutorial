@@ -26,6 +26,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/manthan/C-Sharp-Tutorial/30.Asp.netCoreCRUD/DepartmentEmp/Views/Department/CreateEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxDcmVhdGVFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/30.Asp.netCoreCRUD/DepartmentEmp/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/manthan/C-Sharp-Tutorial/30.Asp.netCoreCRUD/DepartmentEmp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

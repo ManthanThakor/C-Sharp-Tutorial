@@ -1,4 +1,8 @@
-﻿namespace DepartmentEmp.Models
+﻿using DepartmentEmp.Data;
+using DepartmentEmp.Models;
+using Microsoft.AspNetCore.Mvc;
+
+namespace DepartmentEmp.Models
 {
     public class Employee
     {
@@ -10,3 +14,4 @@
         public byte[] ImageData { get; set; }
     }
 }
+
