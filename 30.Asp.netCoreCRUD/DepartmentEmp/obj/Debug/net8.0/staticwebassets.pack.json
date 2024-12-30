@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\1232331-XXXXXXX-395010243456036.pdf",
+      "PackagePath": "staticwebassets\\images\\1232331-XXXXXXX-395010243456036.pdf"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\download243525582.png",
+      "PackagePath": "staticwebassets\\images\\download243525582.png"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\running_shoes_PNG5816243510923.png",
+      "PackagePath": "staticwebassets\\images\\running_shoes_PNG5816243510923.png"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

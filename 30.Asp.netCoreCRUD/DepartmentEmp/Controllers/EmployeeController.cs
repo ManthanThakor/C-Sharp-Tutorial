@@ -28,7 +28,7 @@ namespace DepartmentEmp.Controllers
         {
             if (id == null)
             {
-                ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+                ViewBag.Departments = _context.Departments.ToList();
                 return View(new Employee());
             }
             else
@@ -38,7 +38,7 @@ namespace DepartmentEmp.Controllers
                 {
                     return NotFound();
                 }
-                ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+                ViewBag.Departments = _context.Departments.ToList();
                 return View(employee);
             }
         }
@@ -50,7 +50,6 @@ namespace DepartmentEmp.Controllers
             {
                 if (employee.ImageFile != null)
                 {
-                    // Handle file upload and save the file
                     string fileName = Path.GetFileNameWithoutExtension(employee.ImageFile.FileName);
                     string extension = Path.GetExtension(employee.ImageFile.FileName);
                     fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
@@ -61,15 +60,14 @@ namespace DepartmentEmp.Controllers
                         await employee.ImageFile.CopyToAsync(fileStream);
                     }
 
-                    // Save the image path to the employee record
                     employee.ImagePath = "/images/" + fileName;
                 }
 
-                if (id == null) // Create
+                if (id == null)
                 {
                     _context.Employees.Add(employee);
                 }
-                else // Edit
+                else
                 {
                     _context.Employees.Update(employee);
                 }
@@ -78,7 +76,7 @@ namespace DepartmentEmp.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Departments = _context.Departments.ToList(); // Pass departments to the view for selection
+            ViewBag.Departments = _context.Departments.ToList();
             return View(employee);
         }
 
