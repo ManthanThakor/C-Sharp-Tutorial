@@ -51,8 +51,11 @@ namespace DepartmentEmp.Controllers
                 if (employee.ImageFile != null)
                 {
                     string fileName = Path.GetFileNameWithoutExtension(employee.ImageFile.FileName);
+
                     string extension = Path.GetExtension(employee.ImageFile.FileName);
+
                     fileName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
+
                     string path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
 
                     using (var fileStream = new FileStream(path, FileMode.Create))
