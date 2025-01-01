@@ -41,11 +41,11 @@ namespace DepartmentEmp.Controllers
         {
             if (ModelState.IsValid)
             {
-                if (id == null) // Create
+                if (id == null)
                 {
                     _context.Departments.Add(department);
                 }
-                else // Edit
+                else
                 {
                     _context.Departments.Update(department);
                 }
