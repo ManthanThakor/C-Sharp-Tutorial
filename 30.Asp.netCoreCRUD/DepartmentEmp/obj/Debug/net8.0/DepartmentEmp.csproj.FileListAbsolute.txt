@@ -291,3 +291,6 @@ E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\bin\Debug\net8.0\ru
 E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\bin\Debug\net8.0\DepartmentEmp.staticwebassets.endpoints.json
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\manthan\C-Sharp-Tutorial\30.Asp.netCoreCRUD\DepartmentEmp\obj\Debug\net8.0\staticwebassets\msbuild.DepartmentEmp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

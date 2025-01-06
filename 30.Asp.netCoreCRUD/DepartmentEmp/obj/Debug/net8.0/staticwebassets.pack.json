@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\DepartmentEmp.bundle.scp.css",
-      "PackagePath": "staticwebassets\\DepartmentEmp.bundle.scp.css"
+      "PackagePath": "staticwebassets\\DepartmentEmp.ywp2t6s1hj.bundle.scp.css"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\css\\site.css",
@@ -17,8 +17,16 @@
       "PackagePath": "staticwebassets\\images\\1232331-XXXXXXX-395010243456036.pdf"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\KEY MASTER255222574.png",
+      "PackagePath": "staticwebassets\\images\\KEY MASTER255222574.png"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\Screenshot 2024-12-23 162143244715847.png",
       "PackagePath": "staticwebassets\\images\\Screenshot 2024-12-23 162143244715847.png"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\Screenshot 2024-12-23 162143254756578.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-12-23 162143254756578.png"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\Screenshot 2024-12-23 162357250430185.png",
@@ -27,6 +35,10 @@
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\download243525582.png",
       "PackagePath": "staticwebassets\\images\\download243525582.png"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\download255251462.png",
+      "PackagePath": "staticwebassets\\images\\download255251462.png"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\images\\running_shoes_PNG5816243510923.png",
@@ -263,6 +275,10 @@
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\30.Asp.netCoreCRUD\\DepartmentEmp\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DepartmentEmp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DepartmentEmp.Microsoft.AspNetCore.StaticWebAssets.props",
