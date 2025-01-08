@@ -1,0 +1,16 @@
+﻿@model WebApplication1.Models.Course
+
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h1>@Model.Title</h1>
+
+<div>
+    <strong>Description:</strong> @Model.Description
+</div>
+
+<p>
+    <a href="@Url.Action("Index", "Courses")" class="btn btn-primary">Back to List</a>
+    <a href="@Url.Action("CreateOrEdit", "Courses", new { id = Model.Id })" class="btn btn-warning">Edit</a>
+</p>

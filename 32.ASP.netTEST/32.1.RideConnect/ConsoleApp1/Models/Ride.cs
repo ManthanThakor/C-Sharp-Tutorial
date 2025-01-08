@@ -24,5 +24,4 @@ namespace ConsoleApp1.Models
             Status = "Requested";
         }
     }
-
 }

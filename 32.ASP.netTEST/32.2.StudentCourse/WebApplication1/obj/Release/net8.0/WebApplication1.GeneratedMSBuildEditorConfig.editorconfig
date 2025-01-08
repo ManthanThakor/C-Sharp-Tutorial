@@ -26,6 +26,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.2.StudentCourse\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Courses/CreateOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGVPckVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +52,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Students/CreateOrEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcQ3JlYXRlT3JFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Students/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/manthan/C-Sharp-Tutorial/32.ASP.netTEST/32.2.StudentCourse/WebApplication1/Views/_ViewImports.cshtml]
