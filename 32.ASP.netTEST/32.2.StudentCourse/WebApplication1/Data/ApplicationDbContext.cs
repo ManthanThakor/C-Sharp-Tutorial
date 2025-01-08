@@ -14,10 +14,10 @@ namespace WebApplication1.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Student>()
-                .HasMany(s => s.Courses)
-                .WithMany(c => c.Students)
-                .UsingEntity(j => j.ToTable("StudentCourses"));
+            modelBuilder.Entity<Course>()
+            .HasMany(c => c.Students)
+            .WithOne(s => s.Course)
+            .HasForeignKey(s => s.CourseId);
         }
     }
 

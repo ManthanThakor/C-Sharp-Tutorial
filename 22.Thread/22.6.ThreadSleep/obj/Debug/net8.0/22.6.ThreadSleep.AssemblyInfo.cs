@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("22.6.ThreadSleep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f2f56f1d53b17e3e4b41bc11e41386c0311c0de")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("22.6.ThreadSleep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("22.6.ThreadSleep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

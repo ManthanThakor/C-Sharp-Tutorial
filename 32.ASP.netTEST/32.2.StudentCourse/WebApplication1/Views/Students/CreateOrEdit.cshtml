@@ -6,16 +6,38 @@
 
 <h1>@ViewData["Title"]</h1>
 
-<form asp-action="CreateOrEdit" method="post">
+<form method="post">
+    @if (Model.Id != 0)
+    {
+            <input type="hidden" asp-for="Id" />
+    }
+
     <div class="form-group">
-        <label for="Name">Name</label>
-        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
+
     <div class="form-group">
-        <label for="Email">Email</label>
-        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required />
+        <label asp-for="Age" class="control-label"></label>
+        <input asp-for="Age" class="form-control" />
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CourseId" class="control-label"></label>
+        <select asp-for="CourseId" class="form-control" asp-items="@(new SelectList(ViewData["Courses"] as List<WebApplication1.Models.Course>, "Id", "Title", Model.CourseId))">
+            <option value="">Select Course</option>
+        </select>
+        <span asp-validation-for="CourseId" class="text-danger"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Save</button>
     <a href="@Url.Action("Index", "Students")" class="btn btn-secondary">Cancel</a>
 </form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

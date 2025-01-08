@@ -13,8 +13,7 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Title</th>
-            <th>Description</th>
+            <th>Course Title</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -23,11 +22,13 @@
         {
             <tr>
                 <td>@course.Title</td>
-                <td>@course.Description</td>
                 <td>
                     <a href="@Url.Action("Details", "Courses", new { id = course.Id })" class="btn btn-info">Details</a>
                     <a href="@Url.Action("CreateOrEdit", "Courses", new { id = course.Id })" class="btn btn-warning">Edit</a>
-                    <a href="@Url.Action("Delete", "Courses", new { id = course.Id })" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this course?');">Delete</a>
+
+                    <form method="post" asp-action="DeleteConfirmed" asp-route-id="@course.Id" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
                 </td>
             </tr>
         }

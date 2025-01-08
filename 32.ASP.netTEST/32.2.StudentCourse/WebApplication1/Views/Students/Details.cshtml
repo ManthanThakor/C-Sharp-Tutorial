@@ -7,10 +7,13 @@
 <h1>@Model.Name</h1>
 
 <div>
-    <strong>Email:</strong> @Model.Email
+    <strong>Age:</strong> @Model.Age
+</div>
+<div>
+    <strong>Course:</strong> @Model.Course?.Title
 </div>
 
 <p>
-    <a href="@Url.Action("Index", "Students")" class="btn btn-primary">Back to List</a>
+    <a href="@Url.Action("Index", "Students")" class="btn btn-primary">Back to Students</a>
     <a href="@Url.Action("CreateOrEdit", "Students", new { id = Model.Id })" class="btn btn-warning">Edit</a>
 </p>

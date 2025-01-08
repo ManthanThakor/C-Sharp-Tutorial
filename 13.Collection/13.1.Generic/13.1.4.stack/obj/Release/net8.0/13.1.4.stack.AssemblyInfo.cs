@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("13.1.4.stack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+944ff7e1245dd3a5568d656bdc293ec1722de22b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("13.1.4.stack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("13.1.4.stack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

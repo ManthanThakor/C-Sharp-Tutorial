@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NotificationSystemWithAsynchronous")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0524595ab94d7f648765c4aba4d9333d7e254c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("NotificationSystemWithAsynchronous")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NotificationSystemWithAsynchronous")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

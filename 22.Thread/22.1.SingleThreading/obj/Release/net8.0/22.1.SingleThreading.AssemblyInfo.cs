@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("22.1.SingleThreading")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99dc19313c5e57eab8a1f5f2a482c007a44abafe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("22.1.SingleThreading")]
 [assembly: System.Reflection.AssemblyTitleAttribute("22.1.SingleThreading")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

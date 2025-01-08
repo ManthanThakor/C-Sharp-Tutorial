@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("22.12.1.WithoutSynchronization")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f6fd8b1bc6e1e52cd8b7a1cebab2becb03f63b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("22.12.1.WithoutSynchronization")]
 [assembly: System.Reflection.AssemblyTitleAttribute("22.12.1.WithoutSynchronization")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-﻿    @model IEnumerable<WebApplication1.Models.Student>
+﻿@model IEnumerable<WebApplication1.Models.Student>
 
 @{
     ViewData["Title"] = "Students";
@@ -13,23 +13,28 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Name</th>
-            <th>Email</th>
+            <th>Student Name</th>
+            <th>Age</th>
+            <th>Course</th>
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var student in Model)
         {
-            <tr>
-                <td>@student.Name</td>
-                <td>@student.Email</td>
-                <td>
-                    <a href="@Url.Action("Details", "Students", new { id = student.Id })" class="btn btn-info">Details</a>
-                    <a href="@Url.Action("CreateOrEdit", "Students", new { id = student.Id })" class="btn btn-warning">Edit</a>
-                    <a href="@Url.Action("Delete", "Students", new { id = student.Id })" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this student?');">Delete</a>
-                </td>
-            </tr>
+                <tr>
+                    <td>@student.Name</td>
+                    <td>@student.Age</td>
+                    <td>@student.Course?.Title</td>
+                    <td>
+                        <a href="@Url.Action("Details", "Students", new { id = student.Id })" class="btn btn-info">Details</a>
+                        <a href="@Url.Action("CreateOrEdit", "Students", new { id = student.Id })" class="btn btn-warning">Edit</a>
+
+                        <form method="post" asp-action="DeleteConfirmed" asp-route-id="@student.Id" style="display:inline;">
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
         }
     </tbody>
 </table>

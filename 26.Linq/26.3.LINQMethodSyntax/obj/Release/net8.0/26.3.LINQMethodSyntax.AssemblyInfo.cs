@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("26.3.LINQMethodSyntax")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+92c7a88ccdfd3fa320c2b0b1d31c72d47c968c19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("26.3.LINQMethodSyntax")]
 [assembly: System.Reflection.AssemblyTitleAttribute("26.3.LINQMethodSyntax")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

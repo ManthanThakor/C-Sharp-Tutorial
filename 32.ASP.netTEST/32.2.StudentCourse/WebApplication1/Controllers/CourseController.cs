@@ -27,7 +27,9 @@ namespace WebApplication1.Controllers
             }
 
             var course = await _context.Courses
+                .Include(c => c.Students) 
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (course == null)
             {
                 return NotFound();
@@ -53,53 +55,60 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateOrEdit(int id, [Bind("Id,Title,Description")] Course course)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateOrEdit(int? id, [Bind("Id,Title")] Course course)
         {
-            if (id != course.Id)
+            if (!ModelState.IsValid)
             {
-                return NotFound();
+                return View(course);
             }
 
-            if (ModelState.IsValid)
+            if (id == null || id == 0)
             {
-                try
-                {
-                    if (course.Id == 0)
-                    {
-                        _context.Add(course);
-                    }
-                    else
-                    {
-                        _context.Update(course);
-                    }
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    throw;
-                }
+                _context.Add(course);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(course);
-        }
 
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
+            // Edit an existing course
+            try
             {
-                return NotFound();
+                var existingCourse = await _context.Courses.FindAsync(id);
+                if (existingCourse == null)
+                {
+                    return NotFound();
+                }
+
+                existingCourse.Title = course.Title;
+                _context.Update(existingCourse);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                // Handle the concurrency issue if necessary
+                throw;
             }
 
-            var course = await _context.Courses
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (course == null)
-            {
-                return NotFound();
-            }
-
-            _context.Courses.Remove(course);
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var course = await _context.Courses.FindAsync(id);
+            if (course != null)
+            {
+                _context.Courses.Remove(course);
+                await _context.SaveChangesAsync();
+            }
+
+            // Redirect back to Index after deletion
+            return RedirectToAction(nameof(Index));
+        }
+
+
     }
 }
+

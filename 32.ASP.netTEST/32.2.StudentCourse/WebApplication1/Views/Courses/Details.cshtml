@@ -7,10 +7,14 @@
 <h1>@Model.Title</h1>
 
 <div>
-    <strong>Description:</strong> @Model.Description
+    <strong>Students:</strong>
+    @foreach (var student in Model.Students)
+    {
+            <p>@student.Name</p>
+    }
 </div>
 
 <p>
-    <a href="@Url.Action("Index", "Courses")" class="btn btn-primary">Back to List</a>
+    <a href="@Url.Action("Index", "Courses")" class="btn btn-primary">Back to Courses</a>
     <a href="@Url.Action("CreateOrEdit", "Courses", new { id = Model.Id })" class="btn btn-warning">Edit</a>
 </p>

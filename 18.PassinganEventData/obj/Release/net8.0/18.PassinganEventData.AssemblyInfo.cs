@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("18.PassinganEventData")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1f51b7a1092b69066b89205ff50404646b2f021")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfd6e1c79bb02c10739ab81111f4e4c61571fdfc")]
 [assembly: System.Reflection.AssemblyProductAttribute("18.PassinganEventData")]
 [assembly: System.Reflection.AssemblyTitleAttribute("18.PassinganEventData")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
