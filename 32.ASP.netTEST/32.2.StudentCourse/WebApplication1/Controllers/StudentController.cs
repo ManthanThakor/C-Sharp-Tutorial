@@ -54,6 +54,7 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateOrEdit(int id, [Bind("Id,Name,Email")] Student student)
         {
             if (id != student.Id)

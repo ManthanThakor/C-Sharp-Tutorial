@@ -13,8 +13,6 @@ namespace WebApplication1.Controllers
         {
             _context = context;
         }
-
-        // GET: Courses
         public async Task<IActionResult> Index()
         {
             var courses = await _context.Courses.ToListAsync();
@@ -42,7 +40,7 @@ namespace WebApplication1.Controllers
         {
             if (id == null)
             {
-                return View(new Course());  // Ensure an empty Course object is passed
+                return View(new Course());
             }
 
             var course = await _context.Courses.FindAsync(id);
@@ -51,7 +49,7 @@ namespace WebApplication1.Controllers
                 return NotFound();
             }
 
-            return View(course);  // Pass the existing course for editing
+            return View(course);
         }
 
         [HttpPost]
