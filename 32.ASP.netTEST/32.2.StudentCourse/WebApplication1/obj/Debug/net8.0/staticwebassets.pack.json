@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\WebApplication1.yj6fvmmoe8.bundle.scp.css"
     },
     {
+      "Id": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\advanced-styles.css",
+      "PackagePath": "staticwebassets\\css\\advanced-styles.css"
+    },
+    {
       "Id": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\style2.css",
+      "PackagePath": "staticwebassets\\css\\style2.css"
     },
     {
       "Id": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\favicon.ico",

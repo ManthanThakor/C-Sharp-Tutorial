@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DUUJl9L/0ecSek/mBJP4uCDbFKLgr3pbnXrSj+ReG3o=",
+  "Hash": "8N7uaLlQAvaCeCwIrX2agrBpDI0VKX+oINbfdSN/1J8=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -59,6 +59,27 @@
       "OriginalItemSpec": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebApplication1.bundle.scp.css"
     },
     {
+      "Identity": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\advanced-styles.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/advanced-styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qrxldcuyd3",
+      "Integrity": "yiTy1EYwZ9iUwag6AfY2C0Ty+53Uh8Gggg6ip3fdCxM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\advanced-styles.css"
+    },
+    {
       "Identity": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\site.css",
       "SourceId": "WebApplication1",
       "SourceType": "Discovered",
@@ -78,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\style2.css",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "css/style2#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0bb82t7l3b",
+      "Integrity": "PHEBFW7EhQJ1O8Q/jBhW60rXP8FN5QWgQY55et/+YoY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style2.css"
     },
     {
       "Identity": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\favicon.ico",
@@ -1321,6 +1363,88 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/advanced-styles.css",
+      "AssetFile": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\advanced-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiTy1EYwZ9iUwag6AfY2C0Ty+53Uh8Gggg6ip3fdCxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 17:38:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiTy1EYwZ9iUwag6AfY2C0Ty+53Uh8Gggg6ip3fdCxM="
+        }
+      ]
+    },
+    {
+      "Route": "css/advanced-styles.qrxldcuyd3.css",
+      "AssetFile": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\advanced-styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2827"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yiTy1EYwZ9iUwag6AfY2C0Ty+53Uh8Gggg6ip3fdCxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 17:38:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qrxldcuyd3"
+        },
+        {
+          "Name": "label",
+          "Value": "css/advanced-styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yiTy1EYwZ9iUwag6AfY2C0Ty+53Uh8Gggg6ip3fdCxM="
+        }
+      ]
+    },
+    {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1399,6 +1523,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+        }
+      ]
+    },
+    {
+      "Route": "css/style2.0bb82t7l3b.css",
+      "AssetFile": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\style2.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PHEBFW7EhQJ1O8Q/jBhW60rXP8FN5QWgQY55et/+YoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 17:42:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0bb82t7l3b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/style2.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PHEBFW7EhQJ1O8Q/jBhW60rXP8FN5QWgQY55et/+YoY="
+        }
+      ]
+    },
+    {
+      "Route": "css/style2.css",
+      "AssetFile": "D:\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.2.StudentCourse\\WebApplication1\\wwwroot\\css\\style2.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PHEBFW7EhQJ1O8Q/jBhW60rXP8FN5QWgQY55et/+YoY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 08 Jan 2025 17:42:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PHEBFW7EhQJ1O8Q/jBhW60rXP8FN5QWgQY55et/+YoY="
         }
       ]
     },
