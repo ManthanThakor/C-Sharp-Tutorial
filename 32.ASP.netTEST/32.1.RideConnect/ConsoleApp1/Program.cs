@@ -7,10 +7,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Driver driver1 = new Driver(1, "John Doe", "123-456-7890", "Downtown", "Sedan");
-        Driver driver2 = new Driver(2, "Jane Smith", "987-654-3210", "Uptown", "SUV");
+        Driver driver1 = new Driver(1, "ABC", "123-456-7890", "Downtown", "Sedan");
+        Driver driver2 = new Driver(2, "xyz", "987-654-3210", "Uptown", "SUV");
 
-        Passenger passenger = new Passenger(1, "Alice Johnson", "555-123-4567", "Midtown");
+        Passenger passenger = new Passenger(1, "VVV", "555-123-4567", "Midtown");
         passenger.PaymentMethods.Add("Credit Card");
         passenger.PaymentMethods.Add("PayPal");
 
