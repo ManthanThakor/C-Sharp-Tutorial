@@ -20,7 +20,6 @@ class Program
 
         RideManager rideManager = new RideManager(availableDrivers, notificationService);
 
-
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.WriteLine("=== Welcome to the Ride Booking System ===");
