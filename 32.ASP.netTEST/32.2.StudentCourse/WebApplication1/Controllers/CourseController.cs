@@ -55,7 +55,6 @@ namespace WebApplication1.Controllers
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateOrEdit(int? id, [Bind("Id,Title")] Course course)
         {
             if (!ModelState.IsValid)
@@ -70,7 +69,6 @@ namespace WebApplication1.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            // Edit an existing course
             try
             {
                 var existingCourse = await _context.Courses.FindAsync(id);
@@ -85,7 +83,6 @@ namespace WebApplication1.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                // Handle the concurrency issue if necessary
                 throw;
             }
 
@@ -94,7 +91,6 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var course = await _context.Courses.FindAsync(id);
@@ -104,7 +100,6 @@ namespace WebApplication1.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            // Redirect back to Index after deletion
             return RedirectToAction(nameof(Index));
         }
 

@@ -14,14 +14,12 @@ namespace WebApplication1.Controllers
             _context = context;
         }
 
-        // GET: Students
         public async Task<IActionResult> Index()
         {
             var students = await _context.Students.Include(s => s.Course).ToListAsync();
             return View(students);
         }
 
-        // GET: Students/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -41,7 +39,6 @@ namespace WebApplication1.Controllers
             return View(student);
         }
 
-        // GET: Students/CreateOrEdit/5
         public async Task<IActionResult> CreateOrEdit(int? id)
         {
             if (id == null)
@@ -62,7 +59,6 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateOrEdit(int? id, [Bind("Id,Name,Age,CourseId")] Student student)
         {
             if (!ModelState.IsValid)
@@ -73,13 +69,11 @@ namespace WebApplication1.Controllers
 
             if (id == null || id == 0)
             {
-                // Create
                 _context.Add(student);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
 
-            // Edit
             try
             {
                 var existingStudent = await _context.Students.FindAsync(id);
@@ -96,7 +90,6 @@ namespace WebApplication1.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                // Handle the concurrency issue if necessary
                 throw;
             }
 
@@ -105,7 +98,6 @@ namespace WebApplication1.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var student = await _context.Students.FindAsync(id);
@@ -115,7 +107,6 @@ namespace WebApplication1.Controllers
                 await _context.SaveChangesAsync();
             }
 
-            // Redirect back to Index after deletion
             return RedirectToAction(nameof(Index));
         }
 
