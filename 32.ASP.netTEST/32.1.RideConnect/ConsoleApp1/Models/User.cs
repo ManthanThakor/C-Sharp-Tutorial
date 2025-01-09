@@ -26,5 +26,4 @@ namespace ConsoleApp1.Models
             Console.WriteLine($"ID: {Id}, Name: {Name}, Contact Info: {ContactInfo}, Location: {Location}");
         }
     }
-
 }

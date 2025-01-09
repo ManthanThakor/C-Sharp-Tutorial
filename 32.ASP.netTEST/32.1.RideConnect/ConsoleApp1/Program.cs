@@ -16,23 +16,57 @@ class Program
 
         List<Driver> availableDrivers = new List<Driver> { driver1, driver2 };
 
-        RideManager rideManager = new RideManager(availableDrivers);
+        INotificationService notificationService = new SMSNotification();
 
-        Ride requestedRide = passenger.RequestRide(rideManager, "Midtown", "Airport");
+        RideManager rideManager = new RideManager(availableDrivers, notificationService);
+
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Cyan;
+        Console.WriteLine("=== Welcome to the Ride Booking System ===");
+        Console.ResetColor();
+        Console.WriteLine();
+
+        Console.WriteLine("Enter Pickup Location:");
+        string pickupLocation = Console.ReadLine();
+        Console.WriteLine("Enter Drop Location:");
+        string dropLocation = Console.ReadLine();
+
+        // Request a ride
+        Ride requestedRide = passenger.RequestRide(rideManager, pickupLocation, dropLocation);
 
         if (requestedRide != null)
         {
-            requestedRide.Driver.AcceptRide(requestedRide);
+            // Notify Driver
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"{requestedRide.Driver.Name}, you have been notified for a ride request.");
+            Console.ResetColor();
+            Console.WriteLine("Do you want to accept or decline the ride?");
+            Console.WriteLine("1. Accept");
+            Console.WriteLine("2. Decline");
 
-            rideManager.UpdateRideStatus(requestedRide, "DriverOnTheWay");
+            // Handle Driver's decision
+            int driverChoice = int.Parse(Console.ReadLine());
 
-            INotificationService smsNotification = new SMSNotification();
-            smsNotification.SendNotification(passenger, "Your ride is on the way!");
-            smsNotification.SendNotification(requestedRide.Driver, "You have a new ride request!");
+            if (driverChoice == 1)
+            {
+                rideManager.HandleRideAcceptance(requestedRide, requestedRide.Driver, true);
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Ride accepted by {requestedRide.Driver.Name}.");
+                Console.ResetColor();
+            }
+            else if (driverChoice == 2)
+            {
+                rideManager.HandleRideAcceptance(requestedRide, requestedRide.Driver, false);
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Ride declined by {requestedRide.Driver.Name}.");
+                Console.ResetColor();
+            }
 
+            // Update Ride Status
             rideManager.UpdateRideStatus(requestedRide, "RideCompleted");
 
-            Console.WriteLine("Choose your payment method:");
+            // Payment Process
+            Console.WriteLine("\nChoose your payment method:");
             Console.WriteLine("1. Credit Card");
             Console.WriteLine("2. PayPal");
 
@@ -42,20 +76,27 @@ class Program
             if (choice == 1)
             {
                 paymentProcessor = new CreditCardProcessor();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Credit Card selected.");
             }
             else if (choice == 2)
             {
                 paymentProcessor = new PayPalProcessor();
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("PayPal selected.");
             }
 
             if (paymentProcessor != null)
             {
+                Console.ResetColor();
                 passenger.MakePayment(paymentProcessor, 50.0m);
+                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.WriteLine("Payment processed successfully.");
+                Console.ResetColor();
             }
-
-            smsNotification.SendNotification(passenger, "Payment of $50 has been processed.");
         }
 
+        Console.WriteLine("\nPress any key to exit...");
         Console.ReadLine();
     }
 }

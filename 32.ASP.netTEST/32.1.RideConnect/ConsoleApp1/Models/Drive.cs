@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
@@ -23,25 +19,27 @@ namespace ConsoleApp1.Models
             if (AvailabilityStatus)
             {
                 ride.Status = "Accepted";
-                Console.WriteLine($"Ride accepted by {Name}");
+                AvailabilityStatus = false;
+                Console.WriteLine($"{Name} has accepted the ride: Ride ID {ride.RideId}, {ride.PickupLocation} to {ride.DropLocation}");
             }
             else
             {
-                Console.WriteLine($"Driver {Name} is not available.");
+                Console.WriteLine($"{Name} is currently unavailable.");
             }
         }
 
         public void DeclineRide(Ride ride)
         {
             ride.Status = "Declined";
-            Console.WriteLine($"Ride declined by {Name}");
+            Console.WriteLine($"{Name} has declined the ride: Ride ID {ride.RideId}, {ride.PickupLocation} to {ride.DropLocation}");
         }
 
-        public void UpdateRideStatus(Ride ride, string status)
+        public void NotifyRideRequest(Ride ride)
         {
-            ride.Status = status;
-            Console.WriteLine($"Ride status updated to: {status}");
+            Console.WriteLine($"{Name}, you have a new ride request! Ride ID: {ride.RideId}, Pickup: {ride.PickupLocation}, Drop: {ride.DropLocation}");
+            Console.WriteLine("Do you want to accept or decline the ride?");
+            Console.WriteLine("1. Accept");
+            Console.WriteLine("2. Decline");
         }
     }
-
 }
