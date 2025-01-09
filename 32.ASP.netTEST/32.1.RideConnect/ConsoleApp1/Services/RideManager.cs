@@ -8,7 +8,6 @@ namespace ConsoleApp1.Services
 {
     public class RideManager
     {
-
         private List<Driver> availableDrivers;
         private List<Ride> activeRides;
         private INotificationService notificationService;
