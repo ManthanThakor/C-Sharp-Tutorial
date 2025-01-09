@@ -31,12 +31,10 @@ class Program
         Console.WriteLine("Enter Drop Location:");
         string dropLocation = Console.ReadLine();
 
-        // Request a ride
         Ride requestedRide = passenger.RequestRide(rideManager, pickupLocation, dropLocation);
 
         if (requestedRide != null)
         {
-            // Notify Driver
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"{requestedRide.Driver.Name}, you have been notified for a ride request.");
             Console.ResetColor();
@@ -44,7 +42,6 @@ class Program
             Console.WriteLine("1. Accept");
             Console.WriteLine("2. Decline");
 
-            // Handle Driver's decision
             int driverChoice = int.Parse(Console.ReadLine());
 
             if (driverChoice == 1)
@@ -62,10 +59,8 @@ class Program
                 Console.ResetColor();
             }
 
-            // Update Ride Status
             rideManager.UpdateRideStatus(requestedRide, "RideCompleted");
 
-            // Payment Process
             Console.WriteLine("\nChoose your payment method:");
             Console.WriteLine("1. Credit Card");
             Console.WriteLine("2. PayPal");
