@@ -12,8 +12,8 @@ using StudentCourse.Data;
 namespace StudentCourse.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250131111551_InitialCreate2")]
-    partial class InitialCreate2
+    [Migration("20250131123909_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

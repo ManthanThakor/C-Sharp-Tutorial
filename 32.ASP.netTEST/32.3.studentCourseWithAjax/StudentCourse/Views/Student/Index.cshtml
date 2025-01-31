@@ -12,15 +12,15 @@
     <form id="createStudent">
         <div>
             <label>Name:</label>
-            <input type="text" id="name" required />
+            <input type="text" id="name" />
         </div>
         <div>
             <label>Email:</label>
-            <input type="email" id="email" required />
+            <input type="email" id="email" />
         </div>
         <div>
             <label>Date of Birth:</label>
-            <input type="date" id="dob" required />
+            <input type="date" id="dob" />
         </div>
         <button type="submit">Create Student</button>
     </form>
@@ -59,15 +59,15 @@
         <input type="hidden" id="editStudentId" />
         <div>
             <label>Name:</label>
-            <input type="text" id="editName" required />
+            <input type="text" id="editName" />
         </div>
         <div>
             <label>Email:</label>
-            <input type="email" id="editEmail" required />
+            <input type="email" id="editEmail" />
         </div>
         <div>
             <label>Date of Birth:</label>
-            <input type="date" id="editDob" required />
+            <input type="date" id="editDob" />
         </div>
         <button type="submit">Save Changes</button>
         <button type="button" id="cancelEdit">Cancel</button>
@@ -78,7 +78,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Create student using AJAX
             $('#createStudent').submit(function (e) {
                 e.preventDefault();
 
@@ -93,7 +92,7 @@
                     success: function (response) {
                         alert(response.message);
                         if (response.success) {
-                            location.reload(); // Reload the page to show updated list
+                            location.reload();
                         }
                     },
                     error: function () {
@@ -102,7 +101,6 @@
                 });
             });
 
-            // Edit student functionality
             $('.edit-student').click(function () {
                 var studentId = $(this).data('id');
 
@@ -123,7 +121,6 @@
                 });
             });
 
-            // Submit edited student data
             $('#editStudent').submit(function (e) {
                 e.preventDefault();
 
@@ -139,7 +136,7 @@
                     success: function (response) {
                         alert(response.message);
                         if (response.success) {
-                            location.reload(); // Reload the page to show updated list
+                            location.reload();
                         }
                     },
                     error: function () {
@@ -148,12 +145,10 @@
                 });
             });
 
-            // Cancel editing
             $('#cancelEdit').click(function () {
                 $('#editStudentModal').hide();
             });
 
-            // Delete student using AJAX
             $('.delete-student').click(function () {
                 var studentId = $(this).data('id');
 
