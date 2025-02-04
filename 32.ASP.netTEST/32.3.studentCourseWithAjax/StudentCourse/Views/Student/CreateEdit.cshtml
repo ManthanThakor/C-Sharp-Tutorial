@@ -1,17 +1,38 @@
 ﻿@model Student
 
-<form id="createEditStudentForm">
-    <input type="hidden" id="studentId" value="@Model.Id">
-    <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" value="@Model.Name" placeholder="Enter name">
+<div class="modal fade" id="createEditStudentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">@(Model.Id == 0 ? "Create Student" : "Edit Student")</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="studentForm">
+                    <input type="hidden" id="studentId" value="@Model.Id" />
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" value="@Model.Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" value="@Model.Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" value="@(Model.DateOfBirth.ToString("yyyy-MM-dd"))" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="saveStudent()">Save Changes</button>
+            </div>
+        </div>
     </div>
-    <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" value="@Model.Email" placeholder="Enter email">
-    </div>
-    <div class="form-group">
-        <label for="dob">Date of Birth</label>
-        <input type="date" class="form-control" id="dob" value="@Model.DateOfBirth.ToString("yyyy-MM-dd")">
-    </div>
-</form>
+</div>

@@ -5,26 +5,6 @@
 <!-- Button to Open Modal for Creating Student -->
 <button class="btn btn-primary" data-toggle="modal" data-target="#createEditStudentModal" onclick="openCreateEditModal()">Create Student</button>
 
-<!-- Modal Structure for Create/Edit Student -->
-<div class="modal fade" id="createEditStudentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create / Edit Student</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="modalBody">
-                <!-- The form will be loaded here dynamically -->
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="saveStudent()">Save Changes</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Table to display students -->
 <table id="studentTable" class="table-striped table">
@@ -60,15 +40,25 @@
         });
     }
 
+
     // Function to open the Create/Edit modal
     function openCreateEditModal(id = null) {
         $.get(`/Student/CreateEdit?id=${id}`, function (data) {
-            $("#modalBody").html(data);
+            $("body").append(data); // Append modal to body
+
+            if (id) {
+                $("#exampleModalLabel").text("Edit Student");
+            } else {
+                $("#exampleModalLabel").text("Create Student");
+            }
+
             $("#createEditStudentModal").modal("show");
+            $('#createEditStudentModal').on('hidden.bs.modal', function () {
+                $(this).remove();
+            });
         });
     }
 
-    // Function to save the student (Create or Edit)
     function saveStudent() {
         var student = {
             Id: $("#studentId").val(),
@@ -83,16 +73,19 @@
             contentType: "application/json",
             data: JSON.stringify(student),
             success: function (response) {
-                alert(response.message);
+                alert(response.success ?
+                    (student.Id == 0 ? "Student created successfully!" : "Student updated successfully!")
+                    : response.message
+                );
+
                 if (response.success) {
                     $('#createEditStudentModal').modal('hide');
-                    loadStudents(); // Reload student data after creation or edit
+                    loadStudents();
                 }
             }
         });
     }
 
-    // Function to delete a student
     function deleteStudent(id) {
         $.ajax({
             type: "POST",
