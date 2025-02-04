@@ -16,7 +16,6 @@ namespace StudentCourse.Controllers
             _context = context;
         }
 
-        // Index view that will render the partial view for Create/Edit
         public IActionResult Index()
         {
             return View();
@@ -30,13 +29,12 @@ namespace StudentCourse.Controllers
         }
 
 
-        // This will return the partial view for Create or Edit
         [HttpGet]
         public IActionResult CreateEdit(int? id)
         {
             if (id == null)
             {
-                return PartialView("CreateEdit", new Student()); // Create new student
+                return PartialView("CreateEdit", new Student());
             }
 
             var student = _context.Students.Find(id);
@@ -45,7 +43,7 @@ namespace StudentCourse.Controllers
                 return NotFound();
             }
 
-            return PartialView("CreateEdit", student); // Edit existing student
+            return PartialView("CreateEdit", student);
         }
 
 
@@ -56,12 +54,10 @@ namespace StudentCourse.Controllers
             {
                 if (student.Id == 0)
                 {
-                    // Creating new student
                     _context.Students.Add(student);
                 }
                 else
                 {
-                    // Editing existing student
                     _context.Students.Update(student);
                 }
 

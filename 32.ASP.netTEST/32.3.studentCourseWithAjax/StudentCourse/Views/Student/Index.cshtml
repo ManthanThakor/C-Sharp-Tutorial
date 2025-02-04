@@ -2,11 +2,9 @@
     ViewData["Title"] = "Student Management";
 }
 
-<!-- Button to Open Modal for Creating Student -->
 <button class="btn btn-primary" data-toggle="modal" data-target="#createEditStudentModal" onclick="openCreateEditModal()">Create Student</button>
 
 
-<!-- Table to display students -->
 <table id="studentTable" class="table-striped table">
     <thead>
         <tr>
@@ -21,15 +19,13 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    // On page load, load students
     $(document).ready(function () {
         loadStudents();
     });
 
-    // Function to load all students from the server
     function loadStudents() {
         $.get("/Student/GetStudents", function (data) {
-            $("#studentTable tbody").empty();  // Clear the existing table body
+            $("#studentTable tbody").empty();
             if (data.length > 0) {
                 data.forEach(function (student) {
                     $("#studentTable tbody").append(`<tr> <td>${student.name}</td> <td>${student.email}</td> <td>${student.dateOfBirth}</td> <td> <button onclick="openCreateEditModal(${student.id})">Edit</button> <button onclick="deleteStudent(${student.id})">Delete</button>  </td> </tr> `);
@@ -40,11 +36,9 @@
         });
     }
 
-
-    // Function to open the Create/Edit modal
     function openCreateEditModal(id = null) {
         $.get(`/Student/CreateEdit?id=${id}`, function (data) {
-            $("body").append(data); // Append modal to body
+            $("body").append(data);
 
             if (id) {
                 $("#exampleModalLabel").text("Edit Student");
@@ -94,7 +88,7 @@
             data: JSON.stringify(id),
             success: function (response) {
                 alert(response.message);
-                loadStudents(); // Reload student data after deletion
+                loadStudents();
             }
         });
     }
