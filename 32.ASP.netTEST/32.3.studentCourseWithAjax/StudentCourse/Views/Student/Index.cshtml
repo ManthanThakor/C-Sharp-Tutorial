@@ -52,17 +52,7 @@
             $("#studentTable tbody").empty();  // Clear the existing table body
             if (data.length > 0) {
                 data.forEach(function (student) {
-                    $("#studentTable tbody").append(`
-                                                        <tr>
-                                                            <td>${student.name}</td>
-                                                            <td>${student.email}</td>
-                                                            <td>${student.dateOfBirth}</td>
-                                                            <td>
-                                                                <button onclick="openCreateEditModal(${student.id})">Edit</button>
-                                                                <button onclick="deleteStudent(${student.id})">Delete</button>
-                                                            </td>
-                                                        </tr>
-                                                    `);
+                    $("#studentTable tbody").append(`<tr> <td>${student.name}</td> <td>${student.email}</td> <td>${student.dateOfBirth}</td> <td> <button onclick="openCreateEditModal(${student.id})">Edit</button> <button onclick="deleteStudent(${student.id})">Delete</button>  </td> </tr> `);
                 });
             } else {
                 $("#studentTable tbody").append("<tr><td colspan='4'>No records found</td></tr>");
