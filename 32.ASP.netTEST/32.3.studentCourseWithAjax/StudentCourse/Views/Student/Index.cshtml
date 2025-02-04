@@ -1,27 +1,89 @@
-﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+﻿@{
+    ViewData["Title"] = "Student Management";
+}
+
+<!-- Button to Open Modal -->
+<button class="btn btn-primary" data-toggle="modal" data-target="#createStudentModal">Create Student</button>
+
+<!-- Modal Structure -->
+<div class="modal fade" id="createStudentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create New Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Form for creating a student -->
+                <form id="createStudentForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="addStudent()">Create Student</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Table to display students -->
+<table id="studentTable" class="table-striped table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Date of Birth</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
+    // On page load, load students
     $(document).ready(function () {
         loadStudents();
     });
 
+    // Function to load all students from the server
     function loadStudents() {
         $.get("/Student/GetStudents", function (data) {
-            $("#studentTable tbody").empty();
-            data.forEach(student => {
-                $("#studentTable tbody").append(`
-                                <tr>
-                                    <td>${student.name}</td>
-                                    <td>${student.email}</td>
-                                    <td>${student.dateOfBirth}</td>
-                                    <td>
-                                        <button onclick="deleteStudent(${student.id})">Delete</button>
-                                    </td>
-                                </tr>
-                            `);
-            });
+            $("#studentTable tbody").empty();  // Clear the existing table body
+            if (data.length > 0) {
+                data.forEach(function (student) {
+                    $("#studentTable tbody").append(`
+                                    <tr>
+                                        <td>${student.name}</td>
+                                        <td>${student.email}</td>
+                                        <td>${student.dateOfBirth}</td>
+                                        <td>
+                                            <button onclick="deleteStudent(${student.id})">Delete</button>
+                                        </td>
+                                    </tr>
+                                `);
+                });
+            } else {
+                $("#studentTable tbody").append("<tr><td colspan='4'>No records found</td></tr>");
+            }
         });
     }
 
+    // Function to add a new student
     function addStudent() {
         var student = {
             Name: $("#name").val(),
@@ -36,11 +98,17 @@
             data: JSON.stringify(student),
             success: function (response) {
                 alert(response.message);
-                loadStudents();
+                if (response.success) {
+                    // Close the modal and clear form fields
+                    $('#createStudentModal').modal('hide');
+                    $('#createStudentForm')[0].reset();
+                    loadStudents(); // Reload student data after creation
+                }
             }
         });
     }
 
+    // Function to delete a student
     function deleteStudent(id) {
         $.ajax({
             type: "POST",
@@ -49,25 +117,8 @@
             data: JSON.stringify(id),
             success: function (response) {
                 alert(response.message);
-                loadStudents();
+                loadStudents(); // Reload student data after deletion
             }
         });
     }
 </script>
-
-<table id="studentTable">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Date of Birth</th>
-            <th>Action</th>
-        </tr>
-    </thead>
-    <tbody></tbody>
-</table>
-
-<input type="text" id="name" placeholder="Name">
-<input type="email" id="email" placeholder="Email">
-<input type="date" id="dob">
-<button onclick="addStudent()">Add Student</button>
