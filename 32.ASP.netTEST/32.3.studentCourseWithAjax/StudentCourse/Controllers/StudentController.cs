@@ -52,6 +52,7 @@ namespace StudentCourse.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 if (student.Id == 0)
                 {
                     _context.Students.Add(student);
