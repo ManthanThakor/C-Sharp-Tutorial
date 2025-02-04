@@ -16,6 +16,7 @@ namespace StudentCourse.Controllers
             _context = context;
         }
 
+        // Index view that will render the partial view for Create/Edit
         public IActionResult Index()
         {
             return View();
@@ -28,36 +29,47 @@ namespace StudentCourse.Controllers
             return Json(students);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Student student)
+
+        // This will return the partial view for Create or Edit
+        [HttpGet]
+        public IActionResult CreateEdit(int? id)
         {
-            if (ModelState.IsValid)
+            if (id == null)
             {
-                _context.Students.Add(student);
-                await _context.SaveChangesAsync();
-                return Json(new { success = true, message = "Student added successfully!" });
+                return PartialView("CreateEdit", new Student()); // Create new student
             }
-            return Json(new { success = false, message = "Validation failed." });
+
+            var student = _context.Students.Find(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
+            return PartialView("CreateEdit", student); // Edit existing student
         }
 
+
         [HttpPost]
-        public IActionResult Edit([FromBody] Student student)
+        public async Task<IActionResult> CreateEdit([FromBody] Student student)
         {
             if (ModelState.IsValid)
             {
-                var existingStudent = _context.Students.FirstOrDefault(s => s.Id == student.Id);
-                if (existingStudent != null)
+                if (student.Id == 0)
                 {
-                    existingStudent.Name = student.Name;
-                    existingStudent.Email = student.Email;
-                    existingStudent.DateOfBirth = student.DateOfBirth;
-
-                    _context.SaveChanges();
-                    return Json(new { success = true, message = "Student updated successfully!" });
+                    // Creating new student
+                    _context.Students.Add(student);
                 }
-                return Json(new { success = false, message = "Student not found." });
+                else
+                {
+                    // Editing existing student
+                    _context.Students.Update(student);
+                }
+
+                await _context.SaveChangesAsync();
+                return Json(new { success = true, message = student.Id == 0 ? "Student added successfully!" : "Student updated successfully!" });
             }
-            return Json(new { success = false, message = "Error updating student." });
+
+            return Json(new { success = false, message = "Validation failed." });
         }
 
         [HttpPost]
@@ -71,4 +83,5 @@ namespace StudentCourse.Controllers
             return Json(new { success = true, message = "Student deleted successfully!" });
         }
     }
+
 }

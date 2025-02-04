@@ -12,7 +12,7 @@ using StudentCourse.Data;
 namespace StudentCourse.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250131123909_InitialCreate")]
+    [Migration("20250204080310_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,8 +35,7 @@ namespace StudentCourse.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -79,13 +78,11 @@ namespace StudentCourse.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasMaxLength(30)
-                        .HasColumnType("nvarchar(30)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
