@@ -41,15 +41,23 @@ namespace StudentCourse.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit([FromBody] Student student)
+        public IActionResult Edit([FromBody] Student student)
         {
             if (ModelState.IsValid)
             {
-                _context.Students.Update(student);
-                await _context.SaveChangesAsync();
-                return Json(new { success = true, message = "Student updated successfully!" });
+                var existingStudent = _context.Students.FirstOrDefault(s => s.Id == student.Id);
+                if (existingStudent != null)
+                {
+                    existingStudent.Name = student.Name;
+                    existingStudent.Email = student.Email;
+                    existingStudent.DateOfBirth = student.DateOfBirth;
+
+                    _context.SaveChanges();
+                    return Json(new { success = true, message = "Student updated successfully!" });
+                }
+                return Json(new { success = false, message = "Student not found." });
             }
-            return Json(new { success = false, message = "Validation failed." });
+            return Json(new { success = false, message = "Error updating student." });
         }
 
         [HttpPost]

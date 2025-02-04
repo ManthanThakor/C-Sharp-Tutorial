@@ -2,10 +2,10 @@
     ViewData["Title"] = "Student Management";
 }
 
-<!-- Button to Open Modal -->
+<!-- Button to Open Modal for Creating Student -->
 <button class="btn btn-primary" data-toggle="modal" data-target="#createStudentModal">Create Student</button>
 
-<!-- Modal Structure -->
+<!-- Modal Structure for Create Student -->
 <div class="modal fade" id="createStudentModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -16,7 +16,6 @@
                 </button>
             </div>
             <div class="modal-body">
-                <!-- Form for creating a student -->
                 <form id="createStudentForm">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -35,6 +34,41 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 <button type="button" class="btn btn-primary" onclick="addStudent()">Create Student</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Structure for Edit Student -->
+<div class="modal fade" id="editStudentModal" tabindex="-1" role="dialog" aria-labelledby="editStudentModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editStudentModalLabel">Edit Student</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editStudentForm">
+                    <input type="hidden" id="editStudentId">
+                    <div class="form-group">
+                        <label for="editName">Name</label>
+                        <input type="text" class="form-control" id="editName" placeholder="Enter name">
+                    </div>
+                    <div class="form-group">
+                        <label for="editEmail">Email</label>
+                        <input type="email" class="form-control" id="editEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="editDob">Date of Birth</label>
+                        <input type="date" class="form-control" id="editDob">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="editStudent()">Save Changes</button>
             </div>
         </div>
     </div>
@@ -67,19 +101,31 @@
             if (data.length > 0) {
                 data.forEach(function (student) {
                     $("#studentTable tbody").append(`
-                                    <tr>
-                                        <td>${student.name}</td>
-                                        <td>${student.email}</td>
-                                        <td>${student.dateOfBirth}</td>
-                                        <td>
-                                            <button onclick="deleteStudent(${student.id})">Delete</button>
-                                        </td>
-                                    </tr>
-                                `);
+                                        <tr>
+                                            <td>${student.name}</td>
+                                            <td>${student.email}</td>
+                                            <td>${student.dateOfBirth}</td>
+                                            <td>
+                                                <button onclick="editStudentModal(${student.id})">Edit</button>
+                                                <button onclick="deleteStudent(${student.id})">Delete</button>
+                                            </td>
+                                        </tr>
+                                    `);
                 });
             } else {
                 $("#studentTable tbody").append("<tr><td colspan='4'>No records found</td></tr>");
             }
+        });
+    }
+
+    // Function to open the edit modal with student data
+    function editStudentModal(id) {
+        $.get(`/Student/GetStudent/${id}`, function (student) {
+            $("#editStudentId").val(student.id);
+            $("#editName").val(student.name);
+            $("#editEmail").val(student.email);
+            $("#editDob").val(student.dateOfBirth);
+            $("#editStudentModal").modal("show");
         });
     }
 
@@ -103,6 +149,30 @@
                     $('#createStudentModal').modal('hide');
                     $('#createStudentForm')[0].reset();
                     loadStudents(); // Reload student data after creation
+                }
+            }
+        });
+    }
+
+    // Function to edit a student's details
+    function editStudent() {
+        var student = {
+            Id: $("#editStudentId").val(),
+            Name: $("#editName").val(),
+            Email: $("#editEmail").val(),
+            DateOfBirth: $("#editDob").val()
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "/Student/Edit",
+            contentType: "application/json",
+            data: JSON.stringify(student),
+            success: function (response) {
+                alert(response.message);
+                if (response.success) {
+                    $('#editStudentModal').modal('hide');
+                    loadStudents(); // Reload student data after edit
                 }
             }
         });
