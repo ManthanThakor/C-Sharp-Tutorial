@@ -1,174 +1,73 @@
-﻿@model IEnumerable<StudentCourse.Models.Student>
+﻿<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        loadStudents();
+    });
 
-@{
-    ViewData["Title"] = "Students";
-}
+    function loadStudents() {
+        $.get("/Student/GetStudents", function (data) {
+            $("#studentTable tbody").empty();
+            data.forEach(student => {
+                $("#studentTable tbody").append(`
+                                <tr>
+                                    <td>${student.name}</td>
+                                    <td>${student.email}</td>
+                                    <td>${student.dateOfBirth}</td>
+                                    <td>
+                                        <button onclick="deleteStudent(${student.id})">Delete</button>
+                                    </td>
+                                </tr>
+                            `);
+            });
+        });
+    }
 
-<h2>@ViewData["Title"]</h2>
+    function addStudent() {
+        var student = {
+            Name: $("#name").val(),
+            Email: $("#email").val(),
+            DateOfBirth: $("#dob").val()
+        };
 
-<!-- Create Student Form -->
-<div id="createStudentForm">
-    <h3>Create Student</h3>
-    <form id="createStudent">
-        <div>
-            <label>Name:</label>
-            <input type="text" id="name" />
-        </div>
-        <div>
-            <label>Email:</label>
-            <input type="email" id="email" />
-        </div>
-        <div>
-            <label>Date of Birth:</label>
-            <input type="date" id="dob" />
-        </div>
-        <button type="submit">Create Student</button>
-    </form>
-</div>
+        $.ajax({
+            type: "POST",
+            url: "/Student/Create",
+            contentType: "application/json",
+            data: JSON.stringify(student),
+            success: function (response) {
+                alert(response.message);
+                loadStudents();
+            }
+        });
+    }
 
-<!-- Student List -->
-<table id="studentsTable">
+    function deleteStudent(id) {
+        $.ajax({
+            type: "POST",
+            url: "/Student/Delete",
+            contentType: "application/json",
+            data: JSON.stringify(id),
+            success: function (response) {
+                alert(response.message);
+                loadStudents();
+            }
+        });
+    }
+</script>
+
+<table id="studentTable">
     <thead>
         <tr>
             <th>Name</th>
             <th>Email</th>
             <th>Date of Birth</th>
-            <th>Actions</th>
+            <th>Action</th>
         </tr>
     </thead>
-    <tbody>
-        @foreach (var student in Model)
-        {
-            <tr id="student-@student.Id">
-                <td>@student.Name</td>
-                <td>@student.Email</td>
-                <td>@student.DateOfBirth.ToString("yyyy-MM-dd")</td>
-                <td>
-                    <button class="btn btn-info edit-student" data-id="@student.Id">Edit</button>
-                    <button class="btn btn-danger delete-student" data-id="@student.Id">Delete</button>
-                </td>
-            </tr>
-        }
-    </tbody>
+    <tbody></tbody>
 </table>
 
-<!-- Edit Student Modal -->
-<div id="editStudentModal" style="display:none;">
-    <h3>Edit Student</h3>
-    <form id="editStudent">
-        <input type="hidden" id="editStudentId" />
-        <div>
-            <label>Name:</label>
-            <input type="text" id="editName" />
-        </div>
-        <div>
-            <label>Email:</label>
-            <input type="email" id="editEmail" />
-        </div>
-        <div>
-            <label>Date of Birth:</label>
-            <input type="date" id="editDob" />
-        </div>
-        <button type="submit">Save Changes</button>
-        <button type="button" id="cancelEdit">Cancel</button>
-    </form>
-</div>
-
-@section Scripts {
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#createStudent').submit(function (e) {
-                e.preventDefault();
-
-                var name = $('#name').val();
-                var email = $('#email').val();
-                var dob = $('#dob').val();
-
-                $.ajax({
-                    url: '@Url.Action("Create", "Student")',
-                    type: 'POST',
-                    data: { Name: name, Email: email, DateOfBirth: dob },
-                    success: function (response) {
-                        alert(response.message);
-                        if (response.success) {
-                            location.reload();
-                        }
-                    },
-                    error: function () {
-                        alert("Error creating student.");
-                    }
-                });
-            });
-
-            $('.edit-student').click(function () {
-                var studentId = $(this).data('id');
-
-                $.ajax({
-                    url: '@Url.Action("Edit", "Student")',
-                    type: 'GET',
-                    data: { id: studentId },
-                    success: function (data) {
-                        $('#editStudentId').val(data.id);
-                        $('#editName').val(data.name);
-                        $('#editEmail').val(data.email);
-                        $('#editDob').val(data.dateOfBirth);
-                        $('#editStudentModal').show();
-                    },
-                    error: function () {
-                        alert("Error fetching student data.");
-                    }
-                });
-            });
-
-            $('#editStudent').submit(function (e) {
-                e.preventDefault();
-
-                var id = $('#editStudentId').val();
-                var name = $('#editName').val();
-                var email = $('#editEmail').val();
-                var dob = $('#editDob').val();
-
-                $.ajax({
-                    url: '@Url.Action("Edit", "Student")',
-                    type: 'POST',
-                    data: { Id: id, Name: name, Email: email, DateOfBirth: dob },
-                    success: function (response) {
-                        alert(response.message);
-                        if (response.success) {
-                            location.reload();
-                        }
-                    },
-                    error: function () {
-                        alert("Error editing student.");
-                    }
-                });
-            });
-
-            $('#cancelEdit').click(function () {
-                $('#editStudentModal').hide();
-            });
-
-            $('.delete-student').click(function () {
-                var studentId = $(this).data('id');
-
-                if (confirm('Are you sure you want to delete this student?')) {
-                    $.ajax({
-                        url: '@Url.Action("DeleteConfirmed", "Student")',
-                        type: 'POST',
-                        data: { id: studentId },
-                        success: function (response) {
-                            alert(response.message);
-                            if (response.success) {
-                                $('#student-' + studentId).remove();
-                            }
-                        },
-                        error: function () {
-                            alert("Error deleting student.");
-                        }
-                    });
-                }
-            });
-        });
-    </script>
-}
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="email" placeholder="Email">
+<input type="date" id="dob">
+<button onclick="addStudent()">Add Student</button>

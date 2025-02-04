@@ -2,6 +2,8 @@
 using Microsoft.EntityFrameworkCore;
 using StudentCourse.Data;
 using StudentCourse.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace StudentCourse.Controllers
 {
@@ -14,41 +16,51 @@ namespace StudentCourse.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetStudents()
         {
             var students = await _context.Students.ToListAsync();
-            return View(students);
+            return Json(students);
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Email,DateOfBirth")] Student student)
+        public async Task<IActionResult> Create([FromBody] Student student)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(student);
+                _context.Students.Add(student);
                 await _context.SaveChangesAsync();
-                return Json(new { success = true, message = "Student created successfully." });
+                return Json(new { success = true, message = "Student added successfully!" });
             }
-            return Json(new { success = false, message = "Failed to create student." });
+            return Json(new { success = false, message = "Validation failed." });
         }
 
-        public async Task<IActionResult> Edit(int? id)
+        [HttpPost]
+        public async Task<IActionResult> Edit([FromBody] Student student)
         {
-            if (id == null)
+            if (ModelState.IsValid)
             {
-                return NotFound();
+                _context.Students.Update(student);
+                await _context.SaveChangesAsync();
+                return Json(new { success = true, message = "Student updated successfully!" });
             }
-
-            var student = await _context.Students.FindAsync(id);
-            if (student == null)
-            {
-                return NotFound();
-            }
-            return Json(student);
+            return Json(new { success = false, message = "Validation failed." });
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Delete([FromBody] int id)
+        {
+            var student = await _context.Students.FindAsync(id);
+            if (student == null) return Json(new { success = false, message = "Student not found." });
 
+            _context.Students.Remove(student);
+            await _context.SaveChangesAsync();
+            return Json(new { success = true, message = "Student deleted successfully!" });
+        }
     }
 }
-
