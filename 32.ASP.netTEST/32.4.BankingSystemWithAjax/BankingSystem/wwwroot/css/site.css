@@ -118,3 +118,141 @@ a.btn:hover {
 .hide {
     display: none;
 }
+
+
+/* Advanced Navbar Styling */
+.navbar {
+    background: linear-gradient(45deg, #6a1b9a, #8e24aa, #ab47bc);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+    .navbar-brand:hover, .nav-link:hover {
+        color: #ff4081 !important;
+        text-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
+        transform: scale(1.1);
+    }
+
+.navbar-toggler {
+    border-color: #ff4081;
+}
+
+.navbar-toggler-icon {
+    background-color: #ff4081;
+}
+
+/* Glowing Effect for Navbar on Scroll */
+.navbar.scrolled {
+    background: linear-gradient(45deg, #9c27b0, #8e24aa);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar Dropdown Effects */
+.navbar .navbar-nav .nav-item .nav-link::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background: #ff4081;
+    width: 0;
+    transition: width 0.4s ease;
+}
+
+.navbar .navbar-nav .nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+/* Advanced Footer Styling */
+footer {
+    background-color: #222;
+    color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+    footer a {
+        color: #ff4081;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+        footer a:hover {
+            color: #ff80ab;
+            text-decoration: underline;
+            text-shadow: 0 0 10px #ff4081, 0 0 15px #ff4081;
+        }
+
+/* Button Hover Effects */
+button, .btn {
+    background-color: #ff4081;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+    button:hover, .btn:hover {
+        background-color: #0080ff;
+        transform: scale(1.1);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    button:active, .btn:active {
+        background-color: #3422db;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transform: scale(1);
+    }
+
+    /* Glowing Button */
+    button.glow, .btn.glow {
+        position: relative;
+        background-color: #00bcd4;
+        color: #fff;
+        box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+        transition: all 0.4s ease;
+    }
+
+        button.glow:hover, .btn.glow:hover {
+            background-color: #0097a7;
+            box-shadow: 0 0 25px #0097a7, 0 0 40px #0097a7, 0 0 60px #0097a7;
+            transform: scale(1.1);
+        }
+
+/* Shadows and Lighting Effects */
+
+.container, .footer {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar Fixed on Scroll */
+.navbar.scrolled {
+    background-color: #6200ea;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow on Hover for Links */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ff4081;
+    text-shadow: 0 0 15px rgba(255, 64, 129, 0.6);
+    transform: scale(1.1);
+}
+
+/* Adding Glow on Active Link */
+.navbar-nav .nav-item .nav-link.active {
+    color: #ff4081 !important;
+    text-shadow: 0 0 15px rgba(255, 64, 129, 0.8);
+    transform: scale(1.1);
+}

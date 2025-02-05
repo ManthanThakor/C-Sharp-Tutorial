@@ -9,7 +9,6 @@ E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSys
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\appsettings.Development.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\appsettings.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\BankingSystem.staticwebassets.runtime.json
-E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\BankingSystem.staticwebassets.endpoints.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\BankingSystem.exe
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\BankingSystem.deps.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\bin\Debug\net8.0\BankingSystem.runtimeconfig.json
@@ -165,9 +164,7 @@ E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSys
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\scopedcss\projectbundle\BankingSystem.bundle.scp.css
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets.build.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets.development.json
-E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets\msbuild.BankingSystem.Microsoft.AspNetCore.StaticWebAssets.props
-E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets\msbuild.BankingSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets\msbuild.build.BankingSystem.props
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BankingSystem.props
 E:\manthan\C-Sharp-Tutorial\32.ASP.netTEST\32.4.BankingSystemWithAjax\BankingSystem\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BankingSystem.props

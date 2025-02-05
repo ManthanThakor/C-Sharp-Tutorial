@@ -9,6 +9,8 @@ $(function () {
     });
 });
 
+
+
 showInPopup = (url, title) => {
     $.ajax({
         type: 'GET',
@@ -17,7 +19,6 @@ showInPopup = (url, title) => {
             $('#form-modal .modal-body').html(res);
             $('#form-modal .modal-title').html(title);
             $('#form-modal').modal('show');
-            // to make popup draggable
             $('.modal-dialog').draggable({
                 handle: ".modal-header"
             });
@@ -39,6 +40,7 @@ jQueryAjaxPost = form => {
                     $('#form-modal .modal-body').html('');
                     $('#form-modal .modal-title').html('');
                     $('#form-modal').modal('hide');
+                    $.notify('submited successfully ', { globalPosition: 'top center', className: 'success' });
                 }
                 else
                     $('#form-modal .modal-body').html(res.html);
@@ -65,6 +67,8 @@ jQueryAjaxDelete = form => {
                 processData: false,
                 success: function (res) {
                     $('#view-all').html(res.html);
+                    $.notify('Delete successfully ', { globalPosition: 'top center', className: 'success' });
+
                 },
                 error: function (err) {
                     console.log(err)
@@ -75,6 +79,5 @@ jQueryAjaxDelete = form => {
         }
     }
 
-    //prevent default form submit event
     return false;
 }

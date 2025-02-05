@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BankingSystem.bundle.scp.css",
-      "PackagePath": "staticwebassets\\BankingSystem.39w23fg0ja.bundle.scp.css"
+      "PackagePath": "staticwebassets\\BankingSystem.bundle.scp.css"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\wwwroot\\css\\site.css",
@@ -11,6 +11,10 @@
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\wwwroot\\js\\notify.min.js",
+      "PackagePath": "staticwebassets\\js\\notify.min.js"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\wwwroot\\js\\site.js",
@@ -243,10 +247,6 @@
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\32.ASP.netTEST\\32.4.BankingSystemWithAjax\\BankingSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BankingSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BankingSystem.Microsoft.AspNetCore.StaticWebAssets.props",
