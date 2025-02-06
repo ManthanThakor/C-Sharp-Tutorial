@@ -1,13 +1,4 @@
 ﻿
-$(function () {
-    $("#loaderbody").addClass('hide');
-
-    $(document).bind('ajaxStart', function () {
-        $("#loaderbody").removeClass('hide');
-    }).bind('ajaxStop', function () {
-        $("#loaderbody").addClass('hide');
-    });
-});
 
 
 
@@ -20,8 +11,10 @@ showInPopup = (url, title) => {
             $('#form-modal .modal-title').html(title);
             $('#form-modal').modal('show');
             $('.modal-dialog').draggable({
-                handle: ".modal-header"
+                handle: " .modal-body , .modal-header"
             });
+            $('.modal-header, .modal-body').css('cursor', 'grab');
+
         }
     })
 }
