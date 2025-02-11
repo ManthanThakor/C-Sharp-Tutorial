@@ -167,3 +167,6 @@ E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\bin\Debug\net8.0\MovieAPI.run
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\bin\Debug\net8.0\MovieAPI.pdb
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\obj\Debug\net8.0\MovieAPI.genruntimeconfig.cache
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\obj\Debug\net8.0\ref\MovieAPI.dll
+E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\bin\Debug\net8.0\MovieAPI.staticwebassets.endpoints.json
+E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\MovieAPI\obj\Debug\net8.0\staticwebassets\msbuild.MovieAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
