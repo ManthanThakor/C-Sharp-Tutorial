@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ictdKFSieDU=",
+  "success": true,
+  "projectFilePath": "E:\\manthan\\C-Sharp-Tutorial\\33.Asp.netAPI\\MyFirstWebAPIProject\\MyFirstWebAPIProject.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.0\\microsoft.aspnetcore.openapi.9.0.0.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
