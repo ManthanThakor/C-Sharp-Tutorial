@@ -12,8 +12,8 @@ using MovieAPI.EfCore;
 namespace MovieAPI.Migrations
 {
     [DbContext(typeof(MovieAppDbContext))]
-    [Migration("20250211063709_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250211105611_InitialCreate2")]
+    partial class InitialCreate2
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
