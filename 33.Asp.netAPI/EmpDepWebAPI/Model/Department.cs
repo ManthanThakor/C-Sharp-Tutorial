@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace EmpDepWebAPI.Model
 {
@@ -12,4 +13,6 @@ namespace EmpDepWebAPI.Model
 
         public ICollection<Employee> Employees { get; set; } = new List<Employee>();
     }
+
+
 }

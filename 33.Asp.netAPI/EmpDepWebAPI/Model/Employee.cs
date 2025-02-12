@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace EmpDepWebAPI.Model
 {
@@ -12,6 +13,7 @@ namespace EmpDepWebAPI.Model
 
         public int DepartmentId { get; set; }
 
+        [JsonIgnore]
         public Department? Department { get; set; }
     }
 }

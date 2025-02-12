@@ -15,12 +15,10 @@ namespace EmpDepWebAPI.Controllers
             _employeeRepository = employeeRepository;
         }
 
-        // GET: api/Employees
         [HttpGet]
         public ActionResult<IEnumerable<Employee>> GetAllEmployees() =>
             Ok(_employeeRepository.GetAllEmployees().ToList());
 
-        // GET: api/Employees/{id}
         [HttpGet("{id}")]
         public ActionResult<Employee> GetEmployee(int id)
         {
@@ -30,7 +28,6 @@ namespace EmpDepWebAPI.Controllers
             return Ok(employee);
         }
 
-        // POST: api/Employees
         [HttpPost]
         public ActionResult<Employee> CreateEmployee([FromBody] Employee employee)
         {
@@ -41,7 +38,6 @@ namespace EmpDepWebAPI.Controllers
             return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, employee);
         }
 
-        // PUT: api/Employees/{id}
         [HttpPut("{id}")]
         public ActionResult UpdateEmployee(int id, [FromBody] Employee employee)
         {

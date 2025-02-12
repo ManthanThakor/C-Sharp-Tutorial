@@ -2,11 +2,14 @@ using EmpDepWebAPI.EfCore;
 using EmpDepWebAPI.Repository.RepoInter;
 using EmpDepWebAPI.Repository;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+        options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles); // Ignore circular references
 
 // Configure Database Connection
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -20,14 +23,10 @@ builder.Services.AddDbContext<EmpDepDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 // Register the repository for dependency injection
-
-// Register the repository for dependency injection
-// Register repositories as scoped services
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Configure Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

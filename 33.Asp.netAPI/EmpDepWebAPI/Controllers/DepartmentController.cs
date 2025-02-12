@@ -16,12 +16,10 @@ namespace EmpDepWebAPI.Controllers
             _departmentRepository = departmentRepository;
         }
 
-        // GET: api/Departments
         [HttpGet]
         public ActionResult<IEnumerable<Department>> GetAllDepartments() =>
             Ok(_departmentRepository.GetAllDepartments().ToList());
 
-        // GET: api/Departments/{id}
         [HttpGet("{id}")]
         public ActionResult<Department> GetDepartment(int id)
         {
@@ -31,7 +29,6 @@ namespace EmpDepWebAPI.Controllers
             return Ok(department);
         }
 
-        // POST: api/Departments
         [HttpPost]
         public ActionResult<Department> CreateDepartment([FromBody] Department department)
         {
@@ -42,7 +39,6 @@ namespace EmpDepWebAPI.Controllers
             return CreatedAtAction(nameof(GetDepartment), new { id = department.Id }, department);
         }
 
-        // PUT: api/Departments/{id}
         [HttpPut("{id}")]
         public ActionResult UpdateDepartment(int id, [FromBody] Department department)
         {
@@ -53,7 +49,6 @@ namespace EmpDepWebAPI.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Departments/{id}
         [HttpDelete("{id}")]
         public ActionResult DeleteDepartment(int id)
         {

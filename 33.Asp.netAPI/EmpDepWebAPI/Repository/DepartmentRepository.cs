@@ -14,9 +14,15 @@ namespace EmpDepWebAPI.Repository
             _context = context;
         }
 
-        public IQueryable<Department> GetAllDepartments() => _context.Departments;
+        public IQueryable<Department> GetAllDepartments() => _context.Departments.Include(d => d.Employees);
 
-        public Department GetDepartment(int id) => _context.Departments.FirstOrDefault(d => d.Id == id);
+        public Department GetDepartment(int id)
+        {
+            return _context.Departments
+                           .Include(d => d.Employees)
+                           .FirstOrDefault(d => d.Id == id);
+        }
+
 
         public bool AddDepartment(Department department)
         {
