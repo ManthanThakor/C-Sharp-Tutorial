@@ -8,7 +8,6 @@ E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\EmpDepWe
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\EmpDepWebAPI.sourcelink.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\appsettings.Development.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\appsettings.json
-E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\EmpDepWebAPI.staticwebassets.endpoints.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\EmpDepWebAPI.exe
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\EmpDepWebAPI.deps.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\EmpDepWebAPI.runtimeconfig.json
@@ -157,9 +156,7 @@ E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\bin\Debug\net8.0\runtimes
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\scopedcss\bundle\EmpDepWebAPI.styles.css
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets.build.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets.development.json
-E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets\msbuild.EmpDepWebAPI.Microsoft.AspNetCore.StaticWebAssets.props
-E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets\msbuild.EmpDepWebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.EmpDepWebAPI.props
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.EmpDepWebAPI.props
 E:\manthan\C-Sharp-Tutorial\33.Asp.netAPI\EmpDepWebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.EmpDepWebAPI.props

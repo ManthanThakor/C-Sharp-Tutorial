@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "xFsU5C1FMfHVweNGRInX09yuXy7HvMgB7Fs7qTB2yqQ=",
+  "Hash": "XGYsmSjqa7dqswpvUgKlOqASB+Q61P2JpPs/RXrPOMQ=",
   "Source": "EmpDepWebAPI",
   "BasePath": "_content/EmpDepWebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }
