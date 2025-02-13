@@ -1,7 +1,7 @@
 ﻿using UserAuthMVC.Models.ViewModels;
 using UserAuthMVC.Models;
 
-namespace UserAuthMVC.Provider.IRepository
+namespace UserAuthMVC.Repository.IRepo
 {
     public interface IUserRepo
     {

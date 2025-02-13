@@ -1,13 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using UserAuthMVC.EFcore;
-using UserAuthMVC.Models;
+﻿using UserAuthMVC.EFcore;
 using UserAuthMVC.Models.ViewModels;
-using UserAuthMVC.Provider.IRepository;
+using UserAuthMVC.Models;
+using UserAuthMVC.Repository.Utilities;
 
-namespace UserAuthMVC.Repository
+namespace UserAuthMVC.Repository.IRepo
 {
     public class UserRepo : IUserRepo
     {
@@ -18,67 +14,62 @@ namespace UserAuthMVC.Repository
             _context = context;
         }
 
+        // Register user
         public CookieUserItem Register(Register model)
         {
+            // Generate a salt for the password
+            string salt = PasswordHasher.GenerateSalt();
 
-            string salt = GenerateSalt();
+            // Hash the password with the generated salt
+            string hashedPassword = PasswordHasher.HashPassword(model.Password, salt);
 
-
-            string hashedPassword = HashPassword(model.Password, salt);
-
+            // Create the user
             var user = new CookieUser
             {
                 Id = Guid.NewGuid(),
-                Name = model.EmailAddress.Split('@')[0],
+                EmailAddress = model.EmailAddress,
+                Name = model.Name,
                 PasswordHash = hashedPassword,
-                Salt = salt,
-                CreatedUtc = DateTime.UtcNow
+                Salt = salt
             };
 
+            // Save the user to the database
             _context.Users.Add(user);
             _context.SaveChanges();
 
             return new CookieUserItem
             {
                 UserId = user.Id,
+                EmailAddress = user.EmailAddress,
                 Name = user.Name,
-                EmailAddress = model.EmailAddress,
                 CreatedUtc = user.CreatedUtc
             };
         }
 
         public CookieUserItem Validate(Login model)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Name == model.EmailAddress);
-            if (user == null) return null;
+            var user = _context.Users.SingleOrDefault(u => u.EmailAddress == model.EmailAddress);
 
-            // Verify password
-            string hashedInputPassword = HashPassword(model.Password, user.Salt);
-            if (hashedInputPassword != user.PasswordHash) return null;
+            if (user == null)
+            {
+                return null;
+            }
+
+            bool isPasswordValid = PasswordHasher.VerifyPassword(model.Password, user.PasswordHash, user.Salt);
+
+            if (!isPasswordValid)
+            {
+                return null;
+            }
 
             return new CookieUserItem
             {
                 UserId = user.Id,
+                EmailAddress = user.EmailAddress,
                 Name = user.Name,
-                EmailAddress = model.EmailAddress,
                 CreatedUtc = user.CreatedUtc
             };
         }
-
-        private string GenerateSalt(int size = 32)
-        {
-            using var rng = new RNGCryptoServiceProvider();
-            byte[] saltBytes = new byte[size];
-            rng.GetBytes(saltBytes);
-            return Convert.ToBase64String(saltBytes);
-        }
-
-        private string HashPassword(string password, string salt)
-        {
-            using SHA256 sha256 = SHA256.Create();
-            byte[] saltedPassword = Encoding.UTF8.GetBytes(password + salt);
-            byte[] hashedBytes = sha256.ComputeHash(saltedPassword);
-            return Convert.ToBase64String(hashedBytes);
-        }
     }
+
 }

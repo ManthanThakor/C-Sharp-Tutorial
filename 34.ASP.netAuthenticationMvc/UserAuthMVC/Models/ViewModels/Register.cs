@@ -6,5 +6,6 @@ namespace UserAuthMVC.Models.ViewModels
     {
         [Required, Compare("Password")]
         public string ConfirmPassword { get; set; }
+        public string Name { get; internal set; }
     }
 }
