@@ -1,0 +1,27 @@
+﻿@model Dictionary<string, string>
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Claim Type</th>
+            <th>Claim Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.Key</td>
+                <td>@claim.Value</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Logout</a>

@@ -1,0 +1,26 @@
+﻿@model UserAuthMVC.Models.ViewModels.Register
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label for="EmailAddress">Email Address</label>
+        <input type="email" class="form-control" id="EmailAddress" asp-for="EmailAddress" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" asp-for="Password" required />
+    </div>
+
+    <div class="form-group">
+        <label for="ConfirmPassword">Confirm Password</label>
+        <input type="password" class="form-control" id="ConfirmPassword" asp-for="ConfirmPassword" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

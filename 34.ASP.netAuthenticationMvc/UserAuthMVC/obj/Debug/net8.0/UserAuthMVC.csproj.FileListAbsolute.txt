@@ -9,7 +9,6 @@ E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\ne
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\appsettings.Development.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\appsettings.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\UserAuthMVC.staticwebassets.runtime.json
-E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\UserAuthMVC.staticwebassets.endpoints.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\UserAuthMVC.exe
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\UserAuthMVC.deps.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\bin\Debug\net8.0\UserAuthMVC.runtimeconfig.json
@@ -157,9 +156,7 @@ E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\ne
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\scopedcss\projectbundle\UserAuthMVC.bundle.scp.css
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets.build.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets.development.json
-E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets\msbuild.UserAuthMVC.Microsoft.AspNetCore.StaticWebAssets.props
-E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets\msbuild.UserAuthMVC.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets\msbuild.build.UserAuthMVC.props
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.UserAuthMVC.props
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.UserAuthMVC.props
