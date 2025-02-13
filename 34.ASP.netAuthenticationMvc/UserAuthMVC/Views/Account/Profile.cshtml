@@ -1,27 +1,29 @@
 ﻿@model Dictionary<string, string>
 
 @{
-    ViewData["Title"] = "User Profile";
+    ViewData["Title"] = "Profile";
 }
 
-<h2>@ViewData["Title"]</h2>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>Claim Type</th>
-            <th>Claim Value</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var claim in Model)
-        {
-            <tr>
-                <td>@claim.Key</td>
-                <td>@claim.Value</td>
-            </tr>
-        }
-    </tbody>
-</table>
-
-<a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Logout</a>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">User Profile</h2>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <strong>Name:</strong> @Model[System.Security.Claims.ClaimTypes.Name]
+                </div>
+                <div class="mb-3">
+                    <strong>Email:</strong> @Model[System.Security.Claims.ClaimTypes.Email]
+                </div>
+                <div class="mb-3">
+                    <strong>User ID:</strong> @Model[System.Security.Claims.ClaimTypes.NameIdentifier]
+                </div>
+                <div class="text-center">
+                    <a asp-action="Logout" class="btn btn-danger">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

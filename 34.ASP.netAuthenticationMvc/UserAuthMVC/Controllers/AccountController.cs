@@ -19,71 +19,101 @@ namespace UserAuthMVC.Controllers
             _userManager = userManager;
         }
 
-        // GET: Account/Register
+        [HttpGet]
         public IActionResult Register()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
-        // POST: Account/Register
+        // Updated AccountController.cs - Register method
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(Register model)
         {
             if (ModelState.IsValid)
             {
-                var user = _userRepo.Register(model);
-
-                if (user != null)
+                try
                 {
-                    await _userManager.SignInAsync(HttpContext, user, isPresent: true); // auto sign-in after registration
-                    return RedirectToAction("Index", "Home");  // Redirect to Home page after successful registration
+                    // Check if email already exists
+                    var existingUser = _userRepo.Validate(new Login { EmailAddress = model.EmailAddress });
+                    if (existingUser != null)
+                    {
+                        ModelState.AddModelError("EmailAddress", "Email address is already in use.");
+                        return View(model);
+                    }
+
+                    // Register the user
+                    var user = _userRepo.Register(model);
+                    if (user != null)
+                    {
+                        await _userManager.SignInAsync(HttpContext, user, isPresent: true);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError(string.Empty, "Registration failed. Please try again.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError(string.Empty, "An error occurred during registration. Please try again.");
+                    // Log the exception details here
                 }
             }
 
+            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
-        // GET: Account/Profile
-        [Authorize]
-        public IActionResult Profile()
+        [HttpGet]
+        public IActionResult Login(string returnUrl = null)
         {
-            var userClaims = this.User.Claims.ToDictionary(x => x.Type, x => x.Value);
-            return View(userClaims);  // Passing user claims to the view
-        }
-
-        // GET: Account/Login
-        public IActionResult Login()
-        {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            ViewData["ReturnUrl"] = returnUrl;
             return View();
         }
 
-        // POST: Account/Login
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(Login model)
+        public async Task<IActionResult> Login(Login model, string returnUrl = null)
         {
+            ViewData["ReturnUrl"] = returnUrl;
             if (ModelState.IsValid)
             {
                 var user = _userRepo.Validate(model);
-
                 if (user != null)
                 {
-                    await _userManager.SignInAsync(HttpContext, user, isPresent: true);  // Sign-in user
-                    return RedirectToAction("Index", "Home");  // Redirect to Home page after successful login
+                    await _userManager.SignInAsync(HttpContext, user, isPresent: true);
+                    return !string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl)
+                        ? Redirect(returnUrl)
+                        : RedirectToAction("Index", "Home");
                 }
-
-                ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                ModelState.AddModelError(string.Empty, "Invalid email or password.");
             }
-
             return View(model);
         }
 
-        // GET: Account/Logout
+        [Authorize]
+        [HttpGet]
+        public IActionResult Profile()
+        {
+            var userClaims = User.Claims.ToDictionary(x => x.Type, x => x.Value);
+            return View(userClaims);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            await _userManager.SignOutAsync(HttpContext);  // Sign out the user
-            return RedirectToAction("Login", "Account");  // Redirect to login page after logout
+            await _userManager.SignOutAsync(HttpContext);
+            return RedirectToAction("Login");
         }
     }
 }

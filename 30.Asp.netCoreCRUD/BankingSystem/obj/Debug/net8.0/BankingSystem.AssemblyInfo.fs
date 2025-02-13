@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("BankingSystem")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c52183c523cec93c5e06277cc8dfa62890c02db")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52f373913816b782eeb5651ee180b62db3989bc2")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("BankingSystem")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("BankingSystem")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

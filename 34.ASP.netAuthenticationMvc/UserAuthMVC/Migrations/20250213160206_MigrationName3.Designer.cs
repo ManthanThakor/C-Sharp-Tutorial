@@ -12,8 +12,8 @@ using UserAuthMVC.EFcore;
 namespace UserAuthMVC.Migrations
 {
     [DbContext(typeof(CookieContext))]
-    [Migration("20250213071506_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250213160206_MigrationName3")]
+    partial class MigrationName3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,10 @@ namespace UserAuthMVC.Migrations
 
                     b.Property<DateTime>("CreatedUtc")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("EmailAddress")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
