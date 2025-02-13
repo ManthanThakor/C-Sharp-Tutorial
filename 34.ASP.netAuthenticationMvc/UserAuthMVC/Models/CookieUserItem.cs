@@ -1,6 +1,6 @@
 ﻿namespace UserAuthMVC.Models
 {
-    public class CookieUserItemcs
+    public class CookieUserItem
     {
         public Guid UserId { get; set; }
         public string EmailAddress { get; set; }
