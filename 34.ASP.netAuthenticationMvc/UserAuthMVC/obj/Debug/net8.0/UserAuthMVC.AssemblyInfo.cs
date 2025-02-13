@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UserAuthMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdde51baf2bd9aae5c7cc0d044e81f3360fd925c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c39fbbc518e365e1e823fa048633d7acb125d1d")]
 [assembly: System.Reflection.AssemblyProductAttribute("UserAuthMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UserAuthMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
