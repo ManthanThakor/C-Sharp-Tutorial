@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("23.3.StudentInformationRetrieval")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52f373913816b782eeb5651ee180b62db3989bc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a68a7c89732660596c555ab682f189a4b2bebcb1")]
 [assembly: System.Reflection.AssemblyProductAttribute("23.3.StudentInformationRetrieval")]
 [assembly: System.Reflection.AssemblyTitleAttribute("23.3.StudentInformationRetrieval")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

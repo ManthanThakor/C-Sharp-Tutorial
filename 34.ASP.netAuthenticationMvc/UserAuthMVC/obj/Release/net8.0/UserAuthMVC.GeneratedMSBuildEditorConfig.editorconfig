@@ -17,53 +17,51 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UserAuthMVC
 build_property.RootNamespace = UserAuthMVC
-build_property.ProjectDir = D:\ManthanThakor\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\
+build_property.ProjectDir = E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\ManthanThakor\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC
+build_property.MSBuildProjectDirectory = E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\UserAuthMVC
 build_property._RazorSourceGeneratorDebug = 
-build_property.EffectiveAnalysisLevelStyle = 8.0
-build_property.EnableCodeStyleSeverity = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Login.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Profile.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Register.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Home/Index.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Home/Privacy.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/Error.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/_ViewImports.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/_ViewStart.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/ManthanThakor/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/_Layout.cshtml]
+[E:/manthan/C-Sharp-Tutorial/34.ASP.netAuthenticationMvc/UserAuthMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0ghc17fm30

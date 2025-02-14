@@ -20,9 +20,9 @@
                 <div class="mb-3">
                     <strong>User ID:</strong> @Model[System.Security.Claims.ClaimTypes.NameIdentifier]
                 </div>
-                <div class="text-center">
-                    <a asp-action="Logout" class="btn btn-danger">Logout</a>
-                </div>
+
+                <a class="nav-link text-dark"
+                   asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
             </div>
         </div>
     </div>

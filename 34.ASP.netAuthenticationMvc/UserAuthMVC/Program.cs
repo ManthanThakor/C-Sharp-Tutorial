@@ -1,6 +1,12 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
+using System.Security.Cryptography;
 using UserAuthMVC.EFcore;
+using UserAuthMVC.Models.ViewModels;
+using UserAuthMVC.Models;
 using UserAuthMVC.Repository.IRepo;
 using UserAuthMVC.Repository.Utilitie;
 
@@ -52,3 +58,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+
+

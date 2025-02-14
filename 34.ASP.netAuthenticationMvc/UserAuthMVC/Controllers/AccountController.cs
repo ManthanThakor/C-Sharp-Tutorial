@@ -113,7 +113,7 @@ namespace UserAuthMVC.Controllers
         public async Task<IActionResult> Logout()
         {
             await _userManager.SignOutAsync(HttpContext);
-            return RedirectToAction("Login");
+            return RedirectToAction("Login", "Account");
         }
     }
 }
