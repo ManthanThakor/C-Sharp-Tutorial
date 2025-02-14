@@ -10,12 +10,12 @@ namespace UserAuthMVC.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             return View();

@@ -21,8 +21,12 @@
                     <strong>User ID:</strong> @Model[System.Security.Claims.ClaimTypes.NameIdentifier]
                 </div>
 
-                <a class="nav-link text-dark"
-                   asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                <a class="nav-link text-dark" href="#" onclick="document.getElementById('logoutForm').submit();">Logout</a>
+
+                <form id="logoutForm" asp-controller="Account" asp-action="Logout" method="post" style="display: none;">
+                    <input type="hidden" />
+                </form>
+
             </div>
         </div>
     </div>

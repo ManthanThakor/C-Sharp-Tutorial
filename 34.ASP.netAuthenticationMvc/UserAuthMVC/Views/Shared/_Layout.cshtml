@@ -25,12 +25,44 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        @if (User.Identity.IsAuthenticated)
+                        @*      @if (User.Identity.IsAuthenticated)
                         {
-                            <form asp-controller="Account" asp-action="Logout" method="post">
-                                <button type="submit">Logout</button>
-                            </form>
-                        }
+                        <form asp-controller="Account" asp-action="Logout" method="post">
+                        <button type="submit">Logout</button>
+                        </form>
+                        } *@
+
+                        <ul class="navbar-nav">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown">
+                                        <img src="https://img.freepik.com/free-vector/contact-icon-3d-vector-illustration-blue-button-with-user-profile-symbol-networking-sites-apps-cartoon-style-isolated-white-background-online-communication-digital-marketing-concept_778687-1715.jpg?ga=GA1.1.844070815.1733390791&semt=ais_hybrid" alt="Profile" width="30" height="30" class="rounded-circle">
+                                        @User.Identity.Name
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile">My Profile</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#" onclick="document.getElementById('logoutForm').submit();">
+                                                Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            }
+                            else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Account" asp-action="Login">Login</a>
+                                </li>
+                            }
+                        </ul>
+
+                        <form id="logoutForm" asp-controller="Account" asp-action="Logout" method="post" style="display: none;">
+                            <input type="hidden" />
+                        </form>
+
 
                     </ul>
                 </div>

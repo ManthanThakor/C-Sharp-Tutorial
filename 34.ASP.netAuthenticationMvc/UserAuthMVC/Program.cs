@@ -27,10 +27,10 @@ builder.Services.AddScoped<IUserManager, UserManager>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/Account/Login";
-        options.LogoutPath = "/Account/Logout";
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
-        options.SlidingExpiration = true;
+        //options.LoginPath = "/Account/Login";
+        //options.LogoutPath = "/Account/Logout";
+        //options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        //options.SlidingExpiration = true;
     });
 
 // Configure other required services like user session handling, etc.
@@ -49,7 +49,6 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-// Add authentication and authorization middlewares
 app.UseAuthentication();
 app.UseAuthorization();
 
