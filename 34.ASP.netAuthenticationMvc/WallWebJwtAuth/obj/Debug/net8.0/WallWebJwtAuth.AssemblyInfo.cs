@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WallWebJwtAuth")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e3a4adcc20a7d557104d07da8b885703024415b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3cb52433f04f5a2591675416f59f4737567a73a7")]
 [assembly: System.Reflection.AssemblyProductAttribute("WallWebJwtAuth")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WallWebJwtAuth")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
