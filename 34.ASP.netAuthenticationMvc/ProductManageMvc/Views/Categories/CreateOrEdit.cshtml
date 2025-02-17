@@ -1,0 +1,33 @@
+﻿@model ProductManageMvc.Models.Entity.ProductCategory
+
+@{
+    ViewData["Title"] = Model.Id == 0 ? "Create Category" : "Edit Category";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Product Category</h4>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="CreateOrEdit">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">@ViewData["Title"]</button>
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

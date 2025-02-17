@@ -1,0 +1,15 @@
+﻿@model ProductManageMvc.Models.Entity.ProductCategory
+
+@{
+    ViewData["Title"] = "Delete Category";
+}
+
+<h1>@ViewData["Title"]</h1>
+<hr />
+
+<h4>Are you sure you want to delete the category "@Model.Name"?</h4>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <button type="submit" class="btn btn-danger">Yes, delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
