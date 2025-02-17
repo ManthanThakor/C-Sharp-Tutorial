@@ -6,7 +6,7 @@ using ProductManageMvc.Models.Entity;
 
 namespace ProductManageMvc.Controllers
 {
-    [Authorize]
+
     public class ProductsController : Controller
     {
         private readonly ProductManageMvcContext _context;
