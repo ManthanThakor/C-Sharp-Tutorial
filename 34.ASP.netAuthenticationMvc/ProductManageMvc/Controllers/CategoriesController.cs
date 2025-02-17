@@ -6,7 +6,6 @@ using ProductManageMvc.Models.Entity;
 
 namespace ProductManageMvc.Controllers
 {
-    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly ProductManageMvcContext _context;
@@ -81,14 +80,21 @@ namespace ProductManageMvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var product = await _context.Products.FindAsync(id);
-            if (product != null)
+            var category = await _context.ProductCategories.FindAsync(id);
+
+            if (category != null)
             {
-                _context.Products.Remove(product);
+                var products = _context.Products.Where(p => p.CategoryId == id);
+                _context.Products.RemoveRange(products);
+
+                _context.ProductCategories.Remove(category);
+
                 await _context.SaveChangesAsync();
             }
+
             return RedirectToAction(nameof(Index));
         }
+
 
     }
 }
