@@ -54,7 +54,6 @@ E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Deb
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Composition.TypedParts.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Drawing.Common.dll
-E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Formats.Asn1.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -267,3 +266,4 @@ E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Deb
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\obj\Debug\net8.0\ProductManageMvc.MvcApplicationPartsAssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\34.ASP.netAuthenticationMvc\ProductManageMvc\bin\Debug\net8.0\System.Formats.Asn1.dll
