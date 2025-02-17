@@ -4,6 +4,7 @@ namespace ProdManage.Model
 {
     public class ProductCategory
     {
+        [Key]
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Category name is required.")]

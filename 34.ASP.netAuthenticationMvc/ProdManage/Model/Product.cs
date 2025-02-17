@@ -5,7 +5,8 @@ namespace ProdManage.Model
 {
     public class Product
     {
-        public Guid Id { get; set; }
+        [Key]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Product name is required.")]
         [StringLength(150, ErrorMessage = "Product name can't be longer than 150 characters.")]
