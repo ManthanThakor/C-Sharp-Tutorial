@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ProdManage.Model
+namespace ProdManage.DTO
 {
     public class RegisterModel
     {
@@ -13,5 +13,8 @@ namespace ProdManage.Model
 
         [Required(ErrorMessage = "Password is required")]
         public string Password { get; set; }
+
+        [Compare("Password", ErrorMessage = "The Password and confirm password do not match.")]
+        public string ConfirmPassword { get; set; }
     }
 }
