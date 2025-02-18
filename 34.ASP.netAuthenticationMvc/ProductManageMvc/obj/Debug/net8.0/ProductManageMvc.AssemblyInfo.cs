@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProductManageMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39a75c2aa3d51c4537ddf7fd5858882069b0f4e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2871ff63a6c1a69533c80937641a59a3d6c3f769")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProductManageMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProductManageMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
