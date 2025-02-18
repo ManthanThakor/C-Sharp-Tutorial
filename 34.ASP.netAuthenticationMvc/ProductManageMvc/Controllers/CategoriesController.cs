@@ -6,6 +6,7 @@ using ProductManageMvc.Models.Entity;
 
 namespace ProductManageMvc.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly ProductManageMvcContext _context;
