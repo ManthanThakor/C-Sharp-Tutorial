@@ -11,12 +11,7 @@ builder.Services.AddDbContext<ProductManageMvcContext>(options => options.UseSql
 builder.Services.AddDefaultIdentity<ProductManageMvcUser>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
-    options.Password.RequireDigit = true;
-    options.Password.RequireLowercase = true;
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireUppercase = true;
-    options.Password.RequiredLength = 6;
-    options.Password.RequiredUniqueChars = 1;
+
 }).AddEntityFrameworkStores<ProductManageMvcContext>();
 
 // Add services to the container.
