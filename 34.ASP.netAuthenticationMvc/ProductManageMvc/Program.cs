@@ -8,7 +8,16 @@ var connectionString = builder.Configuration.GetConnectionString("ProductManageM
 
 builder.Services.AddDbContext<ProductManageMvcContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<ProductManageMvcUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ProductManageMvcContext>();
+builder.Services.AddDefaultIdentity<ProductManageMvcUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false;
+    options.Password.RequireDigit = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = true;
+    options.Password.RequiredLength = 6;
+    options.Password.RequiredUniqueChars = 1;
+}).AddEntityFrameworkStores<ProductManageMvcContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

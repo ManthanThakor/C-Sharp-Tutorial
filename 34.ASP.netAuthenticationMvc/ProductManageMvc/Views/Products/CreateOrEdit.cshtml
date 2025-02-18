@@ -1,33 +1,47 @@
-﻿@model ProductManageMvc.Models.Entity.Product
+﻿@using ProductManageMvc.Models.Entity
+@model ProductManageMvc.Models.Entity.Product
 
 @{
     ViewData["Title"] = Model.Id == 0 ? "Create Product" : "Edit Product";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="mt-5 container">
+    <div class="card rounded-lg border-0 shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h3 class="text-center">@ViewData["Title"]</h3>
+        </div>
+        <div class="card-body">
+            <form asp-action="CreateOrEdit" method="post">
+                <input type="hidden" asp-for="Id" />
 
-<form asp-action="CreateOrEdit" method="post">
-    <div class="form-group">
-        <label for="Name">Product Name</label>
-        <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Product Name</label>
+                    <input type="text" class="form-control" asp-for="Name" placeholder="Enter product name" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Price</label>
+                    <input type="number" class="form-control" asp-for="Price" step="0.01" min="0.01" placeholder="Enter price" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label fw-bold">Category</label>
+                    <select class="form-select" asp-for="CategoryId" asp-items="@(new SelectList(ViewData["Categories"] as List<ProductCategory>, "Id", "Name"))" required>
+                        <option value="">-- Select a category --</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-center mt-4">
+                    <button type="submit" class="btn btn-success px-4 me-2">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                    <a href="@Url.Action("Index")" class="btn btn-secondary px-4">
+                        <i class="fas fa-arrow-left"></i> Back to List
+                    </a>
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div class="form-group">
-        <label for="Price">Price</label>
-        <input type="number" class="form-control" id="Price" name="Price" value="@Model.Price" min="0.01" required />
-    </div>
 
-    <div class="form-group">
-        <label for="CategoryId">Category</label>
-        <select class="form-control" id="CategoryId" name="CategoryId" required>
-            @foreach (var category in ViewData["Categories"] as List<ProductManageMvc.Models.Entity.ProductCategory>)
-            {
-                <option value="@category.Id" selected="@((category.Id == Model.CategoryId) ? "selected" : "")">@category.Name</option>
-            }
-        </select>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Save</button>
-</form>
-
-<a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Back to List</a>

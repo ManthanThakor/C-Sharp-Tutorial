@@ -24,12 +24,15 @@ namespace ProductManageMvc.Controllers
 
         public async Task<IActionResult> CreateOrEdit(int? id)
         {
+            ViewData["Categories"] = await _context.ProductCategories.ToListAsync();
+
             if (id == null)
             {
                 return View(new Product());
             }
 
             var product = await _context.Products.FindAsync(id);
+
             if (product == null)
             {
                 return NotFound();
@@ -37,6 +40,7 @@ namespace ProductManageMvc.Controllers
 
             return View(product);
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -74,6 +78,8 @@ namespace ProductManageMvc.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Categories"] = await _context.ProductCategories.ToListAsync();
+
             return View(product);
         }
 
