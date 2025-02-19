@@ -1,11 +1,11 @@
 ﻿using Application.Services;
 using Domain.Entities;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
@@ -14,10 +14,12 @@ namespace WebAPI.Controllers
     public class EmployeeController : ControllerBase
     {
         private readonly IService<Employee> _employeeService;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public EmployeeController(IService<Employee> employeeService)
+        public EmployeeController(IService<Employee> employeeService, IWebHostEnvironment webHostEnvironment)
         {
             _employeeService = employeeService;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         [HttpGet]
@@ -36,59 +38,21 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> Add([FromForm] Employee employee, IFormFile photo)
+        public IActionResult Add([FromBody] Employee employee)
         {
-            if (photo != null)
-            {
-                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-                if (!Directory.Exists(uploadsFolder))
-                    Directory.CreateDirectory(uploadsFolder);
-
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await photo.CopyToAsync(fileStream);
-                }
-
-                employee.PhotoFilename = uniqueFileName;
-            }
-
             _employeeService.Add(employee);
             return CreatedAtAction(nameof(GetById), new { id = employee.Id }, employee);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult> Update(int id, [FromForm] Employee employee, IFormFile photo)
+        public ActionResult Update(int id, [FromBody] Employee employee)
         {
             if (id != employee.Id)
-                return BadRequest();
+                return BadRequest("Mismatched Employee ID");
 
             var existingEmployee = _employeeService.GetById(id);
             if (existingEmployee == null)
                 return NotFound();
-
-            if (photo != null)
-            {
-                string uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads");
-                if (!Directory.Exists(uploadsFolder))
-                    Directory.CreateDirectory(uploadsFolder);
-
-                string uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
-                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-
-                using (var fileStream = new FileStream(filePath, FileMode.Create))
-                {
-                    await photo.CopyToAsync(fileStream);
-                }
-
-                employee.PhotoFilename = uniqueFileName;
-            }
-            else
-            {
-                employee.PhotoFilename = existingEmployee.PhotoFilename;
-            }
 
             _employeeService.Update(employee);
             return NoContent();
@@ -97,32 +61,31 @@ namespace WebAPI.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var employee = _employeeService.GetById(id);
-            if (employee == null)
-                return NotFound();
-
-            if (!string.IsNullOrEmpty(employee.PhotoFilename))
-            {
-                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", employee.PhotoFilename);
-                if (System.IO.File.Exists(filePath))
-                {
-                    System.IO.File.Delete(filePath);
-                }
-            }
-
             _employeeService.Delete(id);
-            return NoContent();
+            return Ok(new { message = "Employee deleted successfully", id });
         }
 
+        [Route("SaveFile")]
+        [HttpPost]
         public IActionResult UploadProfilePhoto()
         {
             try
             {
+                var httpRequest = Request.Form;
+                var postedFile = httpRequest.Files[0];
+                string fileName = postedFile.FileName;
+                string physicalPath = Path.Combine(_webHostEnvironment.ContentRootPath, "EmployeePhotos", fileName);
 
+                using (var stream = new FileStream(physicalPath, FileMode.Create))
+                {
+                    postedFile.CopyTo(stream);
+                }
+
+                return new JsonResult(new { fileName });
             }
             catch (Exception ex)
             {
-
+                return BadRequest(new { error = ex.Message });
             }
         }
     }

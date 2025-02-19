@@ -28,21 +28,25 @@ namespace WebAPI.Controllers
             var department = _departmentService.GetById(id);
             if (department == null)
                 return NotFound();
+
             return Ok(department);
         }
 
         [HttpPost]
-        public ActionResult Add(Department department)
+        public ActionResult Add([FromBody] Department department)
         {
+            if (department == null)
+                return BadRequest("Invalid department data.");
+
             _departmentService.Add(department);
             return CreatedAtAction(nameof(GetById), new { id = department.Id }, department);
         }
 
         [HttpPut("{id}")]
-        public ActionResult Update(int id, Department department)
+        public ActionResult Update(int id, [FromBody] Department department)
         {
-            if (id != department.Id)
-                return BadRequest();
+            if (department == null || id != department.Id)
+                return BadRequest("Invalid department data or mismatched ID.");
 
             _departmentService.Update(department);
             return NoContent();
