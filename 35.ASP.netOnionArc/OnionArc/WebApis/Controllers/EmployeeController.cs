@@ -113,5 +113,17 @@ namespace WebAPI.Controllers
             _employeeService.Delete(id);
             return NoContent();
         }
+
+        public IActionResult UploadProfilePhoto()
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
