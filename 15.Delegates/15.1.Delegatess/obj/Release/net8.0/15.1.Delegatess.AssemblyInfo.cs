@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("15.1.Delegatess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a68a7c89732660596c555ab682f189a4b2bebcb1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c84e8b0bba8701d09c3c9e9b4e3f35475a907e88")]
 [assembly: System.Reflection.AssemblyProductAttribute("15.1.Delegatess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("15.1.Delegatess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
