@@ -10,3 +10,9 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\ne
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\net8.0\refint\Application.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\net8.0\Application.pdb
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\net8.0\ref\Application.dll
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\bin\Debug\net8.0\Domain.dll
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\bin\Debug\net8.0\Infrastructure.dll
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\bin\Debug\net8.0\Infrastructure.pdb
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\bin\Debug\net8.0\Domain.pdb
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\OnionArc\Application\obj\Debug\net8.0\Applicat.44B5EDA2.Up2Date

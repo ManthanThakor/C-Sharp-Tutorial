@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\OnionArc\\WebApis\\wwwroot\\uploads\\1f81c0c9-bfcd-493a-9951-1b364c3fcbb6_pexels-bess-hamiti-83687-36487.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1f81c0c9-bfcd-493a-9951-1b364c3fcbb6_pexels-bess-hamiti-83687-36487.jpg"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\OnionArc\\WebApis\\wwwroot\\uploads\\2451cb8e-4fcf-433f-a41a-5b40d5ade8b1_3cp39xertth.png",
+      "PackagePath": "staticwebassets\\uploads\\2451cb8e-4fcf-433f-a41a-5b40d5ade8b1_3cp39xertth.png"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\OnionArc\\WebApis\\wwwroot\\uploads\\5b4fbdc8-d6fe-458e-8d90-139ffc7e6a8b_Screenshot 2025-02-19 095111.png",
+      "PackagePath": "staticwebassets\\uploads\\5b4fbdc8-d6fe-458e-8d90-139ffc7e6a8b_Screenshot 2025-02-19 095111.png"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\OnionArc\\WebApis\\wwwroot\\uploads\\e4fb0095-417b-4672-b7c2-3c7a02ada348_Screenshot 2025-02-19 095111.png",
+      "PackagePath": "staticwebassets\\uploads\\e4fb0095-417b-4672-b7c2-3c7a02ada348_Screenshot 2025-02-19 095111.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApis.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebApis.props",
+      "PackagePath": "build\\WebApis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebApis.props",
+      "PackagePath": "buildMultiTargeting\\WebApis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebApis.props",
+      "PackagePath": "buildTransitive\\WebApis.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
