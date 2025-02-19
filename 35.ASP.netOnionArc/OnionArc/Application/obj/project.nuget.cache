@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qyWADSgJS64CznapmuoH44cuzUVryzluaeQxEm7r4wdqVlrmXFrOdpOcQJ8T6u82JY8aFk5UefF3DgQ3R1papg==",
+  "dgSpecHash": "vehT4fGJvsc=",
   "success": true,
   "projectFilePath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\OnionArc\\Application\\Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
