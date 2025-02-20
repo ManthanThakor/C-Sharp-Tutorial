@@ -8,7 +8,6 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\o
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\appsettings.Development.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\appsettings.json
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.endpoints.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\WebApi.exe
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\WebApi.deps.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\WebApi.runtimeconfig.json
@@ -168,9 +167,7 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\b
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\scopedcss\bundle\WebApi.styles.css
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets.build.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets.development.json
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.build.WebApi.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebApi.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebApi.props
