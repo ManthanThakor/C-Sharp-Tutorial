@@ -11,9 +11,9 @@ namespace Application.Services
 {
     public class Service<T> : IService<T> where T : BaseEntity
     {
-        private readonly IRepository<T> _repository;
+        private readonly IUserRepository<T> _repository;
 
-        public Service(IRepository<T> repository)
+        public Service(IUserRepository<T> repository)
         {
             _repository = repository;
         }
