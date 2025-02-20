@@ -50,11 +50,8 @@ namespace WebAPI.Controllers
             if (id != employee.Id)
                 return BadRequest("Mismatched Employee ID");
 
-            var existingEmployee = _employeeService.GetById(id);
-            if (existingEmployee == null)
-                return NotFound();
-
             _employeeService.Update(employee);
+
             return NoContent();
         }
 
@@ -67,7 +64,7 @@ namespace WebAPI.Controllers
 
         [Route("SaveFile")]
         [HttpPost]
-        public IActionResult UploadProfilePhoto()
+        public IActionResult UploadProfile()
         {
             try
             {
