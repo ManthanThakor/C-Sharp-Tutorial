@@ -10,6 +10,7 @@ namespace Application.Services.TokenService
     public interface ITokenService
     {
         string GenerateJwtToken(User user);
+        string GenerateRefreshToken();
         bool ValidateToken(string token);
     }
 }

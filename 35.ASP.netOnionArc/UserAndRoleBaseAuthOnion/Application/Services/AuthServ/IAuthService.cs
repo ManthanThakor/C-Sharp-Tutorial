@@ -11,6 +11,7 @@ namespace Application.Services.UserSer
     {
         Task<AuthResponseDto> RegisterAsync(RegisterDto registerDto);
         Task<AuthResponseDto> LoginAsync(LoginDto loginDto);
-        Task<bool> LogoutAsync(string token);
+        Task<AuthResponseDto> RefreshTokenAsync(string refreshToken);
+        Task<bool> LogoutAsync(string refreshToken);
     }
 }
