@@ -23,8 +23,10 @@ namespace Application.Services.TokenService
 
         public string GenerateJwtToken(User user)
         {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]));
+
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
 
             var claims = new[]
             {
@@ -35,8 +37,8 @@ namespace Application.Services.TokenService
             };
 
             var token = new JwtSecurityToken(
-                issuer: _configuration["Jwt:Issuer"],
-                audience: _configuration["Jwt:Audience"],
+                issuer: _configuration["JwtSettings:Issuer"],
+                audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(15),
                 signingCredentials: creds
@@ -56,7 +58,7 @@ namespace Application.Services.TokenService
         public bool ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
+            var key = Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]);
 
             try
             {
@@ -64,10 +66,13 @@ namespace Application.Services.TokenService
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
+                    // Make sure the signing algorithm is consistent
+                    SignatureValidator = (token, parameters) =>
+                        new JwtSecurityToken(token),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidIssuer = _configuration["Jwt:Issuer"],
-                    ValidAudience = _configuration["Jwt:Audience"],
+                    ValidIssuer = _configuration["JwtSettings:Issuer"],
+                    ValidAudience = _configuration["JwtSettings:Audience"],
                     ClockSkew = TimeSpan.Zero
                 }, out _);
 

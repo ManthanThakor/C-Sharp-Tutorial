@@ -180,6 +180,3 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\o
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\ref\WebApi.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\Application.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\Application.pdb
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.endpoints.json
