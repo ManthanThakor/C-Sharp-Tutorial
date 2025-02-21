@@ -8,16 +8,20 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Data
 {
-    public static class DbInitializer
+    public class DbInitializer : IDbInitializer
     {
-        public static async Task InitializeAsync(IServiceProvider serviceProvider)
+        private readonly ApplicationDbContext _context;
+
+        public DbInitializer(ApplicationDbContext context)
         {
-            using var scope = serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+            _context = context;
+        }
 
-            await context.Database.MigrateAsync();
+        public async Task InitializeAsync()
+        {
+            await _context.Database.MigrateAsync();
 
-            if (!await context.Roles.AnyAsync())
+            if (!await _context.Roles.AnyAsync())
             {
                 var adminRole = new Role
                 {
@@ -35,8 +39,8 @@ namespace Infrastructure.Data
                     UpdatedAt = DateTime.UtcNow
                 };
 
-                context.Roles.AddRange(adminRole, userRole);
-                await context.SaveChangesAsync();
+                _context.Roles.AddRange(adminRole, userRole);
+                await _context.SaveChangesAsync();
             }
         }
     }

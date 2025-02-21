@@ -11,19 +11,24 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// 🔹 Configure Database
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 
 // 🔹 Register Services (DI)
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
+builder.Services.AddScoped<IDbInitializer, DbInitializer>(); // ✅ Fixed
 
 // 🔹 Configure JWT Authentication
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
-var key = Encoding.UTF8.GetBytes(jwtSettings["Secret"]);
+var secretKey = jwtSettings["Secret"];
+
+if (string.IsNullOrEmpty(secretKey))
+    throw new Exception("JWT Secret key is missing from configuration.");
+
+var key = Encoding.UTF8.GetBytes(secretKey);
 
 builder.Services.AddAuthentication(options =>
 {
@@ -47,12 +52,15 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// 🔹 Enable Authorization
+builder.Services.AddAuthorization();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// 🔹 Configure Middleware
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -62,7 +70,8 @@ if (app.Environment.IsDevelopment())
 try
 {
     using var scope = app.Services.CreateScope();
-    await DbInitializer.InitializeAsync(app.Services);
+    var dbInitializer = scope.ServiceProvider.GetRequiredService<IDbInitializer>();
+    await dbInitializer.InitializeAsync();
 }
 catch (Exception ex)
 {
@@ -70,9 +79,7 @@ catch (Exception ex)
     Console.WriteLine(ex.StackTrace);
 }
 
-
 app.UseHttpsRedirection();
-// 🔹 Enable Authentication & Authorization
 app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
