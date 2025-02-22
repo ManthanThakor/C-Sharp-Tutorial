@@ -26,8 +26,18 @@ namespace WebApi.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var result = await _authService.LoginAsync(loginDto);
-            return Ok(result);
+            try
+            {
+                Console.WriteLine($"[LoginController] Received login request for email: {loginDto.Email}");
+                var result = await _authService.LoginAsync(loginDto);
+                Console.WriteLine("[LoginController] Login successful");
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[LoginController] Login failed: {ex.Message}");
+                throw;
+            }
         }
 
         [HttpPost("refresh-token")]
