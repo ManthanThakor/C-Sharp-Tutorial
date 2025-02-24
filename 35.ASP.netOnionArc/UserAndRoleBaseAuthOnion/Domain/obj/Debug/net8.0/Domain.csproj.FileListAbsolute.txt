@@ -11,3 +11,16 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\o
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\refint\Domain.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.pdb
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\ref\Domain.dll
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\Manthan Thakor\source\repos\ManthanThakor\C-Sharp-Tutorial\35.ASP.netOnionArc\UserAndRoleBaseAuthOnion\Domain\obj\Debug\net8.0\ref\Domain.dll

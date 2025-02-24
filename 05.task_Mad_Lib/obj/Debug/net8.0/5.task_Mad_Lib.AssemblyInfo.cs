@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("5.task_Mad_Lib")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c84e8b0bba8701d09c3c9e9b4e3f35475a907e88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c46d3715310dc374983ea7e6c0e79f5cbcd6133")]
 [assembly: System.Reflection.AssemblyProductAttribute("5.task_Mad_Lib")]
 [assembly: System.Reflection.AssemblyTitleAttribute("5.task_Mad_Lib")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -54,6 +54,8 @@ namespace Application.Services.AuthServ
                 RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7)
             };
 
+            Console.WriteLine($"[Register] Created user with email: {user.Email} and hash: {user.PasswordHash.Substring(0, 10)}...");
+
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
 
@@ -69,6 +71,8 @@ namespace Application.Services.AuthServ
 
         public async Task<AuthResponseDto> LoginAsync(LoginDto loginDto)
         {
+            Console.WriteLine($"[Login] Attempting login for email: {loginDto.Email}");
+
             var user = await _context.Users.Include(u => u.Role)
                 .FirstOrDefaultAsync(u => u.Email == loginDto.Email);
 
