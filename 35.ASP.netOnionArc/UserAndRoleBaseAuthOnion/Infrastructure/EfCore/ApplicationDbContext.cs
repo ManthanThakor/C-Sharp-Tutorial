@@ -1,11 +1,6 @@
 ﻿using Domain.Entity;
 using Domain.Mapper;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.EfCore
 {
@@ -14,8 +9,10 @@ namespace Infrastructure.EfCore
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
         }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<RefreshTokenRecord> RefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -23,6 +20,7 @@ namespace Infrastructure.EfCore
 
             modelBuilder.ApplyConfiguration(new UserMapper());
             modelBuilder.ApplyConfiguration(new RoleMapper());
+            modelBuilder.ApplyConfiguration(new RefreshTokenRecordMapper());
         }
     }
 }

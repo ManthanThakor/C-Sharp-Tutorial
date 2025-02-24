@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "5u7WihJYIiRay1flFnHTETaFRrFLqptzekkQ4MMOAaoWa0V9kPZJ25BLpsFYjVK3upc6D/ddAQ+6/A7AdkLjoA==",
+  "dgSpecHash": "s4lLIeWFsTq5pt70GixAXtz8M2RFslGjkXxjpRsWtpsWF34+J1T4LM+F09ri/sFCsbaWz+m/kcjDSI+WXHvbkw==",
   "success": true,
   "projectFilePath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TGSUser147\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.3.0\\microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.6\\microsoft.data.sqlclient.5.1.6.nupkg.sha512",
