@@ -66,7 +66,6 @@ namespace Application.Services.TokenService
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
-                    // Make sure the signing algorithm is consistent
                     SignatureValidator = (token, parameters) =>
                         new JwtSecurityToken(token),
                     ValidateIssuer = true,

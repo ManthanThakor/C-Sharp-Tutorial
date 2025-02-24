@@ -25,16 +25,18 @@ namespace Application.Services.AuthServ
 
         public async Task<AuthResponseDto> RegisterAsync(RegisterDto registerDto)
         {
-            // Check if user exists
             var userExists = await _context.Users.AnyAsync(u => u.Email == registerDto.Email);
+
             if (userExists)
+            {
                 throw new ApplicationException("User with this email already exists");
 
-            // Determine role
+            }
+
             var isAdmin = registerDto.Email.ToLower() == "admin@gmail.com" && registerDto.Password == "admin123";
+
             var roleName = isAdmin ? "Admin" : "User";
 
-            // Ensure role exists
             var role = await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
             if (role == null)
             {
@@ -43,7 +45,6 @@ namespace Application.Services.AuthServ
                 await _context.SaveChangesAsync();
             }
 
-            // Create user
             var user = new User
             {
                 Username = registerDto.Username,
@@ -53,8 +54,6 @@ namespace Application.Services.AuthServ
                 RefreshToken = _tokenService.GenerateRefreshToken(),
                 RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7)
             };
-
-            Console.WriteLine($"[Register] Created user with email: {user.Email} and hash: {user.PasswordHash.Substring(0, 10)}...");
 
             await _context.Users.AddAsync(user);
             await _context.SaveChangesAsync();
@@ -71,25 +70,21 @@ namespace Application.Services.AuthServ
 
         public async Task<AuthResponseDto> LoginAsync(LoginDto loginDto)
         {
-            Console.WriteLine($"[Login] Attempting login for email: {loginDto.Email}");
-
             var user = await _context.Users.Include(u => u.Role)
                 .FirstOrDefaultAsync(u => u.Email == loginDto.Email);
 
             if (user == null)
             {
-                Console.WriteLine($"[Login] No user found with email: {loginDto.Email}");
                 throw new ApplicationException("Invalid email or password");
             }
 
             bool isPasswordCorrect = _passwordService.VerifyPassword(loginDto.Password, user.PasswordHash);
+
             if (!isPasswordCorrect)
             {
-                Console.WriteLine($"[Login] Password mismatch for user: {loginDto.Email}");
                 throw new ApplicationException("Invalid email or password");
             }
 
-            // Generate new refresh token
             user.RefreshToken = _tokenService.GenerateRefreshToken();
             user.RefreshTokenExpiryTime = DateTime.UtcNow.AddDays(7);
             await _context.SaveChangesAsync();
