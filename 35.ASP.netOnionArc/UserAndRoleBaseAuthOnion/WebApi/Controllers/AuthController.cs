@@ -55,8 +55,14 @@ namespace API.Controllers
             {
                 return BadRequest(new { message = ex.Message });
             }
-            catch (Exception)
+            catch (Exception ex) // Add the exception variable
             {
+                // Log the specific exception
+                Console.WriteLine($"Login error: {ex.Message}");
+                // If there's an inner exception, log that too
+                if (ex.InnerException != null)
+                    Console.WriteLine($"Inner exception: {ex.InnerException.Message}");
+
                 return StatusCode(500, new { message = "An error occurred during login" });
             }
         }

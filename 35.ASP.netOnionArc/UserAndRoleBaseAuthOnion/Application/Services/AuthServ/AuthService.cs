@@ -99,9 +99,14 @@ namespace Application.Services.AuthServ
 
             var ipAddress = _httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.ToString();
             var deviceInfo = _httpContextAccessor.HttpContext?.Request.Headers["User-Agent"].ToString();
+            var utcNow = DateTime.UtcNow; // Get current time once
 
+            // Replace the IsActive filter with explicit conditions
             var existingTokens = await _context.RefreshTokens
-                .Where(t => t.UserId == user.Id && t.DeviceInfo == deviceInfo && t.IsActive)
+                .Where(t => t.UserId == user.Id &&
+                            t.DeviceInfo == deviceInfo &&
+                            !t.IsRevoked &&
+                            t.ExpiryTime > utcNow)
                 .ToListAsync();
 
             foreach (var token in existingTokens)
@@ -110,6 +115,7 @@ namespace Application.Services.AuthServ
                 token.RevokedReason = TokenRevocationReason.NewTokenIssued.ToString();
             }
 
+            // Rest of the method remains the same
             var refreshToken = CreateRefreshToken(user.Id, ipAddress, deviceInfo);
             await _context.RefreshTokens.AddAsync(refreshToken);
             await _context.SaveChangesAsync();
@@ -147,7 +153,7 @@ namespace Application.Services.AuthServ
                 .ThenInclude(u => u.Role)
                 .FirstOrDefaultAsync(t => t.Token == refreshToken);
 
-            if (token == null || !token.IsActive)
+            if (token == null || token.IsRevoked || token.ExpiryTime <= DateTime.UtcNow)
                 throw new ApplicationException("Invalid or expired refresh token");
 
             token.IsRevoked = true;
