@@ -201,12 +201,12 @@ namespace Application.Services.AuthServ
         private RefreshTokenRecord CreateRefreshToken(Guid userId, string ipAddress, string deviceInfo)
         {
             var refreshToken = _tokenService.GenerateRefreshToken();
-            int refreshTokenExpiryDays = int.Parse(_configuration["JwtSettings:RefreshTokenExpiryDays"] ?? "7");
+            int refreshTokenExpiryMinutes = int.Parse(_configuration["JwtSettings:RefreshTokenExpiryMinutes"] ?? "3");
 
             return new RefreshTokenRecord
             {
                 Token = refreshToken,
-                ExpiryTime = DateTime.UtcNow.AddDays(refreshTokenExpiryDays),
+                ExpiryTime = DateTime.UtcNow.AddMinutes(refreshTokenExpiryMinutes),
                 CreatedAt = DateTime.UtcNow,
                 UserId = userId,
                 IsRevoked = false,
