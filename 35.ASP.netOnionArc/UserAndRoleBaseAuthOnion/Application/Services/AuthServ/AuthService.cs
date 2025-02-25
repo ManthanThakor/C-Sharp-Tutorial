@@ -83,7 +83,6 @@ namespace Application.Services.AuthServ
                 Role = role.Name
             };
         }
-
         public async Task<AuthResponseDto> LoginAsync(LoginDto loginDto)
         {
             var user = await _context.Users
