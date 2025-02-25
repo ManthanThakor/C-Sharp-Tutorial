@@ -98,9 +98,8 @@ namespace Application.Services.AuthServ
 
             var ipAddress = _httpContextAccessor.HttpContext?.Connection.RemoteIpAddress?.ToString();
             var deviceInfo = _httpContextAccessor.HttpContext?.Request.Headers["User-Agent"].ToString();
-            var utcNow = DateTime.UtcNow; // Get current time once
+            var utcNow = DateTime.UtcNow;
 
-            // Replace the IsActive filter with explicit conditions
             var existingTokens = await _context.RefreshTokens
                 .Where(t => t.UserId == user.Id &&
                             t.DeviceInfo == deviceInfo &&
@@ -114,7 +113,6 @@ namespace Application.Services.AuthServ
                 token.RevokedReason = TokenRevocationReason.NewTokenIssued.ToString();
             }
 
-            // Rest of the method remains the same
             var refreshToken = CreateRefreshToken(user.Id, ipAddress, deviceInfo);
             await _context.RefreshTokens.AddAsync(refreshToken);
             await _context.SaveChangesAsync();
