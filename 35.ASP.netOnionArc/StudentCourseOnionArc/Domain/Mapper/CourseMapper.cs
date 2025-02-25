@@ -23,7 +23,7 @@ namespace Domain.Mapper
 
             modelBuilder.Property(c => c.Title)
                 .IsRequired()
-                .HasMaxLength(100)
+                .HasMaxLength(20)
                 .HasColumnName("Title")
                 .HasColumnType("NVARCHAR(100)");
 

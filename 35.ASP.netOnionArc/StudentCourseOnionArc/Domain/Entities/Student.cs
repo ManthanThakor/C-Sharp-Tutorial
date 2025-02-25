@@ -15,7 +15,6 @@ namespace Domain.Entities
         [StringLength(50, MinimumLength = 2, ErrorMessage = "Name must be between 2 and 50 characters.")]
         public string Name { get; set; } = string.Empty;
 
-        [ForeignKey("Course")]
         public int CourseId { get; set; }
         public Course? Course { get; set; }
     }
