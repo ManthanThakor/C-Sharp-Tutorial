@@ -1,6 +1,8 @@
 ﻿using Domain.common;
 using Infrastructure.EfData;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Infrastructure.Repositories
 {
@@ -43,12 +45,7 @@ namespace Infrastructure.Repositories
             Save();
         }
 
-        public void Remove(T entity)
-        {
-            _dbSet.Remove(entity);
-        }
-
-        private void Save()
+        public void Save()
         {
             _context.SaveChanges();
         }
