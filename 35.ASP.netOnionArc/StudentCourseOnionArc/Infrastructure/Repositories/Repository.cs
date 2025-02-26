@@ -17,7 +17,7 @@ namespace Infrastructure.Repositories
             _dbSet = _context.Set<T>();
         }
 
-        public T? GetById(int id)
+        public virtual T? GetById(int id)
         {
             return _dbSet.Find(id);
         }
