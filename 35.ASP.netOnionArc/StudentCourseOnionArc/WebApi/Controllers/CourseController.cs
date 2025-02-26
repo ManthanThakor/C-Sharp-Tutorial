@@ -41,6 +41,7 @@ namespace WebApi.Controllers
             {
                 return BadRequest("Invalid course data.");
             }
+            course.Students = new List<Student>();
 
             _courseService.AddCourse(course);
             return CreatedAtAction(nameof(GetCourseById), new { id = course.Id }, course);

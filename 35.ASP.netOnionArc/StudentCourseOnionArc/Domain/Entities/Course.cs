@@ -19,7 +19,6 @@ namespace Domain.Entities
         [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
         public string Description { get; set; } = string.Empty;
 
-        [JsonIgnore]
         public ICollection<Student> Students { get; set; } = new List<Student>();
     }
 }
