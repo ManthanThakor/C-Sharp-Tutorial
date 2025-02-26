@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
@@ -17,6 +18,8 @@ namespace Domain.Entities
         [Required]
         [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
         public string Description { get; set; } = string.Empty;
+
+        [JsonIgnore]
         public ICollection<Student> Students { get; set; } = new List<Student>();
     }
 }

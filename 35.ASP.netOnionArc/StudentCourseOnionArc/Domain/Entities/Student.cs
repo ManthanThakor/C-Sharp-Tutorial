@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Domain.Entities
@@ -16,6 +17,8 @@ namespace Domain.Entities
         public string Name { get; set; } = string.Empty;
 
         public int CourseId { get; set; }
+
+        [JsonIgnore]
         public Course? Course { get; set; }
     }
 }
