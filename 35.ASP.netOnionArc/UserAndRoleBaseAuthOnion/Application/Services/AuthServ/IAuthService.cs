@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,8 @@ namespace Application.Services.UserSer
     {
         Task<AuthResponseDto> RegisterAsync(RegisterDto registerDto);
         Task<AuthResponseDto> LoginAsync(LoginDto loginDto);
-        Task<AuthResponseDto> RefreshTokenAsync(string refreshToken);
-        Task<bool> LogoutAsync(string refreshToken);
+        Task<TokenResponseDto> RefreshTokenAsync(string refreshToken);
+        Task<bool> LogoutAsync(); // Removed refreshToken parameter
     }
+
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,3 +14,18 @@ namespace Application.DTO
         public string Password { get; set; }
     }
 }
+
+
+
+
+
+
+
+
+//✅ Purpose:
+
+//Used to receive user registration details.
+//✅ Why Needed?
+
+//We don’t expose unnecessary fields like RoleId, RefreshToken, or PasswordHash.
+//The password is handled securely before saving.

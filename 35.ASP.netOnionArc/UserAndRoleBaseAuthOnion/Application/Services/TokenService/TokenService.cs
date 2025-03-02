@@ -4,11 +4,9 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Services.TokenService
 {
@@ -21,12 +19,11 @@ namespace Application.Services.TokenService
             _configuration = configuration;
         }
 
-        public string GenerateJwtToken(User user)
+        public (string AccessToken, DateTime ExpiresAt) GenerateJwtToken(User user)
         {
-
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]));
-
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
+
 
             var claims = new[]
             {
@@ -36,15 +33,19 @@ namespace Application.Services.TokenService
                 new Claim(ClaimTypes.Role, user.Role.Name)
             };
 
+            var expiryMinutes = int.Parse(_configuration["JwtSettings:AccessTokenExpiryMinutes"] ?? "15");
+            var expiresAt = DateTime.UtcNow.AddMinutes(expiryMinutes);
+
+
             var token = new JwtSecurityToken(
                 issuer: _configuration["JwtSettings:Issuer"],
                 audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddMinutes(15),
+                expires: expiresAt,
                 signingCredentials: creds
             );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            return (new JwtSecurityTokenHandler().WriteToken(token), expiresAt);
         }
 
         public string GenerateRefreshToken()
@@ -66,9 +67,6 @@ namespace Application.Services.TokenService
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
-                    // Make sure the signing algorithm is consistent
-                    SignatureValidator = (token, parameters) =>
-                        new JwtSecurityToken(token),
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidIssuer = _configuration["JwtSettings:Issuer"],

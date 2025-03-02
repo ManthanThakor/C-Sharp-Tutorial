@@ -47,6 +47,39 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1079,6 +1112,32 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+      "sha512": "39r9PPrjA6s0blyFv5qarckjNkaHRA5B+3b53ybuGGNTXEj1/DStQJ4NWjFL6QTRQpL9zt7nDyKxZdJOlcnq+Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.3.0": {
+      "sha512": "f10WUgcsKqrkmnz6gt8HeZ7kyKjYN30PO7cSic1lPtH7paPtnQqXPOveul/SIPI43PhRD4trttg4ywnrEmmJpA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2843,27 +2902,28 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Infrastructure >= 1.0.0"
+      "Infrastructure >= 1.0.0",
+      "Microsoft.AspNetCore.Http.Abstractions >= 2.3.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Manthan Thakor\\.nuget\\packages\\": {},
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Manthan Thakor\\source\\repos\\ManthanThakor\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\Application.csproj",
+      "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Manthan Thakor\\source\\repos\\ManthanThakor\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Manthan Thakor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Manthan Thakor\\source\\repos\\ManthanThakor\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\obj\\",
+      "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\TGSUser147\\.nuget\\packages\\",
+      "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Manthan Thakor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TGSUser147\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2872,14 +2932,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Manthan Thakor\\source\\repos\\ManthanThakor\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Manthan Thakor\\source\\repos\\ManthanThakor\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Infrastructure\\Infrastructure.csproj"
+            "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\UserAndRoleBaseAuthOnion\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -2893,12 +2954,17 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
@@ -2915,7 +2981,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
