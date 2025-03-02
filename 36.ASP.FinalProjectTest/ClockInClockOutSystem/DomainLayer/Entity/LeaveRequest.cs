@@ -16,7 +16,7 @@ namespace DomainLayer.Entity
         public LeaveStatus Status { get; set; } = LeaveStatus.Pending;
 
         public Guid EmployeeId { get; set; }
-        public Employee Employee { get; set; }
+        public Employee? Employee { get; set; }
     }
 
 }
