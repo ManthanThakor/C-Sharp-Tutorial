@@ -29,6 +29,7 @@ namespace ApplicationLayer.Services
             List<Claim> claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Id.ToString()),
+                new Claim(JwtRegisteredClaimNames.Name, user.Name),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.Role)
             };
@@ -46,3 +47,60 @@ namespace ApplicationLayer.Services
 
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//We use **`JwtRegisteredClaimNames`** instead of **`ClaimTypes`** because **`JwtRegisteredClaimNames`** follows the official **JWT (JSON Web Token) standard**, making the token compatible with other systems, APIs, and services that use JWT.  
+
+//### **Simple Explanation**  
+//✅ **`JwtRegisteredClaimNames`** → Standard claim names used in JWT (e.g., `sub`, `email`, `name`).  
+//✅ **`ClaimTypes`** → Used mainly in **.NET-based authentication**, not always recognized by other systems.  
+
+//For example:  
+//- `JwtRegisteredClaimNames.Email` → Stored as **"email" * * in JWT(recognized globally).
+//- `ClaimTypes.Email` → Stored as **"http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"`, which is .NET - specific * *and might not work with non-.NET systems.  
+
+//### **Conclusion**  
+//Using `JwtRegisteredClaimNames` ensures that your **JWT tokens work across different platforms**, not just in .NET. 🚀
+
+
+//But in ASP.NET Core, using ClaimTypes.Role is preferred because ASP.NET's role-based authorization system recognizes it automatically.
