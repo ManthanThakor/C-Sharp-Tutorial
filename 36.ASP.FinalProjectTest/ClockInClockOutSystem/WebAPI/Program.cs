@@ -1,8 +1,10 @@
 ﻿using ApplicationLayer.InterfaceService;
 using ApplicationLayer.Services;
 using InfrastructureLayer.Data;
+using InfrastructureLayer.InterfaceRepo;
 using InfrastructureLayer.Utilities;
 using Microsoft.EntityFrameworkCore;
+using InfrastructureLayer.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +20,8 @@ builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 
+// Register Repositories
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 
 var app = builder.Build();
 
