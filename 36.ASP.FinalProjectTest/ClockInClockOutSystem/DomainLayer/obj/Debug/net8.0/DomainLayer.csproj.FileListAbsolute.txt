@@ -1,0 +1,13 @@
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\bin\Debug\net8.0\DomainLayer.deps.json
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\bin\Debug\net8.0\DomainLayer.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\bin\Debug\net8.0\DomainLayer.pdb
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.AssemblyReference.cache
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.sourcelink.json
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\refint\DomainLayer.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\DomainLayer.pdb
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\ClockInClockOutSystem\DomainLayer\obj\Debug\net8.0\ref\DomainLayer.dll
