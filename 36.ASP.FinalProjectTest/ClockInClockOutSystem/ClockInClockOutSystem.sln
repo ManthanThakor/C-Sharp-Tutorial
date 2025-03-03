@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{3A81EDE1-5C5F-4D8F-A346-550C0FE75C29}"
 EndProject
@@ -11,13 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureLayer", "Infr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{D9F127BD-829A-464E-9235-5C94840CBC43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationLayer", "ApplicationLayer\ApplicationLayer.csproj", "{85100874-DE7B-49A2-B202-F0CBF6CC0325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationLayer", "ApplicationLayer\ApplicationLayer.csproj", "{85100874-DE7B-49A2-B202-F0CBF6CC0325}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{D7B93CA0-A69E-4B5E-849B-1E2037413A0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DomainLayer", "DomainLayer\DomainLayer.csproj", "{D7B93CA0-A69E-4B5E-849B-1E2037413A0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{0C616017-A675-4A74-B7CA-19B7BF87CEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{0C616017-A675-4A74-B7CA-19B7BF87CEE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{87AFD536-AD01-4832-8E30-7D2C6D98BC34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{87AFD536-AD01-4832-8E30-7D2C6D98BC34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,5 +50,8 @@ Global
 		{D7B93CA0-A69E-4B5E-849B-1E2037413A0E} = {3A81EDE1-5C5F-4D8F-A346-550C0FE75C29}
 		{0C616017-A675-4A74-B7CA-19B7BF87CEE1} = {57FC42C7-2B03-4B1C-ADB5-E8DB1E39BB5D}
 		{87AFD536-AD01-4832-8E30-7D2C6D98BC34} = {D9F127BD-829A-464E-9235-5C94840CBC43}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C3AACE7-F4BE-4F6B-ADA6-66BD4E8D180C}
 	EndGlobalSection
 EndGlobal
