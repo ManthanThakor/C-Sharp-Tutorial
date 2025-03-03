@@ -1,4 +1,6 @@
 ﻿
+using ApplicationLayer.InterfaceService;
+using ApplicationLayer.Services;
 using InfrastructureLayer.Data;
 using InfrastructureLayer.Utilities;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +16,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddScoped<IPasswordService, PasswordService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<ITokenService, TokenService>();
+
 
 var app = builder.Build();
 
