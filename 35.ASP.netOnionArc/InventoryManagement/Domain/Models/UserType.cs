@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Domain.CommonEntity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json.Serialization;
 
 namespace Domain.Models
 {
-    internal class UserType
+    public class UserType : BaseEntity
     {
+        public string TypeName { get; set; }
+
+        [JsonIgnore]
+        public virtual List<User> Users { get; set; } = new List<User>();
     }
 }

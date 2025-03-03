@@ -3,9 +3,10 @@ using System;
 
 namespace Domain.Models
 {
-    public class ItemImage : BaseEntity
+    public class SupplierItem : BaseEntity
     {
-        public string ImageUrl { get; set; }
+        public Guid SupplierId { get; set; }
+        public virtual User Supplier { get; set; }
 
         public Guid ItemId { get; set; }
         public virtual Item Item { get; set; }

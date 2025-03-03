@@ -1,12 +1,14 @@
-﻿using System;
+﻿using Domain.CommonEntity;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace Domain.Models
 {
-    internal class Category
+    public class Category : BaseEntity
     {
+        [Required]
+        public string CategoryName { get; set; }
+
+        public virtual List<Item> Items { get; set; } = new List<Item>();
     }
 }
