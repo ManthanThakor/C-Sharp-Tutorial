@@ -21,11 +21,11 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
+using (IServiceScope scope = app.Services.CreateScope())
 {
-    var services = scope.ServiceProvider;
-    var context = services.GetRequiredService<AppDbContext>();
-    var passwordService = services.GetRequiredService<IPasswordService>();
+    IServiceProvider services = scope.ServiceProvider;
+    AppDbContext context = services.GetRequiredService<AppDbContext>();
+    IPasswordService passwordService = services.GetRequiredService<IPasswordService>();
 
     DbInitializer.Initialize(context, passwordService);
 }
