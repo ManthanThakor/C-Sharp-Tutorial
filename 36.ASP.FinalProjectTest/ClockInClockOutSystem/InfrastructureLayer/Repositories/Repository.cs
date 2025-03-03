@@ -1,5 +1,5 @@
-﻿using ApplicationLayer.Interfaces.Repositories;
-using InfrastructureLayer.Data;
+﻿using InfrastructureLayer.Data;
+using InfrastructureLayer.InterfaceRepo;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
