@@ -11,6 +11,6 @@ namespace ApplicationLayer.InterfaceService
     {
         Task<AuthResponseDto> RegisterUserAsync(RegisterDto model);
         Task<AuthResponseDto> LoginUserAsync(LoginDto model);
-        AuthResponseDto LogoutUser();
+        Task<AuthResponseDto> LogoutUserAsync();
     }
 }

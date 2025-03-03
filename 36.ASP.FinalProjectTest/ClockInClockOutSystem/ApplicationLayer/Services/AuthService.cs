@@ -60,9 +60,11 @@ namespace ApplicationLayer.Services
             return new AuthResponseDto { Token = token, Message = "Login successful." };
         }
 
-        public AuthResponseDto LogoutUser()
+        public async Task<AuthResponseDto> LogoutUserAsync()
         {
+
             return new AuthResponseDto { Message = "User logged out successfully." };
         }
+
     }
 }
