@@ -7,7 +7,8 @@ namespace Domain.Models
     public class Category : BaseEntity
     {
         [Required]
-        public string CategoryName { get; set; }
+        [MaxLength(100)]
+        public string CategoryName { get; set; } = string.Empty;
 
         public virtual List<Item> Items { get; set; } = new List<Item>();
     }
