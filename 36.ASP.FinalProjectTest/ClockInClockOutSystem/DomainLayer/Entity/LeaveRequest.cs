@@ -18,5 +18,4 @@ namespace DomainLayer.Entity
         public Guid EmployeeId { get; set; }
         public Employee? Employee { get; set; }
     }
-
 }
