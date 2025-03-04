@@ -62,6 +62,17 @@ namespace ApplicationLayer.ServLeaveAttandace
 
         public async Task<bool> ClockInAsync(AttendanceCreateDto dto)
         {
+            // Check if the employee has an open attendance record (clocked in but not clocked out)
+            var existingAttendance = (await _attendanceRepository.GetByEmployeeIdAsync(dto.EmployeeId))
+                .FirstOrDefault(a => a.CheckOutTime == null);
+
+            if (existingAttendance != null)
+            {
+                // Prevent clock-in if an active check-in exists
+                return false;
+            }
+
+            // Create new attendance entry
             var attendance = new Attendance
             {
                 Id = Guid.NewGuid(),
@@ -77,16 +88,28 @@ namespace ApplicationLayer.ServLeaveAttandace
         public async Task<bool> ClockOutAsync(AttendanceUpdateDto dto)
         {
             var attendance = await _attendanceRepository.GetByIdAsync(dto.Id);
-            if (attendance == null || attendance.CheckOutTime != null)
+            if (attendance == null)
+            {
+                Console.WriteLine("Attendance record not found.");
                 return false;
+            }
+
+            if (attendance.CheckOutTime != null)
+            {
+                Console.WriteLine("User already clocked out.");
+                return false;
+            }
 
             attendance.CheckOutTime = dto.CheckOutTime ?? DateTime.UtcNow;
             attendance.TotalWorkingHours = attendance.CheckOutTime.Value - attendance.CheckInTime;
 
             await _attendanceRepository.UpdateAsync(attendance);
             await _attendanceRepository.SaveChangesAsync();
+
+            Console.WriteLine("Clock-Out successful.");
             return true;
         }
+
 
         public async Task<bool> DeleteAsync(Guid id)
         {

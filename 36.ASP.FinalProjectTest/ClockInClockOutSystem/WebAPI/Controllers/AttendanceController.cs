@@ -37,8 +37,9 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> ClockIn([FromBody] AttendanceCreateDto dto)
         {
             var result = await _attendanceService.ClockInAsync(dto);
-            return result ? Ok("Clocked in successfully") : BadRequest("Failed to clock in");
+            return result ? Ok("Clocked in successfully") : BadRequest("Already clocked in. Please clock out first.");
         }
+
 
         [HttpPut("clockout")]
         [Authorize]
