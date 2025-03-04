@@ -6,12 +6,12 @@ namespace DomainLayer.Entity
 {
     public class Attendance : BaseEntity
     {
-        [Required]
+        [Required(ErrorMessage = "Check-in time is required.")]
         public DateTime CheckInTime { get; set; }
 
         public DateTime? CheckOutTime { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Employee ID is required.")]
         public Guid EmployeeId { get; set; }
 
         public Employee? Employee { get; set; }

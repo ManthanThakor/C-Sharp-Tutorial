@@ -5,6 +5,10 @@ using InfrastructureLayer.InterfaceRepo;
 using InfrastructureLayer.Utilities;
 using Microsoft.EntityFrameworkCore;
 using InfrastructureLayer.Repositories;
+using ApplicationLayer.InterServLeaveAttandace;
+using ApplicationLayer.ServLeaveAttandace;
+using InfrastructureLayer.InterRepoLeaveAttandance;
+using InfrastructureLayer.RepoLeaveAttandance;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,9 +23,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IAttendanceService, AttendanceService>();
 
-// Register Repositories
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IAttendanceRepository, AttendanceRepository>();
 
 var app = builder.Build();
 
@@ -30,7 +35,6 @@ using (IServiceScope scope = app.Services.CreateScope())
     IServiceProvider services = scope.ServiceProvider;
     AppDbContext context = services.GetRequiredService<AppDbContext>();
     IPasswordService passwordService = services.GetRequiredService<IPasswordService>();
-
     DbInitializer.Initialize(context, passwordService);
 }
 
@@ -42,6 +46,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
