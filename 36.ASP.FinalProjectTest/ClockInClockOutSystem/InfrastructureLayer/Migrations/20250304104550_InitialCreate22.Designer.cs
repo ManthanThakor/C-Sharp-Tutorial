@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace InfrastructureLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250303045908_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250304104550_InitialCreate22")]
+    partial class InitialCreate22
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -40,6 +40,9 @@ namespace InfrastructureLayer.Migrations
 
                     b.Property<Guid>("EmployeeId")
                         .HasColumnType("UniqueIdentifier");
+
+                    b.Property<TimeSpan?>("TotalWorkingHours")
+                        .HasColumnType("time");
 
                     b.HasKey("Id")
                         .HasName("PK_AttendanceId");

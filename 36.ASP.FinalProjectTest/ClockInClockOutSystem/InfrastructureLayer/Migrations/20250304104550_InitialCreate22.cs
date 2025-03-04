@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace InfrastructureLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialCreate22 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -33,7 +33,8 @@ namespace InfrastructureLayer.Migrations
                     AttendanceID = table.Column<Guid>(type: "UniqueIdentifier", nullable: false),
                     CheckInTime = table.Column<DateTime>(type: "DATETIME2", nullable: false),
                     CheckOutTime = table.Column<DateTime>(type: "DATETIME2", nullable: true),
-                    EmployeeId = table.Column<Guid>(type: "UniqueIdentifier", nullable: false)
+                    EmployeeId = table.Column<Guid>(type: "UniqueIdentifier", nullable: false),
+                    TotalWorkingHours = table.Column<TimeSpan>(type: "time", nullable: true)
                 },
                 constraints: table =>
                 {

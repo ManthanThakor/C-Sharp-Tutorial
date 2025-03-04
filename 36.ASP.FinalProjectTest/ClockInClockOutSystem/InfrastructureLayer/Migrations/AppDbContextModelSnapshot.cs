@@ -38,6 +38,9 @@ namespace InfrastructureLayer.Migrations
                     b.Property<Guid>("EmployeeId")
                         .HasColumnType("UniqueIdentifier");
 
+                    b.Property<TimeSpan?>("TotalWorkingHours")
+                        .HasColumnType("time");
+
                     b.HasKey("Id")
                         .HasName("PK_AttendanceId");
 
