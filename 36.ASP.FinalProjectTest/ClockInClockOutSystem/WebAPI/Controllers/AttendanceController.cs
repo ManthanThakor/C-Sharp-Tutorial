@@ -29,6 +29,12 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> GetByEmployeeId(Guid employeeId)
         {
             var result = await _attendanceService.GetByEmployeeIdAsync(employeeId);
+
+            if (result == null || !result.Any())
+            {
+                return NotFound("No attendance records found for this employee.");
+            }
+
             return Ok(result);
         }
 
@@ -36,8 +42,19 @@ namespace WebAPI.Controllers
         [Authorize]
         public async Task<IActionResult> ClockIn([FromBody] AttendanceCreateDto dto)
         {
+            if (dto == null)
+            {
+                return BadRequest("Invalid data.");
+            }
+
             var result = await _attendanceService.ClockInAsync(dto);
-            return result ? Ok("Clocked in successfully") : BadRequest("Already clocked in. Please clock out first.");
+
+            if (!result)
+            {
+                return BadRequest("Already clocked in. Please clock out first.");
+            }
+
+            return Ok("Clocked in successfully.");
         }
 
 
@@ -45,8 +62,19 @@ namespace WebAPI.Controllers
         [Authorize]
         public async Task<IActionResult> ClockOut([FromBody] AttendanceUpdateDto dto)
         {
+            if (dto == null)
+            {
+                return BadRequest("Invalid data.");
+            }
+
             var result = await _attendanceService.ClockOutAsync(dto);
-            return result ? Ok("Clocked out successfully") : BadRequest("Failed to clock out");
+
+            if (!result)
+            {
+                return BadRequest("Failed to clock out. Please try again.");
+            }
+
+            return Ok("Clocked out successfully.");
         }
 
         [HttpDelete("{id}")]
@@ -54,7 +82,13 @@ namespace WebAPI.Controllers
         public async Task<IActionResult> Delete(Guid id)
         {
             var result = await _attendanceService.DeleteAsync(id);
-            return result ? Ok("Deleted successfully") : BadRequest("Failed to delete");
+
+            if (!result)
+            {
+                return BadRequest("Failed to delete attendance record.");
+            }
+
+            return Ok("Attendance record deleted successfully.");
         }
     }
 }
