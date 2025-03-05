@@ -77,6 +77,5 @@ namespace InfrastructureLayer.Data
 
             base.OnModelCreating(modelBuilder);
         }
-
     }
 }
