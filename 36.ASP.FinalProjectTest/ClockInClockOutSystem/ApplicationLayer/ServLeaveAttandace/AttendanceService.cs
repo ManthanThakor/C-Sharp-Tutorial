@@ -97,7 +97,15 @@ namespace ApplicationLayer.ServLeaveAttandace
                 return false;
             }
 
-            attendance.CheckOutTime = dto.CheckOutTime ?? DateTime.UtcNow;
+            if (dto.CheckOutTime != null)
+            {
+                attendance.CheckOutTime = dto.CheckOutTime;
+            }
+            else
+            {
+                attendance.CheckOutTime = DateTime.UtcNow;
+            }
+
             attendance.TotalWorkingHours = attendance.CheckOutTime.Value - attendance.CheckInTime;
 
             await _attendanceRepository.UpdateAsync(attendance);
