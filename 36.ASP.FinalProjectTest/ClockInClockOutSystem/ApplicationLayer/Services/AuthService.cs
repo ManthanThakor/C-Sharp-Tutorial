@@ -31,7 +31,7 @@ namespace ApplicationLayer.Services
 
             }
 
-            var user = new Employee
+            Employee user = new Employee
             {
                 Id = Guid.NewGuid(),
                 Name = model.Name,
