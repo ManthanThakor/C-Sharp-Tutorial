@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "43G9qn49gxw=",
+  "dgSpecHash": "ZwcaI0ziYIFnoq5Jhg23q/hvQgaTgeJmQ6FGtIXfpYO1TANrE1zcSP94ZWJC9mtDjl6V7BAJ0LecSrwEilLfAQ==",
   "success": true,
   "projectFilePath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
@@ -89,11 +89,7 @@
     "C:\\Users\\TGSUser147\\.nuget\\packages\\system.text.json\\9.0.2\\system.text.json.9.0.2.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
     "C:\\Users\\TGSUser147\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "C:\\Users\\TGSUser147\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512",
-    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512",
-    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.11\\microsoft.netcore.app.host.win-x64.8.0.11.nupkg.sha512"
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }
