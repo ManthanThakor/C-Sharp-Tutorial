@@ -1,1 +1,67 @@
-﻿
+﻿@model IEnumerable<StudentCourseMvcAjaxJquery.Models.Entity.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+}
+
+<h2>Course Management</h2>
+
+<button class="btn btn-success" onclick="showInPopup('@Url.Action("CreateEdit", "Course")','Create Course')">
+    Add New Course
+</button>
+
+<table class="table-bordered mt-3 table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model)
+        {
+            <tr>
+                <td>@course.Title</td>
+                <td>@course.Description</td>
+                <td>
+                    <button class="btn btn-warning" onclick="showInPopup('@Url.Action("CreateEdit", "Course", new { id = course.Id })', 'Edit Course')">Edit</button>
+
+                    <form asp-action="Delete" asp-controller="Course" method="post" onsubmit="return jQueryAjaxDelete(this);" style="display:inline;">
+                        <input type="hidden" name="id" value="@course.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Modal for Create/Edit -->
+<div class="modal fade" id="form-modal" tabindex="-1" aria-labelledby="form-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+<script>
+    function refreshCourseTable() {
+        $.ajax({
+            type: 'GET',
+            url: '/Course/Index',
+            success: function (res) {
+                $('tbody').html($(res).find('tbody').html());
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+</script>

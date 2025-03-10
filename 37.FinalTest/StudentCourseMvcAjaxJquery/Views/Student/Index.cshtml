@@ -1,0 +1,33 @@
+﻿@model IEnumerable<StudentCourseMvcAjaxJquery.Models.Entity.Student>
+
+<h2>Student Management</h2>
+
+<button class="btn btn-success" onclick="showInPopup('@Url.Action("CreateEdit", "Student")','Create Student')">
+    Add New Student
+</button>
+
+<table class="table-bordered mt-3 table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.Email</td>
+                <td>
+                    <button class="btn btn-warning" onclick="showInPopup('@Url.Action("CreateEdit", "Student", new { id = student.Id })', 'Edit Student')">Edit</button>
+                    <form asp-action="Delete" asp-controller="Student" method="post" onsubmit="return jQueryAjaxDelete(this);" style="display:inline;">
+                        <input type="hidden" name="id" value="@student.Id" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

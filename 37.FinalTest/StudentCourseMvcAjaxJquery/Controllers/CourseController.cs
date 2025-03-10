@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using StudentCourseMvcAjaxJquery.Models.Data;
 using StudentCourseMvcAjaxJquery.Models.Entity;
+using StudentCourseMvcAjaxJquery.Models.Data;
 
 namespace StudentCourseMvcAjaxJquery.Controllers
 {
@@ -16,56 +15,49 @@ namespace StudentCourseMvcAjaxJquery.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var courses = _context.Courses.ToList();
+            return View(courses);
         }
 
-        public async Task<IActionResult> GetAll()
+        public IActionResult CreateEdit(int id = 0)
         {
-            var courses = await _context.Courses.ToListAsync();
-            return Json(new { data = courses });
-        }
-
-        public async Task<IActionResult> CreateEdit(int? id)
-        {
-            if (id == null) return PartialView("_CourseForm", new Course());
-
-            var course = await _context.Courses.FindAsync(id);
-            if (course == null) return NotFound();
-
-            return PartialView("_CourseForm", course);
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> CreateEdit(Course course)
-        {
-            if (!ModelState.IsValid)
-            {
-                return PartialView("_CourseForm", course);
-            }
-
-            if (course.Id == 0)
-            {
-                _context.Courses.Add(course);
-                await _context.SaveChangesAsync();
-                return Json(new { success = true, message = "Course added successfully!" });
-            }
+            if (id == 0)
+                return PartialView("_CreateEdit", new Course());
             else
             {
-                _context.Courses.Update(course);
-                await _context.SaveChangesAsync();
-                return Json(new { success = true, message = "Course updated successfully!" });
+                var course = _context.Courses.Find(id);
+                if (course == null) return NotFound();
+                return PartialView("_CreateEdit", course);
             }
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(int id)
+        public IActionResult CreateEdit(Course course)
         {
-            var course = await _context.Courses.FindAsync(id);
-            if (course == null) return Json(new { success = false, message = "Course not found!" });
+            if (!ModelState.IsValid)
+                return PartialView("_CreateEdit", course);
+
+            if (course.Id == 0)
+                _context.Courses.Add(course);
+            else
+                _context.Courses.Update(course);
+
+            _context.SaveChanges();
+
+            return Json(new { success = true });
+        }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var course = _context.Courses.Find(id);
+            if (course == null)
+                return Json(new { success = false, message = "Course not found." });
 
             _context.Courses.Remove(course);
-            await _context.SaveChangesAsync();
-            return Json(new { success = true, message = "Course deleted successfully!" });
+            _context.SaveChanges();
+
+            return Json(new { success = true, message = "Course deleted successfully." });
         }
     }
 }
