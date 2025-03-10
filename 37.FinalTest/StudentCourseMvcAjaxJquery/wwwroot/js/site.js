@@ -22,8 +22,7 @@ showInPopup = (url, title) => {
         }
     });
 };
-
-jQueryAjaxPost = form => {
+jQueryAjaxPost = (form, refreshFunction) => {
     try {
         $.ajax({
             type: 'POST',
@@ -34,7 +33,14 @@ jQueryAjaxPost = form => {
             success: function (res) {
                 if (res.success) {
                     $('#form-modal').modal('hide');
-                    refreshCourseTable(); // Reload the table data
+                    $('.modal-backdrop').remove();
+                    $('body').removeClass('modal-open');
+
+                    if (typeof window[refreshFunction] === "function") {
+                        window[refreshFunction]();
+                    } else {
+                        console.error(`${refreshFunction} is not defined!`);
+                    }
                 } else {
                     $('#form-modal .modal-body').html(res);
                 }
@@ -49,8 +55,8 @@ jQueryAjaxPost = form => {
     }
 };
 
-jQueryAjaxDelete = form => {
-    if (confirm('Are you sure you want to delete this course?')) {
+function jQueryAjaxDelete(form, refreshFunction) {
+    if (confirm('Are you sure you want to delete this record?')) {
         try {
             $.ajax({
                 type: 'POST',
@@ -60,10 +66,17 @@ jQueryAjaxDelete = form => {
                 processData: false,
                 success: function (res) {
                     if (res.success) {
-                        alert(res.message);
-                        refreshCourseTable(); // Reload the table data
+                        $('#form-modal').modal('hide');
+                        $('.modal-backdrop').remove();
+                        $('body').removeClass('modal-open');
+
+                        if (typeof window[refreshFunction] === "function") {
+                            window[refreshFunction]();
+                        } else {
+                            console.error(`${refreshFunction} is not defined!`);
+                        }
                     } else {
-                        alert(res.message);
+                        alert("Error deleting record!");
                     }
                 },
                 error: function (err) {
@@ -75,4 +88,4 @@ jQueryAjaxDelete = form => {
         }
     }
     return false;
-};
+}

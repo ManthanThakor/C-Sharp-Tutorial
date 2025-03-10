@@ -1,8 +1,12 @@
 ﻿@model IEnumerable<StudentCourseMvcAjaxJquery.Models.Entity.Student>
 
+@{
+    ViewData["Title"] = "Students";
+}
+
 <h2>Student Management</h2>
 
-<button class="btn btn-success" onclick="showInPopup('@Url.Action("CreateEdit", "Student")','Create Student')">
+<button class="btn btn-success" onclick="showInPopup('@Url.Action("CreateEdit", "Student")','Add Student')">
     Add New Student
 </button>
 
@@ -11,6 +15,8 @@
         <tr>
             <th>Name</th>
             <th>Email</th>
+            <th>Address</th>
+            <th>Date of Birth</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -20,9 +26,13 @@
             <tr>
                 <td>@student.Name</td>
                 <td>@student.Email</td>
+                <td>@student.Address</td>
+                <td>@student.DOB.ToString("yyyy-MM-dd")</td>
                 <td>
                     <button class="btn btn-warning" onclick="showInPopup('@Url.Action("CreateEdit", "Student", new { id = student.Id })', 'Edit Student')">Edit</button>
-                    <form asp-action="Delete" asp-controller="Student" method="post" onsubmit="return jQueryAjaxDelete(this);" style="display:inline;">
+
+                    <form asp-action="Delete" asp-controller="Student" method="post"
+                          onsubmit="return jQueryAjaxDelete(this, 'refreshStudentTable');" style="display:inline;">
                         <input type="hidden" name="id" value="@student.Id" />
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
@@ -31,3 +41,33 @@
         }
     </tbody>
 </table>
+
+
+<div class="modal fade" id="form-modal" tabindex="-1" aria-labelledby="form-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function refreshStudentTable() {
+        $.ajax({
+            type: 'GET',
+            url: '/Student/Index',
+            success: function (res) {
+                $('tbody').html($(res).find('tbody').html());
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+</script>

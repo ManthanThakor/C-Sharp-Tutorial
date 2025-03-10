@@ -1,5 +1,9 @@
 ﻿@model IEnumerable<StudentCourseMvcAjaxJquery.Models.Entity.Enrollment>
 
+@{
+    ViewData["Title"] = "Enrollments";
+}
+
 <h2>Enrollment Management</h2>
 
 <button class="btn btn-success" onclick="showInPopup('@Url.Action("CreateEdit", "Enrollment")','Enroll Student')">
@@ -9,8 +13,8 @@
 <table class="table-bordered mt-3 table">
     <thead>
         <tr>
-            <th>Student</th>
-            <th>Course</th>
+            <th>Student Name</th>
+            <th>Course Title</th>
             <th>Enrollment Date</th>
             <th>Actions</th>
         </tr>
@@ -24,12 +28,45 @@
                 <td>@enrollment.EnrollmentDate.ToShortDateString()</td>
                 <td>
                     <button class="btn btn-warning" onclick="showInPopup('@Url.Action("CreateEdit", "Enrollment", new { id = enrollment.Id })', 'Edit Enrollment')">Edit</button>
-                    <form asp-action="Delete" asp-controller="Enrollment" method="post" onsubmit="return jQueryAjaxDelete(this);" style="display:inline;">
+
+                    <form asp-action="Delete" asp-controller="Enrollment" method="post"
+                          onsubmit="return jQueryAjaxDelete(this, 'refreshEnrollmentTable');" style="display:inline;">
                         <input type="hidden" name="id" value="@enrollment.Id" />
                         <button type="submit" class="btn btn-danger">Delete</button>
                     </form>
+
                 </td>
             </tr>
         }
     </tbody>
 </table>
+
+<!-- Modal for Create/Edit -->
+<div class="modal fade" id="form-modal" tabindex="-1" aria-labelledby="form-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function refreshEnrollmentTable() {
+        $.ajax({
+            type: 'GET',
+            url: '/Enrollment/Index',
+            success: function (res) {
+                $('tbody').html($(res).find('tbody').html());
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+</script>

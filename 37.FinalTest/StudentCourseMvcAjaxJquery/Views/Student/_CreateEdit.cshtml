@@ -1,7 +1,8 @@
 ﻿@model StudentCourseMvcAjaxJquery.Models.Entity.Student
 
 <form asp-action="CreateEdit" asp-controller="Student"
-      onsubmit="return jQueryAjaxPost(this);" method="post">
+      onsubmit="return jQueryAjaxPost(this, 'refreshStudentTable');" method="post">
+
 
     <input type="hidden" asp-for="Id" />
 
@@ -13,8 +14,22 @@
 
     <div class="form-group">
         <label asp-for="Email"></label>
-        <input asp-for="Email" class="form-control" required />
+        <input asp-for="Email" type="email" class="form-control" required />
         <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <!-- Add Address Field -->
+    <div class="form-group">
+        <label asp-for="Address"></label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <!-- Add Date of Birth (DOB) Field -->
+    <div class="form-group">
+        <label asp-for="DOB"></label>
+        <input asp-for="DOB" type="date" class="form-control" required />
+        <span asp-validation-for="DOB" class="text-danger"></span>
     </div>
 
     <div class="modal-footer">

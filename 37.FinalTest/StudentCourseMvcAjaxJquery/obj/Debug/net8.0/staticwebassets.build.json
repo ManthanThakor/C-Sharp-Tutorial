@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "S/z6buiVUXKrYbQK1h9xVFYY/Id6G3Qp4/h0Bsgkk+Q=",
+  "Hash": "f8nP2GQwCqZRJfTEHNIOd7Y7lSrrxcYRCB1mzYEF/fc=",
   "Source": "StudentCourseMvcAjaxJquery",
   "BasePath": "_content/StudentCourseMvcAjaxJquery",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "E:\\manthan\\C-Sharp-Tutorial\\37.FinalTest\\StudentCourseMvcAjaxJquery\\wwwroot\\js\\JavaScript.js",
+      "SourceId": "StudentCourseMvcAjaxJquery",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manthan\\C-Sharp-Tutorial\\37.FinalTest\\StudentCourseMvcAjaxJquery\\wwwroot\\",
+      "BasePath": "_content/StudentCourseMvcAjaxJquery",
+      "RelativePath": "js/JavaScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\JavaScript.js"
     },
     {
       "Identity": "E:\\manthan\\C-Sharp-Tutorial\\37.FinalTest\\StudentCourseMvcAjaxJquery\\wwwroot\\js\\site.js",

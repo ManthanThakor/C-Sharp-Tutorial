@@ -19,14 +19,20 @@ namespace StudentCourseMvcAjaxJquery.Controllers
             return View(courses);
         }
 
+        [HttpGet]
         public IActionResult CreateEdit(int id = 0)
         {
             if (id == 0)
+            {
                 return PartialView("_CreateEdit", new Course());
+            }
             else
             {
                 var course = _context.Courses.Find(id);
-                if (course == null) return NotFound();
+                if (course == null)
+                {
+                    return NotFound();
+                }
                 return PartialView("_CreateEdit", course);
             }
         }
@@ -35,12 +41,18 @@ namespace StudentCourseMvcAjaxJquery.Controllers
         public IActionResult CreateEdit(Course course)
         {
             if (!ModelState.IsValid)
+            {
                 return PartialView("_CreateEdit", course);
+            }
 
             if (course.Id == 0)
+            {
                 _context.Courses.Add(course);
+            }
             else
+            {
                 _context.Courses.Update(course);
+            }
 
             _context.SaveChanges();
 
@@ -52,7 +64,9 @@ namespace StudentCourseMvcAjaxJquery.Controllers
         {
             var course = _context.Courses.Find(id);
             if (course == null)
+            {
                 return Json(new { success = false, message = "Course not found." });
+            }
 
             _context.Courses.Remove(course);
             _context.SaveChanges();

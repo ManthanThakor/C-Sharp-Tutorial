@@ -1,7 +1,8 @@
 ﻿@model StudentCourseMvcAjaxJquery.Models.Entity.Course
 
 <form asp-action="CreateEdit" asp-controller="Course"
-      onsubmit="return jQueryAjaxPost(this);" method="post">
+      onsubmit="return jQueryAjaxPost(this, 'refreshCourseTable');" method="post">
+
 
     <input type="hidden" asp-for="Id" />
 

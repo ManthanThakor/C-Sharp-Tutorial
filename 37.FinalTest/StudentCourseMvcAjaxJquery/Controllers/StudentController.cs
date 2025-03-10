@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudentCourseMvcAjaxJquery.Models.Data;
 using StudentCourseMvcAjaxJquery.Models.Entity;
-using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace StudentCourseMvcAjaxJquery.Controllers
 {

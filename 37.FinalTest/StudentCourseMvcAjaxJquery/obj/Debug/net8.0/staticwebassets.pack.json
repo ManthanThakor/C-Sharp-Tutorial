@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\37.FinalTest\\StudentCourseMvcAjaxJquery\\wwwroot\\js\\JavaScript.js",
+      "PackagePath": "staticwebassets\\js\\JavaScript.js"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\37.FinalTest\\StudentCourseMvcAjaxJquery\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
