@@ -1,0 +1,9 @@
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.csproj.AssemblyReference.cache
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.GeneratedMSBuildEditorConfig.editorconfig
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.AssemblyInfoInputs.cache
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.AssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.csproj.CoreCompileInputs.cache
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.MvcApplicationPartsAssemblyInfo.cache
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.RazorAssemblyInfo.cache
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.RazorAssemblyInfo.cs
+E:\manthan\C-Sharp-Tutorial\37.FinalTest\StudentCourseMvcAjaxJquery\obj\Debug\net8.0\StudentCourseMvcAjaxJquery.sourcelink.json
