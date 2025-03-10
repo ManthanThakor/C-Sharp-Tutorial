@@ -6,14 +6,14 @@ namespace StudentCourseMvcAjaxJquery.Models.Entity
     public class Student : BaseEntity
     {
         [Required(ErrorMessage = "Name is required.")]
-        [StringLength(50, ErrorMessage = "Name cannot exceed 50 characters.")]
+        [StringLength(50, ErrorMessage = "Name cannot be more than 50 characters.")]
         public string Name { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Invalid email format.")]
         public string Email { get; set; } = string.Empty;
 
-        [StringLength(200, ErrorMessage = "Address cannot More Then  200 characters.")]
+        [StringLength(200, ErrorMessage = "Address cannot be more than  200 characters.")]
         public string Address { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Date of Birth is required.")]

@@ -6,10 +6,10 @@ namespace StudentCourseMvcAjaxJquery.Models.Entity
     public class Course : BaseEntity
     {
         [Required(ErrorMessage = "Title is required.")]
-        [StringLength(100, ErrorMessage = "Title cannot exceed 100 characters.")]
+        [StringLength(100, ErrorMessage = "Title cannot be more than 100 characters.")]
         public string Title { get; set; } = string.Empty;
 
-        [StringLength(500, ErrorMessage = "Description cannot exceed 500 characters.")]
+        [StringLength(500, ErrorMessage = "Description cannot be more than 500 characters.")]
         public string Description { get; set; } = string.Empty;
 
         public ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();
