@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudentCourseMvcAjaxJquery.Models.Data;
 using StudentCourseMvcAjaxJquery.Models.Entity;
-using System.Linq;
 
 namespace StudentCourseMvcAjaxJquery.Controllers
 {
@@ -20,39 +19,55 @@ namespace StudentCourseMvcAjaxJquery.Controllers
             return View(students);
         }
 
+        [HttpGet]
         public IActionResult CreateEdit(int id = 0)
         {
             if (id == 0)
+            {
                 return PartialView("_CreateEdit", new Student());
+            }
             else
             {
                 var student = _context.Students.Find(id);
-                if (student == null) return NotFound();
+                if (student == null)
+                {
+                    return NotFound();
+                }
                 return PartialView("_CreateEdit", student);
             }
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult CreateEdit(Student student)
         {
             if (!ModelState.IsValid)
+            {
                 return PartialView("_CreateEdit", student);
+            }
 
             if (student.Id == 0)
+            {
                 _context.Students.Add(student);
+            }
             else
+            {
                 _context.Students.Update(student);
+            }
 
             _context.SaveChanges();
             return Json(new { success = true });
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Delete(int id)
         {
             var student = _context.Students.Find(id);
             if (student == null)
+            {
                 return Json(new { success = false, message = "Student not found." });
+            }
 
             _context.Students.Remove(student);
             _context.SaveChanges();

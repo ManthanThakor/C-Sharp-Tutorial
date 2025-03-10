@@ -24,17 +24,23 @@ namespace StudentCourseMvcAjaxJquery.Controllers
             return View(enrollments);
         }
 
+        [HttpGet]
         public IActionResult CreateEdit(int id = 0)
         {
             ViewBag.Students = new SelectList(_context.Students, "Id", "Name");
             ViewBag.Courses = new SelectList(_context.Courses, "Id", "Title");
 
             if (id == 0)
+            {
                 return PartialView("_CreateEdit", new Enrollment());
+            }
             else
             {
                 var enrollment = _context.Enrollments.Find(id);
-                if (enrollment == null) return NotFound();
+                if (enrollment == null)
+                {
+                    return NotFound();
+                }
                 return PartialView("_CreateEdit", enrollment);
             }
         }
@@ -50,9 +56,13 @@ namespace StudentCourseMvcAjaxJquery.Controllers
             }
 
             if (enrollment.Id == 0)
+            {
                 _context.Enrollments.Add(enrollment);
+            }
             else
+            {
                 _context.Enrollments.Update(enrollment);
+            }
 
             _context.SaveChanges();
             return Json(new { success = true });
@@ -63,7 +73,9 @@ namespace StudentCourseMvcAjaxJquery.Controllers
         {
             var enrollment = _context.Enrollments.Find(id);
             if (enrollment == null)
+            {
                 return Json(new { success = false, message = "Enrollment not found." });
+            }
 
             _context.Enrollments.Remove(enrollment);
             _context.SaveChanges();
