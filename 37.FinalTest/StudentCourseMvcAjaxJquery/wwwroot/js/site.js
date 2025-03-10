@@ -22,6 +22,7 @@ showInPopup = (url, title) => {
         }
     });
 };
+
 jQueryAjaxPost = (form, refreshFunction) => {
     try {
         $.ajax({
