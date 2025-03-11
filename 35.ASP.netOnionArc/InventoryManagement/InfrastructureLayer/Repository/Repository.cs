@@ -22,16 +22,7 @@ namespace Infrastructure.Repository
             entities = _applicationDbContext.Set<T>();
         }
 
-        public async Task<bool> Delete(T entity)
-        {
-            entities.Remove(entity);
-            var result = await _applicationDbContext.SaveChangesAsync();
-            if (result > 0)
-            {
-                return true;
-            }
-            return false;
-        }
+
 
         public async Task<T> Get(Guid Id)
         {
@@ -46,6 +37,17 @@ namespace Infrastructure.Repository
         public async Task<bool> Insert(T entity)
         {
             await entities.AddAsync(entity);
+            var result = await _applicationDbContext.SaveChangesAsync();
+            if (result > 0)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<bool> Delete(T entity)
+        {
+            entities.Remove(entity);
             var result = await _applicationDbContext.SaveChangesAsync();
             if (result > 0)
             {

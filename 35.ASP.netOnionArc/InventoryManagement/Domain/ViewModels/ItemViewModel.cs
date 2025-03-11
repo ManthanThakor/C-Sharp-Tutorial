@@ -18,7 +18,7 @@ namespace Domain.ViewModels
         public string ItemDescription { get; set; }
         public decimal ItemPrice { get; set; }
         public List<CategoryViewModel> Category { get; set; } = new List<CategoryViewModel>();
-        public List<ItemImagesView> itemImages { get; set; } = new List<ItemImagesView>();
+        public List<ItemImagesView> ItemImages { get; set; } = new List<ItemImagesView>();
         public List<UserView> User { get; set; } = new List<UserView>();
     }
 
