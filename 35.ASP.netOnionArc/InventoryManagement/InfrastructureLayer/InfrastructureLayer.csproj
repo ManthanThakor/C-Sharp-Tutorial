@@ -19,4 +19,9 @@
 		<ProjectReference Include="..\Domain\Domain.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="NewFolder\" />
+	  <Folder Include="Service\CustomServices\IteamServices\" />
+	</ItemGroup>
+
 </Project>

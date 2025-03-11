@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -25,6 +26,9 @@ namespace Domain.ViewModels
 
     public class UserInsertModel
     {
+
+        public string UserId { get; set; }
+
         [Required(ErrorMessage = "Please Enter Name.")]
         public string UserName { get; set; }
 
@@ -43,7 +47,12 @@ namespace Domain.ViewModels
         public string UserPhoneNo { get; set; }
 
         [Required(ErrorMessage = "Please Enter Photo Path.")]
-        public string UserPhoto { get; set; }
+        public IFormFile UserPhoto { get; set; }
+
+        public bool IsActive { get; set; } = true;
+        public Guid UserTypeId { get; set; }
+
+
     }
 
     public class UserUpdateModel : UserInsertModel

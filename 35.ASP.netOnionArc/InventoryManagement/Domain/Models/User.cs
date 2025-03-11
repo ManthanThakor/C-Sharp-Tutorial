@@ -8,6 +8,8 @@ namespace Domain.Models
 {
     public class User : BaseEntity
     {
+        public string UserId { get; set; } = string.Empty;
+
         [Required(ErrorMessage = "User Name is required")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "User Name must be between 3 and 50 characters")]
         public string UserName { get; set; } = string.Empty;
@@ -15,6 +17,9 @@ namespace Domain.Models
         [Required(ErrorMessage = "Email is required")]
         [EmailAddress(ErrorMessage = "Invalid Email Address format")]
         public string UserEmail { get; set; } = string.Empty;
+        public string UserPassword { get; set; } = string.Empty;
+
+        public string UserAddress { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "Phone Number is required")]
         [RegularExpression(@"^\+?[0-9]{10,15}$", ErrorMessage = "Invalid Phone Number. Use format: +1234567890 or 1234567890")]
@@ -25,6 +30,7 @@ namespace Domain.Models
         public string UserPhoto { get; set; } = string.Empty;
 
         [Required(ErrorMessage = "User Type is required")]
+
         public Guid UserTypeId { get; set; }
 
         [JsonIgnore]

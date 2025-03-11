@@ -51,7 +51,10 @@ namespace InfrastructureLayer.Service.CustomServices.UserTypeServices
             var result = await _userType.Get(Id)
 ;
             if (result == null)
+            {
                 return null;
+
+            }
             else
             {
                 UserTypeViewModel userTypeViewModel = new()

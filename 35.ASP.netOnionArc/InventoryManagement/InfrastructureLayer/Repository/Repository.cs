@@ -21,9 +21,6 @@ namespace Infrastructure.Repository
             _applicationDbContext = applicationDbContext;
             entities = _applicationDbContext.Set<T>();
         }
-
-
-
         public async Task<T> Get(Guid Id)
         {
             return await entities.FindAsync(Id);
