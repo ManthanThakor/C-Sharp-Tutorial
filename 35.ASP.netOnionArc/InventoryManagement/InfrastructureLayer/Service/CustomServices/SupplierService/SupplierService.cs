@@ -24,7 +24,7 @@ namespace InfrastructureLayer.Service.CustomServices.SupplierServices
         public async Task<ICollection<UserViewModel>> GetAll()
         {
             UserType userType = await _userTypeService.Find(x => x.TypeName == "Supplier");
-            ICollection<UserViewModel> userViewModels = new List<UserViewModel>();
+            ICollection<UserViewModel> SupplierViewModels = new List<UserViewModel>();
             ICollection<User> users = await _userRepository.FindAll(x => x.UserTypeId == userType.Id);
 
             foreach (User user in users)
@@ -47,9 +47,9 @@ namespace InfrastructureLayer.Service.CustomServices.SupplierServices
                     userView.TypeName = userType.TypeName;
                     userViewMod.UserType.Add(userView);
                 }
-                userViewModels.Add(userViewMod);
+                SupplierViewModels.Add(userViewMod);
             }
-            return users == null ? null : userViewModels;
+            return users == null ? null : SupplierViewModels;
         }
 
         public async Task<UserViewModel> Get(Guid Id)

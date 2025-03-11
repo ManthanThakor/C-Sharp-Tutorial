@@ -12,7 +12,7 @@ namespace Domain.ViewModels
 {
     public class ItemViewModel
     {
-        public Guid Id { get; set; }
+        public Guid ItemId { get; set; }
         public string ItemCode { get; set; }
         public string ItemName { get; set; }
         public string ItemDescription { get; set; }
@@ -39,7 +39,7 @@ namespace Domain.ViewModels
         [Required(ErrorMessage = "Plaese Select User Id")]
         public Guid UserId { get; set; }
         public IFormFile ItemImage { get; set; }
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
     }
 
     public class ItemUpdateModel : ItemInsertModel
