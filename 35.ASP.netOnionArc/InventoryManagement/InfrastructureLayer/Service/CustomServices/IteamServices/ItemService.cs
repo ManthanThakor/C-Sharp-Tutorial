@@ -67,7 +67,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
 
                 ItemViewModel itemView = new()
                 {
-                    Id = supplierItemResult.Id,
+                    ItemId = supplierItemResult.Id,
                     ItemCode = item.ItemCode,
                     ItemName = item.ItemName,
                     ItemDescription = item.ItemDescription ?? string.Empty,
@@ -134,7 +134,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
 
                 ItemViewModel itemView = new()
                 {
-                    Id = item.Id,
+                    ItemId = item.Id,
                     ItemCode = item.ItemCode,
                     ItemName = item.ItemName,
                     ItemDescription = item.ItemDescription ?? string.Empty,
@@ -189,182 +189,212 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
         public async Task<ICollection<ItemViewModel>> GetAllItemByUser(Guid id)
         {
             ICollection<ItemViewModel> itemViewModels = new List<ItemViewModel>();
+
             User supplier = await _supplier.Find(x => x.Id == id);
             User customer = await _customer.Find(x => x.Id == id);
-            UserType userType = await _userType.Find(x => x.Id == supplier.UserTypeId || x.Id == customer.UserTypeId);
+
+            if (supplier == null && customer == null)
+            {
+                return itemViewModels;
+            }
+
+            UserType userType = await _userType.Find(x => (supplier != null && x.Id == supplier.UserTypeId) || (customer != null && x.Id == customer.UserTypeId));
+
+            if (userType == null)
+            {
+                return itemViewModels;
+            }
 
             if (userType.TypeName == "Supplier")
             {
-                ICollection<SupplierItem> ans = await _supplierItem.FindAll(x => x.SupplierId == id);
+                ICollection<SupplierItem> supplierItems = await _supplierItem.FindAll(x => x.SupplierId == id);
 
-                foreach (SupplierItem item in ans)
+                foreach (SupplierItem item in supplierItems)
                 {
-                    Item iteam = await _item.Find(x => x.Id == item.ItemId);
-                    ItemViewModel itemViewModel = new()
+                    Item itemDetails = await _item.Find(x => x.Id == item.ItemId);
+                    if (itemDetails == null) continue;
+
+                    ItemViewModel itemView = new()
                     {
-                        ItemId = item.ItemId,
-                        ItemCode = item.ItemCode,
-                        ItemName = item.ItemName,
-                        ItemDescription = item.ItemDescription,
-                        ItemPrice = item.ItemPrice
+                        ItemId = itemDetails.Id,
+                        ItemCode = itemDetails.ItemCode,
+                        ItemName = itemDetails.ItemName,
+                        ItemDescription = itemDetails.ItemDescription ?? string.Empty,
+                        ItemPrice = itemDetails.ItemPrice
                     };
 
-                    Category category = await _category.Find(x => x.Id == item.CategoryId);
-
-                    CategoryViewModel categoryView = new()
+                    Category category = await _category.Find(x => x.Id == itemDetails.CategoryId);
+                    if (category != null)
                     {
-                        Id = category.Id,
-                        CategoryName = category.CategoryName
-                    };
+                        itemView.Category.Add(new CategoryViewModel
+                        {
+                            Id = category.Id,
+                            CategoryName = category.CategoryName
+                        });
+                    }
 
-                    itemView.Category.Add(categoryView)
-
-
-
-                        User user = await _supplier.Find(x => x.Id == item.UserId);
-                    UserView view = new()
+                    User user = await _supplier.Find(x => x.Id == item.SupplierId);
+                    if (user != null)
                     {
-                        Id = user.Id,
-                        UserName = user.UserName,
-                        UserPhoneno = user.UserPhoneno,
-                        UserEmail = user.UserEmail,
-                        UserAddress = user.UserAddress,
-                        UserID = user.UserID,
-                        UserPhoto = user.UserPhoto
-                    };
-                    itemView.User.Add(view);
+                        itemView.User.Add(new UserView
+                        {
+                            Id = user.Id,
+                            UserName = user.UserName,
+                            UserPhoneNo = user.UserPhoneNo,
+                            UserEmail = user.UserEmail,
+                            UserAddress = user.UserAddress,
+                            UserId = user.UserId,
+                            UserPhoto = user.UserPhoto
+                        });
+                    }
 
-                    ICollection<ItemImage> image = await _itemImages.FindAll(x => )
-                    foreach (var img in image)
-
+                    ICollection<ItemImage> images = await _itemImages.FindAll(x => x.ItemId == item.ItemId);
+                    foreach (var img in images)
                     {
-                        ItemImagesView img View = new()
+                        itemView.ItemImages.Add(new ItemImagesView
                         {
                             Id = img.Id,
-                            ItemId img.ItemId,
-                            ItemImage = img.ItemImage,
+                            ItemId = img.ItemId,
+                            ItemImage = img.ImageUrl,
                             IsActive = img.IsActive
-                        };
-                        itemView.ItemImages.Add(imgView);
-
+                        });
                     }
+
                     itemViewModels.Add(itemView);
                 }
-                return itemViewModels;
             }
             else
-                return itemViewModels
-  }else{
-
-        
-
-
-            public Item GetLast()
             {
-                return _item.GetLast();
-            }
+                ICollection<CustomerItem> customerItems = await _customerItem.FindAll(x => x.UserId == id);
 
-            public async Task<bool> Insert(ItemInsertModel itemInsertModel, string image)
-            {
-                var user = await _user.Find(x => x.Id == itemInsertModel.UserId);
-                var UserType = await _userType.Find(x => x.Id == user.UserTypeId);
-
-                if (UserType.TypeName == "Supplier")
+                foreach (CustomerItem item in customerItems)
                 {
-                    Item newItem = new()
+                    Item itemDetails = await _item.Find(x => x.Id == item.ItemId);
+                    if (itemDetails == null) continue;
+
+                    ItemViewModel itemView = new()
                     {
-                        ItemCode = itemInsertModel.ItemCode,
-                        ItemName = itemInsertModel.ItemName,
-                        ItemDescription = itemInsertModel.ItemDescription,
-                        ItemPrice = itemInsertModel.ItemPrice,
-                        CategoryId = itemInsertModel.CategoryId,
-                        CreatedOn = DateTime.Now,
-                        UpdatedOn = DateTime.Now,
-                        IsActive = itemInsertModel.IsActive
+                        ItemId = itemDetails.Id,
+                        ItemCode = itemDetails.ItemCode,
+                        ItemName = itemDetails.ItemName,
+                        ItemDescription = itemDetails.ItemDescription ?? string.Empty,
+                        ItemPrice = itemDetails.ItemPrice
                     };
-                    var result = await _item.Insert(newItem);
-                    if (result == true)
+
+                    Category category = await _category.Find(x => x.Id == itemDetails.CategoryId);
+                    if (category != null)
                     {
-                        SupplierItem supplierItem = new()
+                        itemView.Category.Add(new CategoryViewModel
                         {
-                            ItemId = item.Id,
-                            UserId = itemInsertModel.UserId,
-                            CreatedOn = DateTime.Now,
-                            UpdatedOn = DateTime.Now,
-                            IsActive = itemInsertModel.IsActive
-                        };
-
-                        ItemImage itemImage = new()
-                        {
-                            ImageUrl = image,
-                            ItemId = Item.,
-                            CreatedOn = DateTime.Now,
-                            UpdatedOn = DateTime.Now,
-                            IsActive = true
-                        };
-
-                        var resultItemImage = await _itemImages.Insert(itemImage);
-                        if (resultItemImage == true)
-                        {
-                            await _supplierItem.Insert(supplierItem);
-                            return true;
-                        }
-                        else
-                            return false;
+                            Id = category.Id,
+                            CategoryName = category.CategoryName
+                        });
                     }
-                    else
-                        return false;
-                }
 
-                else
-                {
-                    Item newItem = new()
+                    User user = await _customer.Find(x => x.Id == item.UserId);
+                    if (user != null)
                     {
-                        ItemCode = itemInsertModel.ItemCode,
-                        ItemName = itemInsertModel.ItemName,
-                        ItemDescription = itemInsertModel.ItemDescription,
-                        ItemPrice = itemInsertModel.ItemPrice,
-                        CategoryId = itemInsertModel.CategoryId,
-                        CreatedOn = DateTime.Now,
-                        UpdatedOn = DateTime.Now,
-                        IsActive = itemInsertModel.IsActive
-                    };
-                    var result = await _item.Insert(newItem);
-                    if (result == true)
-                    {
-                        CustomerItem customerItem = new()
+                        itemView.User.Add(new UserView
                         {
-                            ItemId = item.Id,
-                            UserId = itemInsertModel.UserId,
-                            CreatedOn = DateTime.Now,
-                            UpdatedOn = DateTime.Now,
-                            IsActive = itemInsertModel.IsActive
-                        };
-
-                        ItemImage itemImage = new()
-                        {
-                            ImageUrl = image,
-                            ItemId = Item.id,
-                            CreatedOn = DateTime.Now,
-                            UpdatedOn = DateTime.Now,
-                            IsActive = true
-                        };
-
-                        var resultItemImage = await _itemImages.Insert(itemImage);
-                        if (resultItemImage == true)
-                        {
-                            await _supplierItem.Insert(customerItem);
-                            return true;
-                        }
-                        else
-                            return false;
+                            Id = user.Id,
+                            UserName = user.UserName,
+                            UserPhoneNo = user.UserPhoneNo,
+                            UserEmail = user.UserEmail,
+                            UserAddress = user.UserAddress,
+                            UserId = user.UserId,
+                            UserPhoto = user.UserPhoto
+                        });
                     }
-                    else
-                        return false;
+
+                    ICollection<ItemImage> images = await _itemImages.FindAll(x => x.ItemId == item.ItemId);
+                    foreach (var img in images)
+                    {
+                        itemView.ItemImages.Add(new ItemImagesView
+                        {
+                            Id = img.Id,
+                            ItemId = img.ItemId,
+                            ItemImage = img.ImageUrl,
+                            IsActive = img.IsActive
+                        });
+                    }
+
+                    itemViewModels.Add(itemView);
                 }
             }
 
-            public async Task<bool> Update(ItemUpdateModel itemUpdateModel, string image)
+            return itemViewModels;
+        }
+
+        public Item GetLast()
+        {
+            return _item.GetLast();
+        }
+
+        public async Task<bool> Insert(ItemInsertModel itemInsertModel, string image)
+        {
+            var user = await _user.Find(x => x.Id == itemInsertModel.UserId);
+            var userType = await _userType.Find(x => x.Id == user.UserTypeId);
+            Console.WriteLine(user.UserName + " " + userType.TypeName);
+
+            Item newItem = new()
+            {
+                ItemCode = itemInsertModel.ItemCode,
+                ItemName = itemInsertModel.ItemName,
+                ItemDescription = itemInsertModel.ItemDescription,
+                ItemPrice = itemInsertModel.ItemPrice,
+                CategoryId = itemInsertModel.CategoryId,
+                CreatedOn = DateTime.Now,
+                UpdatedOn = DateTime.Now,
+                IsActive = itemInsertModel.IsActive
+            };
+
+            var result = await _item.Insert(newItem);
+            if (!result)
+                return false;
+
+            ItemImage itemImage = new()
+            {
+                ImageUrl = image,
+                ItemId = newItem.Id,
+                CreatedOn = DateTime.Now,
+                UpdatedOn = DateTime.Now,
+                IsActive = true
+            };
+
+            var resultItemImage = await _itemImages.Insert(itemImage);
+            if (!resultItemImage)
+                return false;
+
+            if (userType.TypeName == "Supplier")
+            {
+                SupplierItem supplierItem = new()
+                {
+                    ItemId = newItem.Id, 
+                    SupplierId = itemInsertModel.UserId,
+                    CreatedOn = DateTime.Now,
+                    UpdatedOn = DateTime.Now,
+                    IsActive = itemInsertModel.IsActive
+                };
+                await _supplierItem.Insert(supplierItem);
+            }
+            else
+            {
+                CustomerItem customerItem = new()
+                {
+                    ItemId = newItem.Id, 
+                    UserId = itemInsertModel.UserId,
+                    CreatedOn = DateTime.Now,
+                    UpdatedOn = DateTime.Now,
+                    IsActive = itemInsertModel.IsActive
+                };
+                await _customerItem.Insert(customerItem);
+            }
+
+            return true;
+        }
+
+
+        public async Task<bool> Update(ItemUpdateModel itemUpdateModel, string image)
             {
                 Item item = await _item.Get(itemUpdateModel.Id);
                 item.ItemCode = itemUpdateModel.ItemCode;
@@ -381,10 +411,10 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 itemImage.UpdatedOn = DateTime.Now;
                 itemImage.IsActive = itemUpdateModel.IsActive;
                 if (image == null)
-                    itemImage.ItemImage = itemImage.ItemImage;
+                    itemImage.ImageUrl = itemImage.ImageUrl;
                 else
-                    itemImage.ItemImage = image;
-                var result = await _item.Update(item);
+                    itemImage.ImageUrl = image;
+          
                 var result = await _item.Update(item);
                 if (result == true)
                 {
@@ -398,73 +428,76 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                     return false;
             }
 
-            public async Task<bool> Delete(Guid Id)
-            {
-                Item item = await _item.Get(Id)
-            ;
+        public async Task<bool> Delete(Guid Id)
+        {
+            Item item = await _item.Get(Id);
 
-                if (item != null)
+            if (item != null)
+            {
+                SupplierItem supplier = await _supplierItem.Find(x => x.ItemId == item.Id);
+                ItemImage itemImages = await _itemImages.Find(x => x.ItemId == item.Id);
+                if (supplier != null)
                 {
-                    SupplierItem supplier = await _supplierItem.Find(x => x.ItemId == item.Id);
-                    ItemImages itemImages = await _itemImages.Find(x => x.ItemId == item.Id);
-                    if (supplier != null)
+                    var resultSupplier = await _supplierItem.Delete(supplier);
+                    if (resultSupplier == true)
                     {
-                        var resultSupplier = await _supplierItem.Delete(supplier);
-                        if (resultSupplier == true)
-                        {
-                            var result = await DeleteItemAndItemImages(itemImages, item);
-                            return result;
-                        }
-                        else
-                        {
-                            var result = await DeleteItemAndItemImages(itemImages, item);
-                            return result;
-                        }
+                        var result = await DeleteItemAndItemImages(itemImages, item);
+                        return result;
                     }
                     else
                     {
-                        return false;
+                        var result = await DeleteItemAndItemImages(itemImages, item);
+                        return result;
                     }
                 }
-            }
-
-            private async Task<bool> DeleteItemAndItemImages(ItemImages itemImages, Item item)
-            {
-                if (itemImages != null)
+                else
                 {
-                    var resultItemImages = await _itemImages.Delete(itemImages);
-                    if (resultItemImages == true)
-                    {
-                        var resultItem = await _item.Delete(item);
-                        if (resultItem == true)
-                        {
-                            return true;
+                    return false;
+                }
+            }
             else
-                                return false;
-                        }
-                        else
-                            return false;
-                    }
-                    else
-                    {
-                        var resultItem = await _item.Delete(item);
-                        if (resultItem == true)
-                        {
-                            return true;
-                        }
-                        else
-                            return false;
-                    }
-                }
-            }
-            public Task<Item> Find(Expression<Func<Item, bool>> match)
             {
-                return _item.Find(match);
-            }
-
-            public async Task<ICollection<Item>> FindAll(Expression<Func<Item, bool>> match)
-            {
-                return await _item.FindAll(match);
+                return false;
             }
         }
+
+        private async Task<bool> DeleteItemAndItemImages(ItemImage itemImage, Item item)
+        {
+            if (itemImage != null)
+            {
+                var resultItemImage = await _itemImages.Delete(itemImage);
+                if (resultItemImage == true)
+                {
+                    var resultItem = await _item.Delete(item);
+                    if (resultItem == true)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+                else
+                {
+                    var resultItem = await _item.Delete(item);
+                    if (resultItem == true)
+                    {
+                        return true;
+                    }
+                    else
+                        return false;
+                }
+            }
+            else
+                return false;
+        }
+        public Task<Item> Find(Expression<Func<Item, bool>> match)
+        {
+            return _item.Find(match);
+        }
+
+        public async Task<ICollection<Item>> FindAll(Expression<Func<Item, bool>> match)
+        {
+            return await _item.FindAll(match);
+        }
     }
+}

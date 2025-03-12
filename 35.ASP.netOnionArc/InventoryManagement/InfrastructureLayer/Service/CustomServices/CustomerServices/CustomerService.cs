@@ -40,7 +40,7 @@ namespace InfrastructureLayer.Service.CustomServices.CustomerServices
                     UserPassword = Encryptor.DecryptString(user.UserPassword),
                     UserAddress = user.UserAddress,
                     UserPhoneNo = user.UserPhoneNo,
-                    UserPhoto = user.UserPhoto,
+                    UserPhoto = user.UserPhoto, 
                 };
                 UserTypeViewModel userView = new();
                 if (userType != null)
