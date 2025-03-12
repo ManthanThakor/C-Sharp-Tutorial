@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj": {}
+    "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj": {
+    "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\TGSUser147\\.nuget\\packages\\",
-        "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\obj\\",
+        "projectPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Manthan Thakor\\.nuget\\packages\\",
+        "outputPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser147\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Manthan Thakor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +43,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -71,24 +71,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+    "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "projectUniqueName": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj",
         "projectName": "InfrastructureLayer",
-        "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj",
-        "packagesPath": "C:\\Users\\TGSUser147\\.nuget\\packages\\",
-        "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\obj\\",
+        "projectPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj",
+        "packagesPath": "C:\\Users\\Manthan Thakor\\.nuget\\packages\\",
+        "outputPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser147\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Manthan Thakor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,15 +97,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj"
+              "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\Domain\\Domain.csproj"
               }
             }
           }
@@ -119,7 +118,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -156,24 +156,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj": {
+    "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj",
+        "projectUniqueName": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj",
         "projectName": "WebAPI",
-        "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\TGSUser147\\.nuget\\packages\\",
-        "outputPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\obj\\",
+        "projectPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\WebAPI.csproj",
+        "packagesPath": "C:\\Users\\Manthan Thakor\\.nuget\\packages\\",
+        "outputPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TGSUser147\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Manthan Thakor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -182,15 +182,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj": {
-                "projectPath": "E:\\manthan\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj"
+              "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj": {
+                "projectPath": "D:\\C-Sharp-Tutorial\\35.ASP.netOnionArc\\InventoryManagement\\InfrastructureLayer\\InfrastructureLayer.csproj"
               }
             }
           }
@@ -204,7 +203,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -240,7 +240,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
