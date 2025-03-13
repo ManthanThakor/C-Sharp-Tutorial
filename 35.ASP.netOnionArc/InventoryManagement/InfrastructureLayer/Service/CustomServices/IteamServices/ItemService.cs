@@ -73,8 +73,9 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                     ItemDescription = item.ItemDescription ?? string.Empty,
                     ItemPrice = item.ItemPrice
                 };
-
+                    
                 Category category = await _category.Find(x => x.Id == item.CategoryId);
+
                 CategoryViewModel categoryView = new()
                 {
                     Id = category.Id,
@@ -224,7 +225,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                         ItemId = itemDetails.Id,
                         ItemCode = itemDetails.ItemCode,
                         ItemName = itemDetails.ItemName,
-                        ItemDescription = itemDetails.ItemDescription ?? string.Empty,
+                        ItemDescription = itemDetails.ItemDescription ?? string.Empty,  
                         ItemPrice = itemDetails.ItemPrice
                     };
 
@@ -339,7 +340,6 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
         {
             var user = await _user.Find(x => x.Id == itemInsertModel.UserId);
             var userType = await _userType.Find(x => x.Id == user.UserTypeId);
-            Console.WriteLine(user.UserName + " " + userType.TypeName);
 
             Item newItem = new()
             {
@@ -402,6 +402,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
         public async Task<bool> Update(ItemUpdateModel itemUpdateModel, string image)
             {
                 Item item = await _item.Get(itemUpdateModel.Id);
+
                 item.ItemCode = itemUpdateModel.ItemCode;
                 item.ItemName = itemUpdateModel.ItemName;
                 item.ItemDescription = itemUpdateModel.ItemDescription;
@@ -411,16 +412,19 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 item.IsActive = itemUpdateModel.IsActive;
 
                 ItemImage itemImage = await _itemImages.Find(x => x.ItemId == itemUpdateModel.Id);
+
                 itemImage.ItemId = item.Id;
                 itemImage.CreatedOn = DateTime.Now;
                 itemImage.UpdatedOn = DateTime.Now;
                 itemImage.IsActive = itemUpdateModel.IsActive;
+
                 if (image == null)
                     itemImage.ImageUrl = itemImage.ImageUrl;
                 else
                     itemImage.ImageUrl = image;
           
                 var result = await _item.Update(item);
+
                 if (result == true)
                 {
                     var resultItemImage = await _itemImages.Update(itemImage);
@@ -493,7 +497,9 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 }
             }
             else
+            {
                 return false;
+            }
         }
         public Task<Item> Find(Expression<Func<Item, bool>> match)
         {
