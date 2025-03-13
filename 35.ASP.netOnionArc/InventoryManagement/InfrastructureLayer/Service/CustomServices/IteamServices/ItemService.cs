@@ -452,7 +452,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                     {
                         var result = await DeleteItemAndItemImages(itemImages, item);
                         return result;
-                    }
+                    }   
                     else
                     {
                         var result = await DeleteItemAndItemImages(itemImages, item);
@@ -474,33 +474,12 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
         {
             if (itemImage != null)
             {
-                var resultItemImage = await _itemImages.Delete(itemImage);
-                if (resultItemImage == true)
-                {
-                    var resultItem = await _item.Delete(item);
-                    if (resultItem == true)
-                    {
-                        return true;
-                    }
-                    else
-                        return false;
-                }
-                else
-                {
-                    var resultItem = await _item.Delete(item);
-                    if (resultItem == true)
-                    {
-                        return true;
-                    }
-                    else
-                        return false;
-                }
+                await _itemImages.Delete(itemImage);
             }
-            else
-            {
-                return false;
-            }
+
+            return await _item.Delete(item);
         }
+
         public Task<Item> Find(Expression<Func<Item, bool>> match)
         {
             return _item.Find(match);
