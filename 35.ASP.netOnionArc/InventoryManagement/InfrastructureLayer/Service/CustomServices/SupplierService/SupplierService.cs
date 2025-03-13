@@ -40,25 +40,31 @@ namespace InfrastructureLayer.Service.CustomServices.SupplierServices
                     UserPhoneNo = user.UserPhoneNo,
                     UserPhoto = user.UserPhoto,
                 };
-                UserTypeViewModel userView = new();
+                UserTypeViewModel userTypeView = new();
                 if (userType != null)
                 {
-                    userView.Id = userType.Id;
-                    userView.TypeName = userType.TypeName;
-                    userViewMod.UserType.Add(userView);
+                    userTypeView.Id = userType.Id;
+                    userTypeView.TypeName = userType.TypeName;
+                    userViewMod.UserType.Add(userTypeView);
                 }
                 SupplierViewModels.Add(userViewMod);
             }
+#pragma warning disable CS8603 // Possible null reference return.
             return users == null ? null : SupplierViewModels;
+#pragma warning restore CS8603 // Possible null reference return.
         }
 
         public async Task<UserViewModel> Get(Guid Id)
         {
-            var user = await _userRepository.Get(Id);
+            User user = await _userRepository.Get(Id);
             UserType userType = await _userTypeService.Find(x => x.TypeName == "Supplier");
 
             if (user == null || user.UserTypeId != userType.Id)
+            {
+#pragma warning disable CS8603 // Possible null reference return.
                 return null;
+#pragma warning restore CS8603 // Possible null reference return.
+            }
 
             UserViewModel userViewModel = new()
             {
@@ -90,7 +96,9 @@ namespace InfrastructureLayer.Service.CustomServices.SupplierServices
         {
             UserType supplierUserType = await _userTypeService.Find(ut => ut.TypeName.ToLower() == "supplier");
             if (supplierUserType == null)
+            {
                 return false;
+            }
 
             User user = new()
             {

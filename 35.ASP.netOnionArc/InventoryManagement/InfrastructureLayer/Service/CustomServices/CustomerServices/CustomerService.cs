@@ -151,7 +151,6 @@ namespace InfrastructureLayer.Service.CustomServices.CustomerServices
             return false;
         }
 
-
         public async Task<bool> Delete(Guid Id)
         {
             if (Id != Guid.Empty)
@@ -165,7 +164,6 @@ namespace InfrastructureLayer.Service.CustomServices.CustomerServices
             }
             return false;
         }
-
 
         public Task<User> Find(Expression<Func<User, bool>> match)
         {

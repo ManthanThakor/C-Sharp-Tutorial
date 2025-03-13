@@ -80,7 +80,9 @@ namespace InfrastructureLayer.Service.CustomServices.CategoryServices
                 return result;
             }
             else
+            {
                 return false;
+            }
         }
 
         public async Task<bool> Delete(Guid Id)

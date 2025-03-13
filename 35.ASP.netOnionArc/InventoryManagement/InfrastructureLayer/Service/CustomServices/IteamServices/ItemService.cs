@@ -125,12 +125,17 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 CustomerItem customerItemResult = await _customerItem.Find(x => x.ItemId == Id);
 
                 if (customerItemResult == null)
+                {
                     return null;
+                }
 
                 Item item = await _item.Find(x => x.Id == customerItemResult.ItemId);
 
                 if (item == null)
+                {
                     return null;
+                }
+
 
                 ItemViewModel itemView = new()
                 {
