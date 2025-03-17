@@ -1,6 +1,5 @@
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\appsettings.Development.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\appsettings.json
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\WebAPI.staticwebassets.endpoints.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\WebAPI.exe
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\WebAPI.deps.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\WebAPI.runtimeconfig.json
@@ -79,9 +78,7 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\De
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\scopedcss\bundle\WebAPI.styles.css
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets.build.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets.development.json
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
-E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.build.WebAPI.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebAPI.props
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebAPI.props
@@ -174,3 +171,5 @@ E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\De
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\manthan\C-Sharp-Tutorial\35.ASP.netOnionArc\InventoryManagement\WebAPI\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll

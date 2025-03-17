@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmpDepWebAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+726d1a780efd3ae41325197fc41ca97e3cefaebf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54e61ec4c909882f2441efa579860f2d69395415")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmpDepWebAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmpDepWebAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

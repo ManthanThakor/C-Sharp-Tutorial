@@ -25,7 +25,7 @@ namespace WebAPI.Controllers
         private readonly IJWTAuthManager _authManager;
         private readonly IWebHostEnvironment _environment;
         private readonly IService<UserType> _serviceUserType;
-  
+
         public LoginController(ILogger<LoginController> logger, ISupplierService supplierServices, ICustomerService customerServices, IService<UserType> serviceUserType, IJWTAuthManager authManager, IWebHostEnvironment environment)
         {
             _logger = logger;
@@ -35,7 +35,7 @@ namespace WebAPI.Controllers
             _environment = environment;
             _serviceUserType = serviceUserType;
         }
-  
+
         [HttpPost("LoginUser")]
         [AllowAnonymous]
         public async Task<IActionResult> UserLogin(LoginModel loginModel)
@@ -63,7 +63,52 @@ namespace WebAPI.Controllers
                 return BadRequest(response);
             }
         }
- 
+
+        [HttpPost("RegisterCustomer")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RegisterCustomer([FromForm] UserInsertModel customerModel)
+        {
+            if (ModelState.IsValid)
+            {
+                var userType = await _serviceUserType.Find(x => x.TypeName == "Customer");
+                if (userType == null)
+                {
+                    return BadRequest("Something Went Wrong On our End, Please Contact Admin for Support...!");
+                }
+
+                if (customerModel.UserPhoto != null)
+                {
+                    var checkUser = await _customerServices.Find(x => x.UserId == customerModel.UserId);
+                    if (checkUser != null)
+                        return BadRequest($"User ID : {customerModel.UserId} already Exists, Please use a different One.");
+
+                    var checkUserName = await _customerServices.Find(x => x.UserName == customerModel.UserName);
+                    if (checkUserName != null)
+                        return BadRequest($"UserName : {customerModel.UserName} already Exists, Please use a different UserName.");
+
+                    var photo = await UploadPhoto(customerModel.UserPhoto, customerModel.UserName, DateTime.UtcNow.ToString("dd/MM/yyyy"));
+                    if (string.IsNullOrEmpty(photo))
+                        return BadRequest("Error Uploading the Profile Photo, Please Try Again Later...!");
+
+                    var result = await _customerServices.Insert(customerModel, photo);
+                    if (result)
+                        return Ok("Customer Registered Successfully...!");
+                    else
+                        return BadRequest("Something Went Wrong on our End, Please Contact Admin for Support...!");
+                }
+                else
+                {
+                    return BadRequest("Please Upload Profile Photo as it is Mandatory...!");
+                }
+            }
+            else
+            {
+                return BadRequest("Invalid Customer Information Provided, Please Try Again Later...!");
+            }
+        }
+
+        [HttpPost("RegisterSupplier")]  // ✅ Add this
+        [AllowAnonymous]
         public async Task<IActionResult> RegisterSupplier([FromForm] UserInsertModel supplierModel)
         {
             if (ModelState.IsValid)
@@ -100,7 +145,7 @@ namespace WebAPI.Controllers
             else
                 return BadRequest("Invalid Supplier Information Provided, Please Try Again Later...!");
         }
-  
+
         private async Task<string> UploadPhoto(IFormFile file, string Id, string date)
         {
             string fileName;

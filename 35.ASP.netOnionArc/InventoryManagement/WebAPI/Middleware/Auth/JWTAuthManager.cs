@@ -1,36 +1,38 @@
-﻿using Domain.Models;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
-using WebAPI.Middleware.Auth;
 
-namespace WebAPI.Middleware.Auth
+public class JWTAuthManager
 {
-    public class JWTAuthManager : IJWTAuthManager
+    private readonly IConfiguration _configuration;
+
+    public JWTAuthManager(IConfiguration configuration)
     {
-        #region Private Variables
-        private readonly IConfiguration _configuration;
-        #endregion
+        _configuration = configuration;
+    }
 
-        #region Constructor
-        public JWTAuthManager(IConfiguration configuration)
+    public string GenerateJWT(string userId, string userName, string role)
+    {
+        var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
+        var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+        var claims = new List<Claim>
         {
-            _configuration = configuration;
-        }
-        #endregion
+            new Claim(JwtRegisteredClaimNames.Sub, userId),
+            new Claim(JwtRegisteredClaimNames.UniqueName, userName),
+            new Claim(ClaimTypes.Role, role),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+        };
 
-        public string GenerateJWT(User user)
-        {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
-            var token = new JwtSecurityToken(
-                _configuration["JWT:Issuer"],
-                _configuration["JWT:Issuer"],
-                expires: DateTime.UtcNow.AddMinutes(120),
-                signingCredentials: credentials
-            );
+        var token = new JwtSecurityToken(
+            issuer: _configuration["JWT:Issuer"],
+            audience: _configuration["JWT:Audience"],
+            claims: claims,
+            expires: DateTime.UtcNow.AddMinutes(Convert.ToInt32(_configuration["JWT:ExpiryMinutes"])),
+            signingCredentials: credentials
+        );
 
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        return new JwtSecurityTokenHandler().WriteToken(token);
     }
 }
