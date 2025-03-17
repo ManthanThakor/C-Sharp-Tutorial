@@ -107,7 +107,7 @@ namespace WebAPI.Controllers
             }
         }
 
-        [HttpPost("RegisterSupplier")] 
+        [HttpPost("RegisterSupplier")]  
         [AllowAnonymous]
         public async Task<IActionResult> RegisterSupplier([FromForm] UserInsertModel supplierModel)
         {
