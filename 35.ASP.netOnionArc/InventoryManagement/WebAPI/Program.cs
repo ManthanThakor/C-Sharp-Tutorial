@@ -6,11 +6,9 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ✅ Register the Database Context
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// ✅ Register JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -26,7 +24,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// ✅ Register Authorization
 builder.Services.AddAuthorization();
 
 builder.Services.AddControllers();
@@ -43,7 +40,6 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// ✅ Enable Authentication & Authorization Middleware
 app.UseAuthentication();
 app.UseAuthorization();
 
