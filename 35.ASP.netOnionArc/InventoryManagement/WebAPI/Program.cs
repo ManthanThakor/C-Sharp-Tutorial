@@ -7,7 +7,6 @@ using InfrastructureLayer.Service.CustomServices.SupplierServices;
 using WebAPI.Middleware.Auth;
 using Infrastructure.Repository;
 using InfrastructureLayer.Repository;
-using Domain.Models;
 using InfrastructureLayer.Service.CustomServices.UserTypeServices;
 using Infrastructure.Services.CustomServices.ItemServices;
 using InfrastructureLayer.Service.CustomServices.CategoryServices;
@@ -23,17 +22,17 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // 🔹 Register Auth services
 builder.Services.AddScoped<IJWTAuthManager, JWTAuthManager>();
 
-// Register Generic Repository
+// 🔹 Register Generic Repository
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
-// Register Specific Services
+// 🔹 Register Specific Services
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<ISupplierService, SupplierService>();
 builder.Services.AddScoped<IUserTypeService, UserTypeService>();
 
-// Register Generic Service
+// 🔹 Register Generic Service
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -73,3 +72,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
+//🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹🔹
