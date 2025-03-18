@@ -341,7 +341,7 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
             var user = await _user.Find(x => x.Id == itemInsertModel.UserId);
             var userType = await _userType.Find(x => x.Id == user.UserTypeId);
 
-            Item newItem = new()
+            var newItem = new Item
             {
                 ItemCode = itemInsertModel.ItemCode,
                 ItemName = itemInsertModel.ItemName,
@@ -353,11 +353,10 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 IsActive = itemInsertModel.IsActive
             };
 
-            var result = await _item.Insert(newItem);
-            if (!result)
+            if (!await _item.Insert(newItem))
                 return false;
 
-            ItemImage itemImage = new()
+            var itemImage = new ItemImage
             {
                 ImageUrl = image,
                 ItemId = newItem.Id,
@@ -366,37 +365,35 @@ namespace InfrastructureLayer.Service.CustomServices.ItemServices
                 IsActive = true
             };
 
-            var resultItemImage = await _itemImages.Insert(itemImage);
-            if (!resultItemImage)
+            if (!await _itemImages.Insert(itemImage))
                 return false;
 
             if (userType.TypeName == "Supplier")
             {
-                SupplierItem supplierItem = new()
+                await _supplierItem.Insert(new SupplierItem
                 {
-                    ItemId = newItem.Id, 
+                    ItemId = newItem.Id,
                     SupplierId = itemInsertModel.UserId,
                     CreatedOn = DateTime.Now,
                     UpdatedOn = DateTime.Now,
                     IsActive = itemInsertModel.IsActive
-                };
-                await _supplierItem.Insert(supplierItem);
+                });
             }
             else
             {
-                CustomerItem customerItem = new()
+                await _customerItem.Insert(new CustomerItem
                 {
-                    ItemId = newItem.Id, 
+                    ItemId = newItem.Id,
                     UserId = itemInsertModel.UserId,
                     CreatedOn = DateTime.Now,
                     UpdatedOn = DateTime.Now,
                     IsActive = itemInsertModel.IsActive
-                };
-                await _customerItem.Insert(customerItem);
+                });
             }
 
             return true;
         }
+
 
 
         public async Task<bool> Update(ItemUpdateModel itemUpdateModel, string image)
