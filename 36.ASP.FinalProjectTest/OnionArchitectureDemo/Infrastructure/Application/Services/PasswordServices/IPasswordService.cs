@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Application.Services.PasswordServices
 {
-    internal class IPasswordService
+    public interface IPasswordService
     {
+        string HashPassword(string password);
+        bool VerifyPassword(string password, string passwordHash);
     }
 }

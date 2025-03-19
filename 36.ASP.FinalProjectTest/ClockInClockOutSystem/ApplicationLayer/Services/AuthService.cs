@@ -28,7 +28,6 @@ namespace ApplicationLayer.Services
             if (existingUser != null)
             {
                 return new AuthResponseDto { Message = "User already exists." };
-
             }
 
             Employee user = new Employee

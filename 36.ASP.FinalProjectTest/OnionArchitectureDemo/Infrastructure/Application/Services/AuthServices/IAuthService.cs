@@ -9,8 +9,8 @@ namespace Infrastructure.Application.Services.AuthServices
 {
     public interface IAuthService
     {
-        Task<ResponseDto<string>> RegisterUser(RegisterDTO model);
-        Task<ResponseDto<string>> LoginUser(LoginDTO model);
-        Task<ResponseDto<string>> LogoutUser();
+        Task<AuthResponseDTO> RegisterAsync(RegisterDTO registerDto);
+        Task<AuthResponseDTO> LoginAsync(LoginDTO loginDto);
+        Task<bool> LogoutAsync(string token);
     }
 }
