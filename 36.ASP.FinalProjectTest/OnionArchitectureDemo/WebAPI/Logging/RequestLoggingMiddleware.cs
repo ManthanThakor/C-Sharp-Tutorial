@@ -27,7 +27,7 @@ namespace WebAPI.Logging
 
             try
             {
-                await _next(context); // 🔹 Call the next middleware
+                await _next(context);
 
                 responseBodyStream.Seek(0, SeekOrigin.Begin);
                 var responseBody = await new StreamReader(responseBodyStream).ReadToEndAsync();
@@ -40,8 +40,8 @@ namespace WebAPI.Logging
             }
             finally
             {
-                context.Response.Body = originalResponseBodyStream; // Restore original response stream
-                responseBodyStream.Dispose(); // Dispose explicitly after copying
+                context.Response.Body = originalResponseBodyStream;
+                responseBodyStream.Dispose();
             }
         }
 
