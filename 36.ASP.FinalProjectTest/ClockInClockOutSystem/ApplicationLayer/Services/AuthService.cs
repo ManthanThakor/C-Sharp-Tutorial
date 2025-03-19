@@ -65,6 +65,5 @@ namespace ApplicationLayer.Services
 
             return new AuthResponseDto { Message = "User logged out successfully." };
         }
-
     }
 }
