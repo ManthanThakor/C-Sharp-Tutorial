@@ -89,3 +89,5 @@ E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
