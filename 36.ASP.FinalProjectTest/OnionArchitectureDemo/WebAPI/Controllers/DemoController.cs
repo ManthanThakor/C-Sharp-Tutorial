@@ -2,11 +2,20 @@
 
 namespace WebAPI.Controllers
 {
-    public class DemoController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class DemoController : ControllerBase
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Get()
         {
-            return View();
+            return Ok(new { message = "GET request received" });
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] object data)
+        {
+            return Ok(new { message = "POST request received", receivedData = data });
         }
     }
 }

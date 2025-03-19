@@ -1,9 +1,11 @@
+﻿using WebAPI.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Logging.AddConsole(); // Enable Console Logging
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -16,10 +18,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseHttpsRedirection(); // 🔹 Ensure HTTPS redirection first
+
+app.UseMiddleware<RequestLoggingMiddleware>(); // 🔹 Use Logging Middleware
 
 app.UseAuthorization();
 
-app.MapControllers();
+app.MapControllers(); // 🔹 Single controller mapping
 
 app.Run();

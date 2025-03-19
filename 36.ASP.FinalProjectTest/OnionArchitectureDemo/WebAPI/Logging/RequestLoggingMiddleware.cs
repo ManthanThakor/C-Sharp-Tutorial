@@ -22,17 +22,26 @@ namespace WebAPI.Logging
                 context.Request.Method, context.Request.Path, requestBody);
 
             var originalResponseBodyStream = context.Response.Body;
-            using (var responseBodyStream = new MemoryStream())
+            var responseBodyStream = new MemoryStream();
+            context.Response.Body = responseBodyStream;
+
+            try
             {
-                context.Response.Body = responseBodyStream;
+                await _next(context); // 🔹 Call the next middleware
 
-                await _next(context);
+                responseBodyStream.Seek(0, SeekOrigin.Begin);
+                var responseBody = await new StreamReader(responseBodyStream).ReadToEndAsync();
 
-                var responseBody = await ReadResponseBody(context);
                 _logger.LogInformation("Response Status: {StatusCode}\nBody: {Body}",
                     context.Response.StatusCode, responseBody);
 
+                responseBodyStream.Seek(0, SeekOrigin.Begin);
                 await responseBodyStream.CopyToAsync(originalResponseBodyStream);
+            }
+            finally
+            {
+                context.Response.Body = originalResponseBodyStream; // Restore original response stream
+                responseBodyStream.Dispose(); // Dispose explicitly after copying
             }
         }
 
@@ -42,15 +51,6 @@ namespace WebAPI.Logging
             using var reader = new StreamReader(context.Request.Body, Encoding.UTF8, leaveOpen: true);
             var body = await reader.ReadToEndAsync();
             context.Request.Body.Position = 0;
-            return string.IsNullOrWhiteSpace(body) ? "[Empty]" : body;
-        }
-
-        private async Task<string> ReadResponseBody(HttpContext context)
-        {
-            context.Response.Body.Seek(0, SeekOrigin.Begin);
-            using var reader = new StreamReader(context.Response.Body, Encoding.UTF8);
-            var body = await reader.ReadToEndAsync();
-            context.Response.Body.Seek(0, SeekOrigin.Begin);
             return string.IsNullOrWhiteSpace(body) ? "[Empty]" : body;
         }
     }
