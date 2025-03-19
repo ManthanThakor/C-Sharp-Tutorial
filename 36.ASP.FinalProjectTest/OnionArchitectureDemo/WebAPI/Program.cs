@@ -3,7 +3,7 @@
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Logging.AddConsole(); // Enable Console Logging
+builder.Logging.AddConsole();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -18,12 +18,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection(); // 🔹 Ensure HTTPS redirection first
+app.UseHttpsRedirection();
 
-app.UseMiddleware<RequestLoggingMiddleware>(); // 🔹 Use Logging Middleware
+app.UseMiddleware<RequestLoggingMiddleware>();
 
 app.UseAuthorization();
 
-app.MapControllers(); // 🔹 Single controller mapping
+app.MapControllers();
 
 app.Run();
