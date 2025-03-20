@@ -8,11 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
-using WebAPI.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Logging.AddConsole();
 
 
@@ -81,16 +79,6 @@ builder.Services.AddAuthorization();
 
 
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-        policy =>
-        {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-        });
-});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -108,7 +96,6 @@ app.UseHttpsRedirection();
 
 //app.UseMiddleware<RequestLoggingMiddleware>();
 
-app.UseCors("AllowAll");
 
 //app.UseMiddleware<AuthHeaderLoggingMiddleware>();
 app.UseAuthentication();

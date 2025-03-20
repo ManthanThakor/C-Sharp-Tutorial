@@ -11,6 +11,9 @@ namespace Infrastructure.Data.Configurations
             builder.HasKey(o => o.Id);
             builder.Property(o => o.Id).HasColumnName("OrderId");
 
+            builder.Property(o => o.TotalAmount)
+               .HasColumnType("decimal(18,2)")
+               .IsRequired();
 
         }
     }
