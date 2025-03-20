@@ -36,14 +36,39 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(key),
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Secret"])),
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidIssuer = jwtSettings["Issuer"],
             ValidAudience = jwtSettings["Audience"],
-            ValidateLifetime = true
+            ValidateLifetime = true,
+            ClockSkew = TimeSpan.Zero // Removes default 5-min token expiry buffer
+        };
+
+        // Enable logging for JWT validation errors
+        options.Events = new JwtBearerEvents
+        {
+            OnAuthenticationFailed = context =>
+            {
+                Console.WriteLine("Authentication failed: " + context.Exception.Message);
+                return Task.CompletedTask;
+            },
+            OnChallenge = context =>
+            {
+                Console.WriteLine("JWT Challenge failed: " + context.ErrorDescription);
+                return Task.CompletedTask;
+            },
+            OnMessageReceived = context =>
+            {
+                Console.WriteLine("JWT Token received: " + context.Token);
+                return Task.CompletedTask;
+            }
         };
     });
+
+builder.Services.AddAuthorization();
+
+
 
 builder.Services.AddCors(options =>
 {
@@ -108,10 +133,8 @@ app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
 
-app.UseMiddleware<AuthHeaderLoggingMiddleware>();
+//app.UseMiddleware<AuthHeaderLoggingMiddleware>();
 app.UseAuthentication();
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
