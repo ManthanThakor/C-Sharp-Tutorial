@@ -25,64 +25,6 @@ builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 
-var jwtSettings = builder.Configuration.GetSection("JwtSettings");
-var key = Encoding.UTF8.GetBytes(jwtSettings["Secret"]);
-
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.RequireHttpsMetadata = false;
-        options.SaveToken = true;
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Secret"])),
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidIssuer = jwtSettings["Issuer"],
-            ValidAudience = jwtSettings["Audience"],
-            ValidateLifetime = true,
-            ClockSkew = TimeSpan.Zero // Removes default 5-min token expiry buffer
-        };
-
-        // Enable logging for JWT validation errors
-        options.Events = new JwtBearerEvents
-        {
-            OnAuthenticationFailed = context =>
-            {
-                Console.WriteLine("Authentication failed: " + context.Exception.Message);
-                return Task.CompletedTask;
-            },
-            OnChallenge = context =>
-            {
-                Console.WriteLine("JWT Challenge failed: " + context.ErrorDescription);
-                return Task.CompletedTask;
-            },
-            OnMessageReceived = context =>
-            {
-                Console.WriteLine("JWT Token received: " + context.Token);
-                return Task.CompletedTask;
-            }
-        };
-    });
-
-builder.Services.AddAuthorization();
-
-
-
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-        policy =>
-        {
-            policy.AllowAnyOrigin()
-                  .AllowAnyMethod()
-                  .AllowAnyHeader();
-        });
-});
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -117,6 +59,41 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+var key = Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Secret"]);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.RequireHttpsMetadata = false;
+        options.SaveToken = true;
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = new SymmetricSecurityKey(key),
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+            ValidAudience = builder.Configuration["JwtSettings:Audience"],
+            ClockSkew = TimeSpan.Zero
+        };
+    });
+builder.Services.AddAuthorization();
+
+
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
+});
+
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
 
