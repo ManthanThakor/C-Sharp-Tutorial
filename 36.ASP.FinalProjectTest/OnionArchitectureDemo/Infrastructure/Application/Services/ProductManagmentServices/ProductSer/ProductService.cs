@@ -1,7 +1,6 @@
 ﻿using Domain.Models;
 using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Data.Repositories;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -12,175 +11,114 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
     {
         private readonly IRepository<Product> _productRepository;
         private readonly IRepository<Category> _categoryRepository;
-        private readonly ILogger<ProductService> _logger;
 
-        public ProductService(
-            IRepository<Product> productRepository,
-            IRepository<Category> categoryRepository,
-            ILogger<ProductService> logger)
+        public ProductService(IRepository<Product> productRepository, IRepository<Category> categoryRepository)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
-            _logger = logger;
         }
 
         public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
-            try
+            IEnumerable<Product> products = await _productRepository.GetAll();
+            List<ProductDto> productDtos = new List<ProductDto>();
+
+            foreach (var product in products)
             {
-                _logger.LogInformation("Fetching all products...");
-                IEnumerable<Product> products = await _productRepository.GetAll();
-
-                List<ProductDto> productDtos = new List<ProductDto>();
-
-                foreach (Product product in products)
-                {
-                    var category = await _categoryRepository.GetById(product.CategoryId);
-
-                    var productDto = new ProductDto
-                    {
-                        ProductId = product.Id,
-                        ProductName = product.ProductName,
-                        Price = product.Price,
-                        StockQuantity = product.StockQuantity,
-                        Category = category != null ? new CategoryDto
-                        {
-                            CategoryId = category.Id,
-                            CategoryName = category.CategoryName
-                        } : null
-                    };
-
-                    productDtos.Add(productDto);
-                }
-
-                return productDtos;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while fetching all products.");
-                throw;
-            }
-        }
-
-        public async Task<ProductDto> GetProductById(Guid id)
-        {
-            try
-            {
-                _logger.LogInformation($"Fetching product with ID: {id}");
-                var product = await _productRepository.GetById(id);
-
-                if (product == null)
-                {
-                    _logger.LogWarning($"Product with ID {id} not found.");
-                    return null;
-                }
-
                 var category = await _categoryRepository.GetById(product.CategoryId);
-
-                return new ProductDto
+                var productDto = new ProductDto
                 {
                     ProductId = product.Id,
                     ProductName = product.ProductName,
                     Price = product.Price,
-                    StockQuantity = product.StockQuantity,
-                    Category = category != null ? new CategoryDto
+                    StockQuantity = product.StockQuantity
+                };
+
+                if (category != null)
+                {
+                    var categoryDto = new CategoryDto
                     {
                         CategoryId = category.Id,
                         CategoryName = category.CategoryName
-                    } : null
-                };
+                    };
+                    productDto.Category = categoryDto;
+                }
+
+                productDtos.Add(productDto);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"An error occurred while fetching product with ID: {id}");
-                throw;
-            }
+
+            return productDtos;
         }
 
+        public async Task<ProductDto> GetProductById(Guid id)
+        {
+            Product product = await _productRepository.GetById(id);
+            if (product == null)
+            {
+                return null;
+            }
+
+            Category category = await _categoryRepository.GetById(product.CategoryId);
+            ProductDto productDto = new ProductDto
+            {
+                ProductId = product.Id,
+                ProductName = product.ProductName,
+                Price = product.Price,
+                StockQuantity = product.StockQuantity
+            };
+
+            if (category != null)
+            {
+                var categoryDto = new CategoryDto
+                {
+                    CategoryId = category.Id,
+                    CategoryName = category.CategoryName
+                };
+                productDto.Category = categoryDto;
+            }
+
+            return productDto;
+        }
 
         public async Task AddProduct(CreateProductDto dto)
         {
-            try
+            Product product = new Product
             {
-                if (dto == null)
-                {
-                    _logger.LogWarning("Invalid product data received.");
-                    throw new ArgumentNullException(nameof(dto), "Product data cannot be null.");
-                }
+                Id = Guid.NewGuid(),
+                ProductName = dto.ProductName,
+                Price = dto.Price,
+                StockQuantity = dto.StockQuantity,
+                CategoryId = dto.CategoryId
+            };
 
-                var product = new Product
-                {
-                    Id = Guid.NewGuid(),
-                    ProductName = dto.ProductName,
-                    Price = dto.Price,
-                    StockQuantity = dto.StockQuantity,
-                    CategoryId = dto.CategoryId
-                };
-
-                await _productRepository.Add(product);
-                _logger.LogInformation($"Product {product.ProductName} added successfully.");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "An error occurred while adding a new product.");
-                throw;
-            }
+            await _productRepository.Add(product);
         }
 
         public async Task UpdateProduct(UpdateProductDto dto)
         {
-            try
+            Product product = await _productRepository.GetById(dto.ProductId);
+            if (product == null)
             {
-                if (dto == null)
-                {
-                    _logger.LogWarning("Invalid product update data received.");
-                    throw new ArgumentNullException(nameof(dto), "Product update data cannot be null.");
-                }
-
-                var product = await _productRepository.GetById(dto.ProductId);
-
-                if (product == null)
-                {
-                    _logger.LogWarning($"Product with ID {dto.ProductId} not found for update.");
-                    return;
-                }
-
-                product.ProductName = dto.ProductName;
-                product.Price = dto.Price;
-                product.StockQuantity = dto.StockQuantity;
-                product.CategoryId = dto.CategoryId;
-
-                await _productRepository.Update(product);
-                _logger.LogInformation($"Product with ID {dto.ProductId} updated successfully.");
+                return;
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"An error occurred while updating product with ID: {dto.ProductId}");
-                throw;
-            }
+
+            product.ProductName = dto.ProductName;
+            product.Price = dto.Price;
+            product.StockQuantity = dto.StockQuantity;
+            product.CategoryId = dto.CategoryId;
+
+            await _productRepository.Update(product);
         }
 
         public async Task DeleteProduct(Guid id)
         {
-            try
+            Product product = await _productRepository.GetById(id);
+            if (product == null)
             {
-                _logger.LogInformation($"Attempting to delete product with ID: {id}");
-                var product = await _productRepository.GetById(id);
-
-                if (product == null)
-                {
-                    _logger.LogWarning($"Product with ID {id} not found for deletion.");
-                    return;
-                }
-
-                await _productRepository.Delete(product);
-                _logger.LogInformation($"Product with ID {id} deleted successfully.");
+                return;
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"An error occurred while deleting product with ID: {id}");
-                throw;
-            }
+
+            await _productRepository.Delete(product);
         }
     }
 }
