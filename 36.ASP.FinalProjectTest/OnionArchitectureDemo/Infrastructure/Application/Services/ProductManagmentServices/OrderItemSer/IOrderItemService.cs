@@ -9,11 +9,10 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.OrderItem
 {
     public interface IOrderItemService
     {
-        Task<IEnumerable<OrderItemDto>> GetAllOrderItemsAsync();
-        Task<OrderItemDto> GetOrderItemByIdAsync(Guid id);
-        Task AddOrderItemAsync(CreateOrderItemDto dto);
-        Task UpdateOrderItemAsync(UpdateOrderItemDto dto);
-        Task DeleteOrderItemAsync(Guid id);
+        Task<IEnumerable<OrderItemDto>> GetAllOrderItems();
+        Task<OrderItemDto> GetOrderItemById(Guid id);
+        Task AddOrderItem(CreateOrderItemDto dto);
+        Task UpdateOrderItem(UpdateOrderItemDto dto);
+        Task DeleteOrderItem(Guid id);
     }
-
 }

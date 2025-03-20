@@ -9,13 +9,12 @@ namespace Infrastructure.Data.Repositories
 {
     public interface IRepository<T> where T : class
     {
-        Task<T> GetByIdAsync(Guid id);
-        Task<IEnumerable<T>> GetAllAsync();
-        Task AddAsync(T entity);
-        Task UpdateAsync(T entity);
-        Task DeleteAsync(T entity);
+        Task<T> GetById(Guid id);
+        Task<IEnumerable<T>> GetAll();
+        Task Add(T entity);
+        Task Update(T entity);
+        Task Delete(T entity);
         Task<T> Find(Expression<Func<T, bool>> match);
         Task<ICollection<T>> FindAll(Expression<Func<T, bool>> match);
-        T GetLast();
     }
 }

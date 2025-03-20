@@ -11,18 +11,18 @@
             _logger = logger;
         }
 
-        //public async Task InvokeAsync(HttpContext context)
-        //{
-        //    if (context.Request.Headers.TryGetValue("Authorization", out var authHeader))
-        //    {
-        //        _logger.LogInformation("Authorization Header: {AuthHeader}", authHeader);
-        //    }
-        //    else
-        //    {
-        //        _logger.LogWarning("No Authorization Header found");
-        //    }
+        public async Task InvokeAsync(HttpContext context)
+        {
+            if (context.Request.Headers.TryGetValue("Authorization", out var authHeader))
+            {
+                _logger.LogInformation("Authorization Header: {AuthHeader}", authHeader);
+            }
+            else
+            {
+                _logger.LogWarning("No Authorization Header found");
+            }
 
-        //    await _next(context);
-        //}
+            await _next(context);
+        }
     }
 }

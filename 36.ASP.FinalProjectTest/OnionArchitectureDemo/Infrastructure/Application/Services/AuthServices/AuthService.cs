@@ -46,7 +46,7 @@ namespace Infrastructure.Application.Services.AuthServices
                 PasswordHash = _passwordService.HashPassword(registerDto.Password)
             };
 
-            await _userRepository.AddAsync(user);
+            await _userRepository.Add(user);
 
             var token = _tokenService.GenerateToken(user);
 

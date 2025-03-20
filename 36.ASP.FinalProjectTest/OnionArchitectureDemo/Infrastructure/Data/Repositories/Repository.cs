@@ -19,29 +19,29 @@ namespace Infrastructure.Data.Repositories
             _dbSet = context.Set<T>();
         }
 
-        public async Task<T> GetByIdAsync(Guid id)
+        public async Task<T> GetById(Guid id)
         {
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<IEnumerable<T>> GetAll()
         {
             return await _dbSet.ToListAsync();
         }
 
-        public async Task AddAsync(T entity)
+        public async Task Add(T entity)
         {
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(T entity)
+        public async Task Update(T entity)
         {
             _dbSet.Update(entity);
             await _context.SaveChangesAsync();
         }
 
-        public async Task DeleteAsync(T entity)
+        public async Task Delete(T entity)
         {
             _dbSet.Remove(entity);
             await _context.SaveChangesAsync();
@@ -57,9 +57,5 @@ namespace Infrastructure.Data.Repositories
             return await _dbSet.Where(match).ToListAsync();
         }
 
-        public T GetLast()
-        {
-            return _dbSet.OrderByDescending(e => EF.Property<object>(e, "Id")).FirstOrDefault();
-        }
     }
 }

@@ -77,6 +77,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 builder.Services.AddAuthorization();
 
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
@@ -92,9 +93,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 //app.UseMiddleware<RequestLoggingMiddleware>();
-
-
 //app.UseMiddleware<AuthHeaderLoggingMiddleware>();
+app.UseAuthentication();
+app.UseAuthorization();
 app.UseAuthentication();
 app.MapControllers();
 

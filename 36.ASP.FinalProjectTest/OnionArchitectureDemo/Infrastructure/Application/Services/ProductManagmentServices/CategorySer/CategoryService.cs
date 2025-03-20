@@ -25,16 +25,17 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
             {
                 _logger.LogInformation("Fetching all categories.");
 
-                IEnumerable<Category> categories = await _categoryRepository.GetAllAsync();
+                IEnumerable<Category> categories = await _categoryRepository.GetAll();
                 List<CategoryDto> categoryDtos = new List<CategoryDto>();
 
                 foreach (var category in categories)
                 {
-                    categoryDtos.Add(new CategoryDto
+                    var categoryDto = new CategoryDto
                     {
                         CategoryId = category.Id,
                         CategoryName = category.CategoryName
-                    });
+                    };
+                    categoryDtos.Add(categoryDto);
                 }
 
                 return categoryDtos;
@@ -50,12 +51,9 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
         {
             try
             {
-                if (id == Guid.Empty)
-                    throw new ArgumentException("Invalid category ID.");
-
                 _logger.LogInformation($"Fetching category with ID: {id}");
 
-                var category = await _categoryRepository.GetByIdAsync(id);
+                var category = await _categoryRepository.GetById(id);
                 if (category == null)
                 {
                     _logger.LogWarning($"Category with ID {id} not found.");
@@ -79,9 +77,6 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(dto.CategoryName))
-                    throw new ArgumentException("Category name cannot be empty.");
-
                 _logger.LogInformation($"Adding new category: {dto.CategoryName}");
 
                 var category = new Category
@@ -90,7 +85,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
                     CategoryName = dto.CategoryName
                 };
 
-                await _categoryRepository.AddAsync(category);
+                await _categoryRepository.Add(category);
                 _logger.LogInformation("Category added successfully.");
             }
             catch (Exception ex)
@@ -104,15 +99,9 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
         {
             try
             {
-                if (dto.CategoryId == Guid.Empty)
-                    throw new ArgumentException("Invalid category ID.");
-
-                if (string.IsNullOrWhiteSpace(dto.CategoryName))
-                    throw new ArgumentException("Category name cannot be empty.");
-
                 _logger.LogInformation($"Updating category with ID: {dto.CategoryId}");
 
-                var category = await _categoryRepository.GetByIdAsync(dto.CategoryId);
+                var category = await _categoryRepository.GetById(dto.CategoryId);
                 if (category == null)
                 {
                     _logger.LogWarning($"Category with ID {dto.CategoryId} not found.");
@@ -120,7 +109,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
                 }
 
                 category.CategoryName = dto.CategoryName;
-                await _categoryRepository.UpdateAsync(category);
+                await _categoryRepository.Update(category);
                 _logger.LogInformation("Category updated successfully.");
             }
             catch (Exception ex)
@@ -134,19 +123,16 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CategoryS
         {
             try
             {
-                if (id == Guid.Empty)
-                    throw new ArgumentException("Invalid category ID.");
-
                 _logger.LogInformation($"Deleting category with ID: {id}");
 
-                var category = await _categoryRepository.GetByIdAsync(id);
+                var category = await _categoryRepository.GetById(id);
                 if (category == null)
                 {
                     _logger.LogWarning($"Category with ID {id} not found.");
                     return;
                 }
 
-                await _categoryRepository.DeleteAsync(category);
+                await _categoryRepository.Delete(category);
                 _logger.LogInformation("Category deleted successfully.");
             }
             catch (Exception ex)
