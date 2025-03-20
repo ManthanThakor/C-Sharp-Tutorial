@@ -9,8 +9,8 @@ namespace Infrastructure.Data.Configurations
         public void Configure(EntityTypeBuilder<Order> builder)
         {
             builder.HasKey(o => o.Id);
-            builder.Property(o => o.Id)
-                .HasColumnName("OrderId");
+            builder.Property(o => o.Id).HasColumnName("OrderId");
+
 
         }
     }

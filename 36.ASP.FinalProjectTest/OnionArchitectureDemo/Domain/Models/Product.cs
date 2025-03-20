@@ -17,11 +17,9 @@ namespace Domain.Models
         public string ProductName { get; set; } = string.Empty;
 
         [Required]
-        [Range(0.01, 99999.99)]
         public decimal Price { get; set; }
 
         [Required]
-        [Range(0, int.MaxValue)]
         public int StockQuantity { get; set; }
 
         [Required]
@@ -29,6 +27,10 @@ namespace Domain.Models
 
         [ForeignKey("CategoryId")]
         public Category? Category { get; set; }
+
+        public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
+        public ICollection<Cart> Carts { get; set; } = new List<Cart>();
+
     }
 
 }

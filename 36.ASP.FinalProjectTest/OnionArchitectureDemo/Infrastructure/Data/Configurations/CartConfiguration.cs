@@ -11,9 +11,8 @@ namespace Infrastructure.Data.Configurations
             builder.HasKey(c => c.Id);
             builder.Property(c => c.Id).HasColumnName("CartId");
 
-
             builder.HasOne(c => c.Product)
-                   .WithMany()
+                   .WithMany(p => p.Carts)
                    .HasForeignKey(c => c.ProductId)
                    .OnDelete(DeleteBehavior.Cascade);
         }
