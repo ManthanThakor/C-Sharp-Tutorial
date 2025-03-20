@@ -30,10 +30,11 @@ namespace Infrastructure.Application.Services.TokenServices
                 throw new ArgumentNullException("JWT Secret Key is missing from configuration.");
             }
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
-            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+            SymmetricSecurityKey symmetricsecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
 
-            var claims = new List<Claim>
+            SigningCredentials credentials = new SigningCredentials(symmetricsecurityKey, SecurityAlgorithms.HmacSha256);
+
+            List<Claim> claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Username),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
@@ -42,12 +43,13 @@ namespace Infrastructure.Application.Services.TokenServices
                 new Claim(ClaimTypes.Email, user.Email)
             };
 
-            var token = new JwtSecurityToken(
+            JwtSecurityToken token = new JwtSecurityToken(
                 issuer: issuer,
                 audience: audience,
                 claims: claims,
                 expires: DateTime.UtcNow.AddMinutes(expiryMinutes),
-                signingCredentials: credentials);
+                signingCredentials: credentials
+             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
