@@ -4,10 +4,8 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Application.Services.TokenServices
 {
@@ -22,9 +20,16 @@ namespace Infrastructure.Application.Services.TokenServices
 
         public string GenerateToken(User user)
         {
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Secret"]));
+            var secretKey = _configuration["JwtSettings:Secret"];
+            if (string.IsNullOrEmpty(secretKey))
+            {
+                throw new ArgumentNullException("JWT Secret Key is missing from configuration.");
+            }
 
+            var securityKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(secretKey));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var expiryMinutes = int.Parse(_configuration["JwtSettings:ExpiryMinutes"] ?? "60");
 
             var claims = new List<Claim>
             {
@@ -37,7 +42,7 @@ namespace Infrastructure.Application.Services.TokenServices
                 issuer: _configuration["JwtSettings:Issuer"],
                 audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddHours(3),
+                expires: DateTime.UtcNow.AddMinutes(expiryMinutes),
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);

@@ -10,7 +10,7 @@ namespace ConsoleApp1
             Console.WriteLine("=== Debugging User Class ===");
 
             User user1 = new User();
-            Console.WriteLine(user1.Email); // Output: ""
+            Console.WriteLine(user1.Email);
 
             User user = new User
             {
