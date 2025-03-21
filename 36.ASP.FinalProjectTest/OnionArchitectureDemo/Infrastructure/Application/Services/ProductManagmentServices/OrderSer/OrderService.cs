@@ -45,7 +45,10 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.OrderSer
         public async Task<OrderDto> GetOrderById(Guid orderId)
         {
             var order = await _orderRepository.GetById(orderId);
-            if (order == null) return null;
+            if (order == null)
+            {
+                return null;
+            }
 
             return new OrderDto
             {
@@ -80,19 +83,22 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.OrderSer
         public async Task DeleteOrder(Guid orderId)
         {
             var order = await _orderRepository.GetById(orderId);
-            if (order == null) return;
+            if (order == null)
+            {
+                return;
+            }
 
             await _orderRepository.Delete(order);
         }
 
         public async Task<IEnumerable<ProductDto>> GetProductsByOrderId(Guid orderId)
         {
-            var orderItems = await _orderItemRepository.FindAll(oi => oi.OrderId == orderId);
-            var productDtos = new List<ProductDto>();
+            ICollection<OrderItem> orderItems = await _orderItemRepository.FindAll(oi => oi.OrderId == orderId);
+            List<ProductDto> productDtos = new List<ProductDto>();
 
-            foreach (var orderItem in orderItems)
+            foreach (OrderItem orderItem in orderItems)
             {
-                var productDto = await _productService.GetProductById(orderItem.ProductId);
+                ProductDto productDto = await _productService.GetProductById(orderItem.ProductId);
                 if (productDto != null)
                 {
                     productDtos.Add(productDto);

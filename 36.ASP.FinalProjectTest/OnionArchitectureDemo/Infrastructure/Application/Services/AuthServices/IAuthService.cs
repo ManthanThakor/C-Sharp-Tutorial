@@ -11,6 +11,5 @@ namespace Infrastructure.Application.Services.AuthServices
     {
         Task<AuthResponseDTO> RegisterAsync(RegisterDTO registerDto);
         Task<AuthResponseDTO> LoginAsync(LoginDTO loginDto);
-        Task<bool> LogoutAsync(string token);
     }
 }

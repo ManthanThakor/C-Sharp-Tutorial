@@ -87,11 +87,6 @@ namespace Infrastructure.Application.Services.AuthServices
             };
         }
 
-        public async Task<bool> LogoutAsync(string token)
-        {
-
-            return await Task.FromResult(true);
-        }
     }
 }
 

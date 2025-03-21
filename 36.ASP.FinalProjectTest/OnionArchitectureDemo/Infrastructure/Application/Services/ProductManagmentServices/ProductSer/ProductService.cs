@@ -156,7 +156,6 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
                     filteredProducts.Add(productDto);
                 }
             }
-
             return filteredProducts;
         }
     }

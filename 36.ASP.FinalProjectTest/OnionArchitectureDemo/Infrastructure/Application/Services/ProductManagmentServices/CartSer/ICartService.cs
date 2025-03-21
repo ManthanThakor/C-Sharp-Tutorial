@@ -9,11 +9,11 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 {
     public interface ICartService
     {
-        Task<IEnumerable<CartDto>> GetAllCarts();
-        Task<CartDto> GetCartById(Guid id);
-        Task AddCart(CreateCartDto dto);
-        Task UpdateCart(UpdateCartDto dto);
-        Task DeleteCart(Guid id);
+        Task<IEnumerable<CartDto>> GetAllCartItems();
+        Task<CartDto> GetCartItemById(Guid id);
+        Task AddCartItem(CreateCartDto dto);
+        Task UpdateCartItem(UpdateCartDto dto);
+        Task DeleteCartItem(Guid id);
     }
 
 }

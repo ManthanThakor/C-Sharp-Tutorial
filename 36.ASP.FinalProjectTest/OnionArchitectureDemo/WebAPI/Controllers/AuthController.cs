@@ -54,18 +54,10 @@ namespace WebAPI.Controllers
 
         [Authorize]
         [HttpPost("logout")]
-        public async Task<IActionResult> Logout()
+        public IActionResult Logout()
         {
-            var token = HttpContext.Request.Headers["Authorization"].ToString().Replace("Bearer ", "");
+            return Ok(new { Message = "Logout successful" });
 
-            var result = await _authService.LogoutAsync(token);
-
-            if (result)
-            {
-                return Ok(new { Message = "Logout successful" });
-            }
-
-            return BadRequest(new { Message = "Logout failed" });
         }
     }
 }
