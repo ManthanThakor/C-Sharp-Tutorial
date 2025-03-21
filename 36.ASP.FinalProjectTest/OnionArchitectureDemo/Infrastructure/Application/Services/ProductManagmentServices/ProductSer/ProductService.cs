@@ -134,10 +134,10 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
                 return new List<ProductDto>();
             }
 
-            var products = await _productRepository.GetAll();
+            IEnumerable<Product> products = await _productRepository.GetAll();
             List<ProductDto> filteredProducts = new List<ProductDto>();
 
-            foreach (var product in products)
+            foreach (Product product in products)
             {
                 if (product.ProductName.ToLower().Contains(productName.ToLower()))
                 {

@@ -38,9 +38,9 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
     {
-        Title = "Attendance API",
+        Title = "Product API",
         Version = "v1",
-        Description = "API for Attendance and Leave Management System"
+        Description = "API for Product Management System"
     });
 
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
