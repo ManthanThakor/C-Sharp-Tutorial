@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StudentCourseMvcAjaxJquery")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2355a0c8998debe6e639c829e35fb069708569f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f7d8579db1d13ff034a9f15c5a068cadcc0ea06")]
 [assembly: System.Reflection.AssemblyProductAttribute("StudentCourseMvcAjaxJquery")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StudentCourseMvcAjaxJquery")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

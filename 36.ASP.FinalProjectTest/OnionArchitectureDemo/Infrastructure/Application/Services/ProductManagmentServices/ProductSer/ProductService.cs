@@ -168,6 +168,5 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
             }
             return filteredProducts;
         }
-
     }
 }
