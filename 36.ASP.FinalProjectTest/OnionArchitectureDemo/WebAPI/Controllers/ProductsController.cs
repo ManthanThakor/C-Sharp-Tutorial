@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Application.Services.ProductManagmentServices.ProductSer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,6 +11,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/products")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
