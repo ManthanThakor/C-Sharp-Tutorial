@@ -14,5 +14,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
         Task AddProduct(CreateProductDto dto);
         Task UpdateProduct(UpdateProductDto dto);
         Task DeleteProduct(Guid id);
+        Task<IEnumerable<ProductDto>> SearchProductByName(string productName);
+
     }
 }

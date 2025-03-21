@@ -120,5 +120,44 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
 
             await _productRepository.Delete(product);
         }
+        public async Task<IEnumerable<ProductDto>> SearchProductByName(string productName)
+        {
+            if (string.IsNullOrWhiteSpace(productName))
+            {
+                return new List<ProductDto>();
+            }
+
+            IEnumerable<Product> products = await _productRepository.GetAll();
+            List<ProductDto> filteredProducts = new List<ProductDto>();
+
+            foreach (var product in products)
+            {
+                if (product.ProductName.ToLower().Contains(productName.ToLower()))
+                {
+                    var category = await _categoryRepository.GetById(product.CategoryId);
+                    var productDto = new ProductDto
+                    {
+                        ProductId = product.Id,
+                        ProductName = product.ProductName,
+                        Price = product.Price,
+                        StockQuantity = product.StockQuantity
+                    };
+
+                    if (category != null)
+                    {
+                        var categoryDto = new CategoryDto
+                        {
+                            CategoryId = category.Id,
+                            CategoryName = category.CategoryName
+                        };
+                        productDto.Category = categoryDto;
+                    }
+
+                    filteredProducts.Add(productDto);
+                }
+            }
+
+            return filteredProducts;
+        }
     }
 }
