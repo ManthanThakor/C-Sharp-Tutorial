@@ -1,61 +1,116 @@
-﻿using Infrastructure.Application.DtosForProductManagaments;
+﻿using Domain.Models;
+using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Application.Services.ProductManagmentServices.CategorySer;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/categories")]  // Base route for all category-related endpoints
     [ApiController]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
+        private readonly ILogger<CategoriesController> _logger;
 
-        public CategoriesController(ICategoryService categoryService)
+        public CategoriesController(ICategoryService categoryService, ILogger<CategoriesController> logger)
         {
             _categoryService = categoryService;
+            _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("all")]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetAllCategories()
         {
-            var categories = await _categoryService.GetAllCategories();
-            return Ok(categories);
+            try
+            {
+                var categories = await _categoryService.GetAllCategories();
+                return Ok(categories);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while getting all categories.");
+                return StatusCode(500, "An error occurred while fetching categories.");
+            }
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:guid}")]
         public async Task<ActionResult<CategoryDto>> GetCategoryById(Guid id)
         {
-            var category = await _categoryService.GetCategoryById(id);
-            if (category == null)
+            try
             {
-                return NotFound();
+                var category = await _categoryService.GetCategoryById(id);
+                if (category == null)
+                {
+                    _logger.LogWarning("Category with ID {CategoryId} not found.", id);
+                    return NotFound("Category not found.");
+                }
+                return Ok(category);
             }
-            return Ok(category);
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while getting category with ID {CategoryId}.", id);
+                return StatusCode(500, "An error occurred while fetching the category.");
+            }
         }
 
-        [HttpPost]
-        public async Task<ActionResult> CreateCategory(CreateCategoryDto dto)
+        [HttpPost("create")]
+        public async Task<ActionResult> CreateCategory([FromBody] CreateCategoryDto dto)
         {
-            await _categoryService.AddCategory(dto);
-            return CreatedAtAction(nameof(GetAllCategories), new { }, null);
+            try
+            {
+                await _categoryService.AddCategory(dto);
+                _logger.LogInformation("Category created successfully.");
+
+                return CreatedAtAction(nameof(GetCategoryById), new { id = dto. }, dto);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while creating category.");
+                return StatusCode(500, "An error occurred while creating the category.");
+            }
         }
 
-        [HttpPut("{id}")]
-        public async Task<ActionResult> UpdateCategory(Guid id, UpdateCategoryDto dto)
+        [HttpPut("update/{id:guid}")]
+        public async Task<ActionResult> UpdateCategory(Guid id, [FromBody] UpdateCategoryDto dto)
         {
             if (id != dto.CategoryId)
             {
-                return BadRequest();
+                return BadRequest("Category ID mismatch.");
             }
-            await _categoryService.UpdateCategory(dto);
-            return NoContent();
+
+            try
+            {
+                await _categoryService.UpdateCategory(dto);
+                _logger.LogInformation("Category with ID {CategoryId} updated successfully.", id);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while updating category with ID {CategoryId}.", id);
+                return StatusCode(500, "An error occurred while updating the category.");
+            }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id:guid}")]
         public async Task<ActionResult> DeleteCategory(Guid id)
         {
-            await _categoryService.DeleteCategory(id);
-            return NoContent();
+            try
+            {
+                await _categoryService.DeleteCategory(id);
+                _logger.LogInformation("Category with ID {CategoryId} deleted successfully.", id);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error while deleting category with ID {CategoryId}.", id);
+                return StatusCode(500, "An error occurred while deleting the category.");
+            }
         }
     }
 }

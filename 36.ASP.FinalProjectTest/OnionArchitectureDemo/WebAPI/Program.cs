@@ -1,5 +1,10 @@
 ﻿using Infrastructure.Application.Services.AuthServices;
 using Infrastructure.Application.Services.PasswordServices;
+using Infrastructure.Application.Services.ProductManagmentServices.CartSer;
+using Infrastructure.Application.Services.ProductManagmentServices.CategorySer;
+using Infrastructure.Application.Services.ProductManagmentServices.OrderItemSer;
+using Infrastructure.Application.Services.ProductManagmentServices.OrderSer;
+using Infrastructure.Application.Services.ProductManagmentServices.ProductSer;
 using Infrastructure.Application.Services.TokenServices;
 using Infrastructure.Data;
 using Infrastructure.Data.Repositories;
@@ -22,6 +27,12 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderItemService, OrderItemService>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 builder.Services.AddSwaggerGen(c =>
 {
