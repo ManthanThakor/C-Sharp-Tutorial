@@ -176,3 +176,6 @@ E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\bin\Debug\net8.0\WebAPI.staticwebassets.endpoints.json
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+E:\manthan\C-Sharp-Tutorial\36.ASP.FinalProjectTest\OnionArchitectureDemo\WebAPI\obj\Debug\net8.0\staticwebassets\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

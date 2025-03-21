@@ -15,4 +15,5 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.OrderItem
         Task UpdateOrderItem(UpdateOrderItemDto dto);
         Task DeleteOrderItem(Guid id);
     }
+
 }

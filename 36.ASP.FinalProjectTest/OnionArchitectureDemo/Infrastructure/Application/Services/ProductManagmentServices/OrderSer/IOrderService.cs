@@ -11,9 +11,10 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.OrderSer
     {
         Task<IEnumerable<OrderDto>> GetAllOrders();
         Task<OrderDto> GetOrderById(Guid id);
-        Task AddOrder(CreateOrderDto dto);
+        Task CreateOrder(CreateOrderDto dto);
         Task UpdateOrder(UpdateOrderDto dto);
         Task DeleteOrder(Guid id);
+        Task<IEnumerable<ProductDto>> GetProductsByOrderId(Guid orderId);
     }
 
 }

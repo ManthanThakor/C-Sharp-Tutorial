@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "LitguNTi3hmkLFAP1Q/lcO1OwzbDgVoc3HzylagRRZCh9g2E28dn6XkZzjP5sCnFFQP/gsqgygBhXSW5v3IWSg==",
+  "dgSpecHash": "W0BpDCQPkE0=",
   "success": true,
   "projectFilePath": "E:\\manthan\\C-Sharp-Tutorial\\36.ASP.FinalProjectTest\\OnionArchitectureDemo\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.11\\microsoft.netcore.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.11\\microsoft.windowsdesktop.app.ref.8.0.11.nupkg.sha512",
+    "C:\\Users\\TGSUser147\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.11\\microsoft.aspnetcore.app.ref.8.0.11.nupkg.sha512"
+  ],
   "logs": []
 }

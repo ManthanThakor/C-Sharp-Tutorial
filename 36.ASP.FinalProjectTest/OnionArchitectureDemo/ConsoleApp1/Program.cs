@@ -7,22 +7,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Debugging User Class ===");
+            Console.WriteLine("=== Debugging ===");
 
-            User user1 = new User();
-            Console.WriteLine(user1.Email);
-
-            User user = new User
-            {
-                Username = "Manthan",
-                Email = "manthan@example.com",
-                PasswordHash = "hashed_password_here"
-            };
-
-            Console.WriteLine($"ID: {user.Id}");
-            Console.WriteLine($"Username: {user.Username}");
-            Console.WriteLine($"Email: {user.Email}");
-            Console.WriteLine($"Password Hash: {user.PasswordHash}");
 
             Console.WriteLine("=== Debugging Complete ===");
             Console.ReadLine();
