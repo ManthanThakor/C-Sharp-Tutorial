@@ -9,8 +9,7 @@ namespace Infrastructure.Application.DtosForProductManagaments
         public string ProductName { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public int StockQuantity { get; set; }
-        public Guid CategoryId { get; set; }
-        public string CategoryName { get; set; } = string.Empty;
+
         public CategoryDto? Category { get; set; }
     }
 

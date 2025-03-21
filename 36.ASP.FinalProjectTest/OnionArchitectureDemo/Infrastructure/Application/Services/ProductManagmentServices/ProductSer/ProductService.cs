@@ -20,29 +20,32 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
 
         public async Task<IEnumerable<ProductDto>> GetAllProducts()
         {
-            IEnumerable<Product> products = await _productRepository.GetAll();
+            var products = await _productRepository.GetAll();
             List<ProductDto> productDtos = new List<ProductDto>();
 
             foreach (var product in products)
             {
                 var category = await _categoryRepository.GetById(product.CategoryId);
+                var categoryDto = new CategoryDto();
+
+                if (category != null)
+                {
+                    categoryDto.CategoryId = category.Id;
+                    categoryDto.CategoryName = category.CategoryName;
+                }
+                else
+                {
+                    categoryDto = null;
+                }
+
                 var productDto = new ProductDto
                 {
                     ProductId = product.Id,
                     ProductName = product.ProductName,
                     Price = product.Price,
-                    StockQuantity = product.StockQuantity
+                    StockQuantity = product.StockQuantity,
+                    Category = categoryDto
                 };
-
-                if (category != null)
-                {
-                    var categoryDto = new CategoryDto
-                    {
-                        CategoryId = category.Id,
-                        CategoryName = category.CategoryName
-                    };
-                    productDto.Category = categoryDto;
-                }
 
                 productDtos.Add(productDto);
             }
@@ -52,33 +55,37 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
 
         public async Task<ProductDto> GetProductById(Guid id)
         {
-            Product product = await _productRepository.GetById(id);
+            var product = await _productRepository.GetById(id);
             if (product == null)
             {
                 return null;
             }
 
-            Category category = await _categoryRepository.GetById(product.CategoryId);
-            ProductDto productDto = new ProductDto
-            {
-                ProductId = product.Id,
-                ProductName = product.ProductName,
-                Price = product.Price,
-                StockQuantity = product.StockQuantity
-            };
+            var category = await _categoryRepository.GetById(product.CategoryId);
+
+            CategoryDto categoryDto = null;
 
             if (category != null)
             {
-                var categoryDto = new CategoryDto
+                categoryDto = new CategoryDto
                 {
                     CategoryId = category.Id,
                     CategoryName = category.CategoryName
                 };
-                productDto.Category = categoryDto;
             }
+
+            var productDto = new ProductDto
+            {
+                ProductId = product.Id,
+                ProductName = product.ProductName,
+                Price = product.Price,
+                StockQuantity = product.StockQuantity,
+                Category = categoryDto
+            };
 
             return productDto;
         }
+
 
         public async Task AddProduct(CreateProductDto dto)
         {
@@ -127,7 +134,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
                 return new List<ProductDto>();
             }
 
-            IEnumerable<Product> products = await _productRepository.GetAll();
+            var products = await _productRepository.GetAll();
             List<ProductDto> filteredProducts = new List<ProductDto>();
 
             foreach (var product in products)
@@ -135,28 +142,32 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.ProductSe
                 if (product.ProductName.ToLower().Contains(productName.ToLower()))
                 {
                     var category = await _categoryRepository.GetById(product.CategoryId);
+
+                    CategoryDto categoryDto = null;
+
+                    if (category != null)
+                    {
+                        categoryDto = new CategoryDto
+                        {
+                            CategoryId = category.Id,
+                            CategoryName = category.CategoryName
+                        };
+                    }
+
                     var productDto = new ProductDto
                     {
                         ProductId = product.Id,
                         ProductName = product.ProductName,
                         Price = product.Price,
-                        StockQuantity = product.StockQuantity
+                        StockQuantity = product.StockQuantity,
+                        Category = categoryDto
                     };
-
-                    if (category != null)
-                    {
-                        var categoryDto = new CategoryDto
-                        {
-                            CategoryId = category.Id,
-                            CategoryName = category.CategoryName
-                        };
-                        productDto.Category = categoryDto;
-                    }
 
                     filteredProducts.Add(productDto);
                 }
             }
             return filteredProducts;
         }
+
     }
 }

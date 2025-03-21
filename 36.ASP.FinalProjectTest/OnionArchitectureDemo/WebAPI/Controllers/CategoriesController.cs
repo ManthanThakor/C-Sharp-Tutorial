@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
-    [Route("api/categories")]  // Base route for all category-related endpoints
+    [Route("api/categories")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {
@@ -65,7 +65,7 @@ namespace WebAPI.Controllers
                 await _categoryService.AddCategory(dto);
                 _logger.LogInformation("Category created successfully.");
 
-                return CreatedAtAction(nameof(GetCategoryById), new { id = dto. }, dto);
+                return StatusCode(201);
             }
             catch (Exception ex)
             {
@@ -73,6 +73,7 @@ namespace WebAPI.Controllers
                 return StatusCode(500, "An error occurred while creating the category.");
             }
         }
+
 
         [HttpPut("update/{id:guid}")]
         public async Task<ActionResult> UpdateCategory(Guid id, [FromBody] UpdateCategoryDto dto)

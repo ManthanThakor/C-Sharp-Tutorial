@@ -58,10 +58,22 @@ namespace WebAPI.Controllers
         {
             var cartItem = await _cartService.GetCartItemById(cartId);
             if (cartItem == null)
+            {
                 return NotFound("Cart item not found");
+            }
 
-            var categoryName = cartItem.Product?.CategoryName ?? "Category not found";
-            return Ok(categoryName);
+            if (cartItem.Product == null)
+            {
+                return NotFound("Product not found for this cart item");
+            }
+
+            if (cartItem.Product.Category == null)
+            {
+                return NotFound("Category not found for this product");
+            }
+
+            return Ok(cartItem.Product.Category.CategoryName);
         }
+
     }
 }

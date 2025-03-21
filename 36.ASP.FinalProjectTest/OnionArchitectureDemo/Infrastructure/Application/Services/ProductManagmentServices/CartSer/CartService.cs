@@ -110,7 +110,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
                 return null;
             }
 
-            return productDto.CategoryName;
+            return productDto.Category.CategoryName;
         }
 
     }
