@@ -14,6 +14,8 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
         Task AddCartItem(CreateCartDto dto);
         Task UpdateCartItem(UpdateCartDto dto);
         Task DeleteCartItem(Guid id);
+        Task<string> GetCategoryNameByCartId(Guid cartId);
     }
+
 
 }

@@ -2,11 +2,6 @@
 using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Application.Services.ProductManagmentServices.ProductSer;
 using Infrastructure.Data.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 {
@@ -30,9 +25,9 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 
             foreach (var cartItem in cartItems)
             {
-                var productDto = await _productService.GetProductById(cartItem.ProductId);
+                ProductDto productDto = await _productService.GetProductById(cartItem.ProductId);
 
-                var cartDto = new CartDto
+                CartDto cartDto = new CartDto
                 {
                     CartId = cartItem.Id,
                     ProductId = cartItem.ProductId,
@@ -48,7 +43,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 
         public async Task<CartDto> GetCartItemById(Guid id)
         {
-            var cartItem = await _cartRepository.GetById(id);
+            Cart cartItem = await _cartRepository.GetById(id);
             if (cartItem == null)
             {
                 return null;
@@ -79,7 +74,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 
         public async Task UpdateCartItem(UpdateCartDto dto)
         {
-            var cartItem = await _cartRepository.GetById(dto.CartId);
+            Cart cartItem = await _cartRepository.GetById(dto.CartId);
             if (cartItem == null)
             {
                 return;
@@ -93,7 +88,7 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 
         public async Task DeleteCartItem(Guid id)
         {
-            var cartItem = await _cartRepository.GetById(id);
+            Cart cartItem = await _cartRepository.GetById(id);
             if (cartItem == null)
             {
                 return;
@@ -101,5 +96,22 @@ namespace Infrastructure.Application.Services.ProductManagmentServices.CartSer
 
             await _cartRepository.Delete(cartItem);
         }
+        public async Task<string> GetCategoryNameByCartId(Guid cartId)
+        {
+            Cart cartItem = await _cartRepository.GetById(cartId);
+            if (cartItem == null)
+            {
+                return null;
+            }
+
+            ProductDto productDto = await _productService.GetProductById(cartItem.ProductId);
+            if (productDto == null)
+            {
+                return null;
+            }
+
+            return productDto.CategoryName;
+        }
+
     }
 }
