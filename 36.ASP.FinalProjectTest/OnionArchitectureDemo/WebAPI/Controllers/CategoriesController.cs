@@ -76,7 +76,6 @@ namespace WebAPI.Controllers
             }
         }
 
-
         [HttpPut("update/{id:guid}")]
         public async Task<ActionResult> UpdateCategory(Guid id, [FromBody] UpdateCategoryDto dto)
         {
