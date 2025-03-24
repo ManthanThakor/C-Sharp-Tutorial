@@ -1,6 +1,7 @@
 ﻿using Domain.Models;
 using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Application.Services.ProductManagmentServices.CategorySer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/categories")]
     [ApiController]
     public class CategoriesController : ControllerBase

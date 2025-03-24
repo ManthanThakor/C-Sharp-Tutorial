@@ -1,5 +1,6 @@
 ﻿using Infrastructure.Application.DtosForProductManagaments;
 using Infrastructure.Application.Services.ProductManagmentServices.OrderItemSer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/order-items")]
     [ApiController]
     public class OrderItemsController : ControllerBase
