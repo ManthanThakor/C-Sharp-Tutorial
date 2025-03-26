@@ -29,7 +29,6 @@ namespace UserAuthMVC.Controllers
             return View();
         }
 
-        // Updated AccountController.cs - Register method
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(Register model)
@@ -38,7 +37,6 @@ namespace UserAuthMVC.Controllers
             {
                 try
                 {
-                    // Check if email already exists
                     var existingUser = _userRepo.Validate(new Login { EmailAddress = model.EmailAddress });
                     if (existingUser != null)
                     {
@@ -46,7 +44,6 @@ namespace UserAuthMVC.Controllers
                         return View(model);
                     }
 
-                    // Register the user
                     var user = _userRepo.Register(model);
                     if (user != null)
                     {
@@ -61,11 +58,9 @@ namespace UserAuthMVC.Controllers
                 catch (Exception ex)
                 {
                     ModelState.AddModelError(string.Empty, "An error occurred during registration. Please try again.");
-                    // Log the exception details here
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 

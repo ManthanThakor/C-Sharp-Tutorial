@@ -5,7 +5,7 @@ using UserAuthMVC.Models;
 
 namespace UserAuthMVC.Controllers
 {
-    [Authorize] // This ensures all actions in this controller require authentication
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
