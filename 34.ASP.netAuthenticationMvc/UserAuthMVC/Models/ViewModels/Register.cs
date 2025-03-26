@@ -6,7 +6,7 @@ namespace UserAuthMVC.Models.ViewModels
     {
         [Required]
         [StringLength(100)]
-        public string Name { get; set; }  // Changed from internal set to public
+        public string Name { get; set; }
 
         [Required]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
