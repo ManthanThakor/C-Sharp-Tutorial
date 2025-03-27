@@ -1,4 +1,7 @@
-﻿const connection = new signalR.HubConnectionBuilder()
+﻿// =====================================================
+// ======================================================
+
+const connection = new signalR.HubConnectionBuilder()
     .withUrl("/chatHub")
     .build();
 
@@ -10,9 +13,12 @@ connection.on("ReceiveMessage", (user, message) => {
 
 connection.start().catch(err => console.error(err.toString()));
 
-function sendMessage() {
+const sendMessage = () => {
     const user = document.getElementById("userInput").value;
     const message = document.getElementById("messageInput").value;
     connection.invoke("SendMessage", user, message)
         .catch(err => console.error(err.toString()));
 }
+
+// =====================================================
+// ======================================================

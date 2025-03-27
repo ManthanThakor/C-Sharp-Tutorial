@@ -5,15 +5,18 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 
-<h2>Chat</h2>
-<input type="text" id="userInput" placeholder="Enter Name" />
-<input type="text" id="messageInput" placeholder="Enter Message" />
-<button onclick="sendMessage()">Send</button>
+<div class="chat-container">
+    <div class="chat-header">Chat App</div>
+    <div class="chat-box" id="messagesList"></div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Enter your name" />
+        <input type="text" id="messageInput" placeholder="Type a message..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
 
-<ul id="messagesList"></ul>
 
-<a href="~/lib/jquery/dist/jquery.min.map">~/lib/jquery/dist/jquery.min.map</a>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/jquery/dist/jquery.js"></script>
-
+<link href="~/css/home.css" rel="stylesheet" />
 <script src="~/js/site.js"></script>

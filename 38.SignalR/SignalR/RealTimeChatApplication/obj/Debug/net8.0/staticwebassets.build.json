@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CXUeL8/w6tFEH7j7ODPtU377rA8d/UuEKE0FBhFaEdQ=",
+  "Hash": "kcfY3LFu+Lq50SOwPfcB1UGOilDuV2R2Vq6dW85XiVA=",
   "Source": "RealTimeChatApplication",
   "BasePath": "_content/RealTimeChatApplication",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RealTimeChatApplication.bundle.scp.css"
+    },
+    {
+      "Identity": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\wwwroot\\css\\home.css",
+      "SourceId": "RealTimeChatApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\wwwroot\\",
+      "BasePath": "_content/RealTimeChatApplication",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
       "Identity": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\wwwroot\\css\\site.css",

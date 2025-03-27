@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\RealTimeChatApplication.bundle.scp.css"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\SignalR\\RealTimeChatApplication\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
