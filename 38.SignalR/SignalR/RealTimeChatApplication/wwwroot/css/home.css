@@ -51,7 +51,7 @@
 
         .chat-box li:nth-child(even) {
             align-self: flex-end;
-            background: #34b7f1;
+            background: #128C7E;
             color: #fff;
         }
 
