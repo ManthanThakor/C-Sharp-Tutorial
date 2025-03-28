@@ -1,47 +1,48 @@
+﻿using CustomerSupportApp.Data;
+using CustomerSupportApp.Hubs;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
-using CustomerSupportApp.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("CustomerSupportAppContextConnection") ?? throw new InvalidOperationException("Connection string 'CustomerSupportAppContextConnection' not found.");
 
-builder.Services.AddDbContext<CustomerSupportAppContext>(options => options.UseSqlServer(connectionString));
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<CustomerSupportAppContext>();
-
-// Database Connection
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-//// Add Identity
-//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
-//    .AddEntityFrameworkStores<ApplicationDbContext>();
-
-// Add Controllers and Views
+// Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
 
-// Configure SignalR
+// Configure Database Connection
+builder.Services.AddDbContext<CustomerSupportAppContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerSupportAppContextConnection")));
+
+// Add Identity
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<CustomerSupportAppContext>();
+
+// Add SignalR
 builder.Services.AddSignalR();
 
 var app = builder.Build();
 
-// Middleware Setup
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-app.UseRouting();
 
+// ✅ Map Controller Routes
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-//app.UseEndpoints(endpoints =>
-//{
-//    endpoints.MapControllers();
-//    endpoints.MapRazorPages();
-//    endpoints.MapHub<ChatHub>("/chatHub");
-//});
+// ✅ Map SignalR Hub
+app.MapHub<ChatHub>("/chatHub");
+
+// ✅ Map Razor Pages for Identity
+app.MapRazorPages();
 
 app.Run();
-
