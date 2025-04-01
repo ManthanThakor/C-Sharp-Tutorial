@@ -5,8 +5,20 @@
       "PackagePath": "staticwebassets\\CustomerSupportApp.bundle.scp.css"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\Logout.css",
+      "PackagePath": "staticwebassets\\css\\Logout.css"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\Register.css",
+      "PackagePath": "staticwebassets\\css\\Register.css"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\StyleSheet.css",
       "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\site.css",
