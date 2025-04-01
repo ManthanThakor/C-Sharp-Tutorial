@@ -11,7 +11,7 @@ namespace CustomerSupportApp.Hubs
         {
             try
             {
-                var user = Context.User?.Identity?.Name; // Get the logged-in user's name
+                var user = Context.User?.Identity?.Name;
                 if (!string.IsNullOrEmpty(user))
                 {
                     await Clients.All.SendAsync("ReceiveMessage", user, message);
@@ -19,9 +19,8 @@ namespace CustomerSupportApp.Hubs
             }
             catch (Exception ex)
             {
-                // Log the error
                 Console.WriteLine($"Error in SendMessage: {ex.Message}");
-                throw; // Re-throw the exception for SignalR to handle
+                throw;
             }
         }
     }
