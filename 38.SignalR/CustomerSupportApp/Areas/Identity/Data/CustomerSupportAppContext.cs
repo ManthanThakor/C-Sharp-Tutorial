@@ -20,9 +20,9 @@ public class CustomerSupportAppContext : IdentityDbContext<IdentityUser>
         base.OnModelCreating(builder);
 
         builder.Entity<ChatMessage>()
-      .HasOne(c => c.ChatRoom)
-      .WithMany(c => c.Messages)
-      .HasForeignKey(c => c.ChatRoomId)
-      .OnDelete(DeleteBehavior.Cascade);
+              .HasOne(c => c.ChatRoom)
+              .WithMany(c => c.Messages)
+              .HasForeignKey(c => c.ChatRoomId)
+              .OnDelete(DeleteBehavior.Cascade);
     }
 }
