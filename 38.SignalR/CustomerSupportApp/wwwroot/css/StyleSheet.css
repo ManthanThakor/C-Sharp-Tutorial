@@ -1,0 +1,145 @@
+﻿:root {
+    --primary-color: #6a11cb;
+    --secondary-color: #2575fc;
+    --chat-bg: rgba(255, 255, 255, 0.1);
+    --glass-blur: blur(8px);
+    --neon-glow: rgba(106, 17, 203, 0.8);
+}
+
+main {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    font-family: 'Poppins', sans-serif;
+}
+
+.chat-room {
+    padding-bottom: 40px;
+}
+
+.chat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.chat-box {
+    width: 100%;
+    background: var(--chat-bg);
+    backdrop-filter: var(--glass-blur);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.messages {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chat-bubble {
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 75%;
+    word-wrap: break-word;
+    animation: slideIn 0.3s ease-out;
+}
+
+    .chat-bubble:nth-child(even) {
+        align-self: flex-end;
+        background: linear-gradient(135deg, #fbc2eb, #a18cd1);
+    }
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px;
+    border-radius: 25px;
+}
+
+    .chat-input input {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        outline: none;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+        .chat-input input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+    .chat-input button {
+        background: var(--primary-color);
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        margin-left: 8px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .chat-input button:hover {
+            background: var(--secondary-color);
+        }
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    25%, 75% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+}

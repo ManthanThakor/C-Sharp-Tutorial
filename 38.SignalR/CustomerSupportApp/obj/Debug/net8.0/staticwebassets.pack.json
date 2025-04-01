@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\CustomerSupportApp.bundle.scp.css"
     },
     {
+      "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
       "Id": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

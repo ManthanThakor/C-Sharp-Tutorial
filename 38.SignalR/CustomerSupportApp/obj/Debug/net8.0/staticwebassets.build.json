@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wn4PGpLJbmmL77WAbH4MNnQ/jU3efheD97awRxDiCxk=",
+  "Hash": "wi5jHYQ6kQ47IAwt81B1WjaRiGOGih1X/hYdebtTZpA=",
   "Source": "CustomerSupportApp",
   "BasePath": "_content/CustomerSupportApp",
   "Mode": "Default",
@@ -1212,6 +1212,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "CustomerSupportApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\",
+      "BasePath": "_content/CustomerSupportApp",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
     },
     {
       "Identity": "E:\\manthan\\C-Sharp-Tutorial\\38.SignalR\\CustomerSupportApp\\wwwroot\\favicon.ico",

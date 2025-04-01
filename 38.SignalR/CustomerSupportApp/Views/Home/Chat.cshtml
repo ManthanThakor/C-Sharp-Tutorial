@@ -4,43 +4,49 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
 
-<h2> Chat</h2>
-
-<!-- You can remove the user input if the user is logged in automatically -->
-<input type="text" id="messageInput" placeholder="Enter message" />
-<button onclick="sendMessage()">Send</button>
-
-<ul id="messagesList"></ul>
+<div class="chat-container chat-room">
+    <div class="chat-box">
+        <div class="chat-header">
+            <h2><i class="fas fa-comment-dots"></i> Live Chat</h2>
+        </div>
+        <ul id="messagesList" class="messages"></ul>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message..." />
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</div>
 
 <script>
-    // Set up SignalR connection
     const connection = new signalR.HubConnectionBuilder()
         .withUrl("/chatHub")
         .build();
 
-    // Start the connection
     connection.start().catch(err => console.error("Connection failed: " + err.toString()));
 
-    // Listen for messages from the server
     connection.on("ReceiveMessage", (user, message) => {
         const li = document.createElement("li");
-        li.textContent = `${user}: ${message}`;
+        li.classList.add("chat-bubble");
+        li.innerHTML = `<strong>${user}:</strong> <span>${message}</span>`;
+
         document.getElementById("messagesList").appendChild(li);
+        li.classList.add("fade-in");
+        document.getElementById("messagesList").scrollTop = document.getElementById("messagesList").scrollHeight;
     });
 
-    // Function to send message
     function sendMessage() {
-        const message = document.getElementById("messageInput").value;
+        const messageInput = document.getElementById("messageInput");
+        const message = messageInput.value.trim();
 
-        if (message.trim() === "") {
-            alert("Please enter a message");
+        if (message === "") {
+            messageInput.classList.add("shake");
+            setTimeout(() => messageInput.classList.remove("shake"), 300);
             return;
         }
 
-        // Send message to SignalR hub
-        connection.invoke("SendMessage", message).catch(err => console.error("SendMessage error: " + err.toString()));
-
-        // Clear the message input
-        document.getElementById("messageInput").value = "";
+        connection.invoke("SendMessage", message).catch(err => console.error(err.toString()));
+        messageInput.value = "";
     }
 </script>
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+
