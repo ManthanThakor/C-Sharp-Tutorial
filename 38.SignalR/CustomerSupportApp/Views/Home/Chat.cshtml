@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Chat Section";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+
+<h2> Chat</h2>
+
+<!-- You can remove the user input if the user is logged in automatically -->
+<input type="text" id="messageInput" placeholder="Enter message" />
+<button onclick="sendMessage()">Send</button>
+
+<ul id="messagesList"></ul>
+
+<script>
+    // Set up SignalR connection
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/chatHub")
+        .build();
+
+    // Start the connection
+    connection.start().catch(err => console.error("Connection failed: " + err.toString()));
+
+    // Listen for messages from the server
+    connection.on("ReceiveMessage", (user, message) => {
+        const li = document.createElement("li");
+        li.textContent = `${user}: ${message}`;
+        document.getElementById("messagesList").appendChild(li);
+    });
+
+    // Function to send message
+    function sendMessage() {
+        const message = document.getElementById("messageInput").value;
+
+        if (message.trim() === "") {
+            alert("Please enter a message");
+            return;
+        }
+
+        // Send message to SignalR hub
+        connection.invoke("SendMessage", message).catch(err => console.error("SendMessage error: " + err.toString()));
+
+        // Clear the message input
+        document.getElementById("messageInput").value = "";
+    }
+</script>

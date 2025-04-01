@@ -12,17 +12,19 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CustomerSupportAppContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerSupportAppContextConnection")));
 
-// Add Identity
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<CustomerSupportAppContext>();
 
-// Add SignalR
 builder.Services.AddSignalR();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
@@ -34,15 +36,12 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-// ✅ Map Controller Routes
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-// ✅ Map SignalR Hub
 app.MapHub<ChatHub>("/chatHub");
 
-// ✅ Map Razor Pages for Identity
 app.MapRazorPages();
 
 app.Run();

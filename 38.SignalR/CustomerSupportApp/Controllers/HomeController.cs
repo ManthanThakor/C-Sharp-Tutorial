@@ -1,4 +1,5 @@
 using CustomerSupportApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -11,6 +12,12 @@ namespace CustomerSupportApp.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
+        }
+
+        [Authorize]
+        public IActionResult Chat()
+        {
+            return View();
         }
 
         public IActionResult Index()
