@@ -10,6 +10,7 @@ main {
     justify-content: center;
     text-align: center;
     display: flex;
+    margin-top: 30px !important;
 }
 
 body {
